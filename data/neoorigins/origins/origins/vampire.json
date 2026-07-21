@@ -11,8 +11,7 @@
     "neoorigins:vampire/vampire_speed_boost",
     "neoorigins:vampire/vampire_daylight_damage",
     "neoorigins:vampire/vampire_slow_regen",
-    "neoorigins:vampire/vampire_food_restriction",
-    "neoorigins:vampire/vampire_water_weakness"
+    "neoorigins:vampire/vampire_food_restriction"
   ],
   "upgrades": [],
   "tier_powers": [

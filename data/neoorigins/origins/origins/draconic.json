@@ -7,14 +7,11 @@
   "powers": [
     "neoorigins:draconic/draconic_fire_immunity",
     "neoorigins:draconic/draconic_lava_swimming",
-    "neoorigins:draconic/draconic_lava_vision",
     "neoorigins:draconic/draconic_slow_fall",
-    "neoorigins:draconic/draconic_flight",
     "neoorigins:draconic/draconic_active_fireball",
     "neoorigins:draconic/draconic_scare_mobs",
     "neoorigins:draconic/draconic_size",
     "neoorigins:draconic/draconic_attack_bonus",
-    "neoorigins:draconic/draconic_water_weakness",
     "neoorigins:draconic/draconic_hunger_drain",
     "neoorigins:draconic/draconic_stamina"
   ],
