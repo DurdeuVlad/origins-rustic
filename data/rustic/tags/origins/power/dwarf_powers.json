@@ -1,6 +1,8 @@
 {
     "replace": false,
     "values": [
-        "rustic:dwarf_pickaxe_haste"
+        "rustic:dwarf_pickaxe_haste",
+        "rustic:dwarf_underground_resistance",
+        "rustic:dwarf_underground_vision"
     ]
 }
