@@ -3,7 +3,7 @@
     "values": [
         "rustic:prevent_watering_can",
         "rustic:prevent_cleaver",
-        "origins_classes:more_crop_drops",
+        "rustic:more_crop_drops",
         "rustic:farmer_crop_speed",
         "rustic:farmer_double_wheat"
     ]
