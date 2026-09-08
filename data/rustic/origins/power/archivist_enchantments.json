@@ -1,0 +1,73 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "loot give @s loot rustic:generic/archivist_enchantment"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:block.enchantment_table.use neutral @a ~ ~ ~ 2 1.2"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "clear @s minecraft:book 1"
+      },
+      {
+        "type": "origins:add_xp",
+        "levels": -5
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:enchant"
+        },
+        "count": 16,
+        "speed": 0.0,
+        "force": true,
+        "spread": [
+          0.5,
+          0.1,
+          0.5
+        ]
+      }
+    ]
+  },
+  "cooldown": 8,
+  "hud_render": {
+    "should_render": false
+  },
+  "key": {
+    "key": "key.use",
+    "continuous": false
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:book"
+          }
+        }
+      },
+      {
+        "type": "origins:xp_levels",
+        "comparison": ">=",
+        "compare_to": 5
+      }
+    ]
+  },
+  "badges": [
+    {
+      "type": "origins:keybind",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Apasă %s ținând o carte în mâna principală cu cel puțin 5 niveluri de XP. Consumă 5 niveluri de XP."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:gameplay/fishing": "rustic:gameplay/fishing"
+  }
+}

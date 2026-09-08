@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:automaton_powers"
+  ],
+  "icon": {
+    "id": "minecraft:iron_ingot"
+  },
+  "order": 11,
+  "impact": 0
+}

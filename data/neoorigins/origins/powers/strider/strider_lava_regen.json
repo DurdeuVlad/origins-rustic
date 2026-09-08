@@ -1,6 +1,0 @@
-{
-  "type": "neoorigins:condition_passive",
-  "condition": { "type": "neoorigins:submerged_in", "fluid": "minecraft:lava" },
-  "entity_action": { "type": "neoorigins:heal", "amount": 2.0 },
-  "interval": 20
-}

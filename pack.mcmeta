@@ -1,8 +1,6 @@
 {
-    "pack": {
-        "description": "Rustic NeoOrigins",
-        "pack_format": 84,
-        "min_format": 84,
-        "max_format": 84
-    }
+  "pack": {
+    "pack_format": 48,
+    "description": "Rustic Craft 2 Classes"
+  }
 }

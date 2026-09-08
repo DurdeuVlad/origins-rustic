@@ -1,0 +1,45 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.primary_active"
+    },
+    "badges": [
+      {
+        "type": "origins:keybind",
+        "sprite": "origins:textures/gui/badge/toggle.png",
+        "text": "Apasă %s pentru a activa/dezactiva zborul estic."
+      }
+    ]
+  },
+  "flight": {
+    "type": "origins:elytra_flight",
+    "render_elytra": true,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    }
+  },
+  "hunger_drain": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "*:*_toggle"
+        },
+        {
+          "type": "origins:fall_flying"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:exhaust",
+      "amount": 1.0
+    }
+  }
+}

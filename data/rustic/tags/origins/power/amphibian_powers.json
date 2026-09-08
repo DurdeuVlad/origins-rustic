@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "rustic:amphibian_ignore_water",
+        "rustic:amphibian_water_regen",
+        "rustic:amphibian_dry_weakness"
+    ]
+}

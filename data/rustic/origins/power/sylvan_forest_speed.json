@@ -1,0 +1,15 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.movement_speed",
+    "operation": "add_multiplied_base",
+    "value": 0.3
+  },
+  "condition": {
+    "type": "origins:biome_in",
+    "condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_forest"
+    }
+  }
+}

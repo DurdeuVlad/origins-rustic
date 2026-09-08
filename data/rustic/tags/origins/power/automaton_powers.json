@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "rustic:automaton_no_regen",
+        "rustic:automaton_iron_repair",
+        "rustic:automaton_copper_feed",
+        "rustic:automaton_armor"
+    ]
+}

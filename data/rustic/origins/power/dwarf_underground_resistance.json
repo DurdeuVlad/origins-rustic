@@ -1,0 +1,23 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": [
+      {
+        "id": "minecraft:resistance",
+        "duration": 40,
+        "amplifier": 1
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:distance_from_coordinates",
+    "offset": {
+      "y": -64
+    },
+    "ignore_x": true,
+    "ignore_z": true,
+    "comparison": "<=",
+    "compare_to": 124
+  }
+}

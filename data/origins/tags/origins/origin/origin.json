@@ -1,0 +1,17 @@
+{
+    "replace": true,
+    "values": [
+        "rustic:human",
+        "rustic:amphibian",
+        "rustic:arachnid",
+        "rustic:automaton",
+        "rustic:dwarf",
+        "rustic:dragonborn",
+        "rustic:enderian",
+        "rustic:phantom",
+        "rustic:sylvan",
+        "rustic:undead",
+        "rustic:vampire",
+        "rustic:frostborn"
+    ]
+}

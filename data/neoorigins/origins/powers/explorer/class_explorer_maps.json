@@ -1,7 +1,0 @@
-{
-  "type": "neoorigins:starting_equipment",
-  "grant_id": "explorer_maps",
-  "item": "minecraft:map",
-  "count": 9,
-  "name": "Starting gear - maps"
-}

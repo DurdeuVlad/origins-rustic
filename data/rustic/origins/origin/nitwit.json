@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:nitwit_powers"
+  ],
+  "icon": {
+    "id": "minecraft:poisonous_potato"
+  },
+  "order": 0,
+  "impact": 0
+}

@@ -1,8 +1,0 @@
-{
-    "type": "neoorigins:attribute_modifier",
-    "attribute": "minecraft:step_height",
-    "amount": 0.5,
-    "operation": "add_value",
-    "name": "Pași ageri",
-    "description": "Poți urca pe blocuri mai înalte fără să sari."
-}

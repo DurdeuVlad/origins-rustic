@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "origins:phantomize",
+        "origins:translucent",
+        "origins:fragile",
+        "origins:phantomize_overlay",
+        "origins:phantomize_callback",
+        "rustic:phantom_phasing"
+    ]
+}

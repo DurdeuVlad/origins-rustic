@@ -1,6 +1,0 @@
-{
-  "type": "neoorigins:modify_damage",
-  "direction": "in",
-  "multiplier": 1.8,
-  "damage_type": "#minecraft:is_fire"
-}

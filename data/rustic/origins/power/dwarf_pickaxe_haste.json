@@ -1,0 +1,23 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:pickaxes"
+    }
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:haste",
+      "duration": 40,
+      "amplifier": 0,
+      "ambient": false,
+      "show_particles": false,
+      "show_icon": true
+    }
+  }
+}

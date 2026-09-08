@@ -1,0 +1,14 @@
+{
+  "type": "origins:night_vision",
+  "strength": 1.0,
+  "condition": {
+    "type": "origins:distance_from_coordinates",
+    "offset": {
+      "y": -64
+    },
+    "ignore_x": true,
+    "ignore_z": true,
+    "comparison": "<=",
+    "compare_to": 124
+  }
+}

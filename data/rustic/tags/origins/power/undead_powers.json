@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "rustic:weakness_sun",
+        "rustic:undead_less_health",
+        "rustic:undead_enhanced_food",
+        "rustic:undead_food_heal",
+        "rustic:undead_poison_immunity",
+        "rustic:undead_harming_immunity"
+    ]
+}

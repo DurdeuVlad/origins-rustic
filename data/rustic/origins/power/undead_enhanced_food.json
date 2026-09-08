@@ -1,0 +1,15 @@
+{
+  "type": "origins:modify_food",
+  "item_condition": {
+    "type": "origins:in_tag",
+    "tag": "rustic:undead_food"
+  },
+  "food_modifier": {
+    "operation": "add_value",
+    "value": 4.0
+  },
+  "saturation_modifier": {
+    "operation": "add_value",
+    "value": 0.5
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:arachnid_powers"
+  ],
+  "icon": {
+    "id": "minecraft:cobweb"
+  },
+  "order": 10,
+  "impact": 0
+}

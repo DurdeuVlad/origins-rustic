@@ -1,9 +1,0 @@
-{
-  "name": "Pleb",
-  "description": "Nu ajuți societatea cu nimic. Ești inutil.",
-  "icon": "minecraft:poisonous_potato",
-  "impact": "none",
-  "order": 11,
-  "powers": [],
-  "upgrades": []
-}

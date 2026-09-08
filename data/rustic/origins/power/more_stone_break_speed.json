@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_break_speed",
+  "modifier": {
+    "operation": "multiply_base_multiplicative",
+    "value": 1.0
+  },
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "rustic:stone"
+  },
+  "hidden": true
+}

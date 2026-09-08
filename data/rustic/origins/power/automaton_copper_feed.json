@@ -1,0 +1,14 @@
+{
+  "type": "origins:edible_item",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "food_properties": {
+    "nutrition": 2,
+    "saturation": 2.0
+  },
+  "consume_animation": "eat"
+}

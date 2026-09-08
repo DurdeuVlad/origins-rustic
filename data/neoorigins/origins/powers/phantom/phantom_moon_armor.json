@@ -1,8 +1,0 @@
-{
-  "type": "neoorigins:persistent_effect",
-  "toggleable": false,
-  "condition": { "type": "neoorigins:night" },
-  "effects": [
-    { "effect": "minecraft:resistance", "amplifier": 0, "ambient": true, "show_particles": false, "show_icon": true }
-  ]
-}

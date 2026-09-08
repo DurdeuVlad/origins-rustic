@@ -1,0 +1,7 @@
+[
+  {
+    "function": "origins:add_power",
+    "power": "origins_classes:items/effecient_digger",
+    "slot": "mainhand"
+  }
+]

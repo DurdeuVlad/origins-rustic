@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:blacksmith_powers"
+  ],
+  "icon": {
+    "id": "minecraft:anvil"
+  },
+  "order": 5,
+  "impact": 0
+}

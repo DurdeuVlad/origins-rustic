@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:set_damage",
+    "damage": {
+      "type": "minecraft:constant",
+      "value": 0
+    },
+    "add": true,
+    "conditions": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "equipment": {
+            "mainhand": {
+              "count": 1
+            }
+          }
+        }
+      }
+    ]
+  }
+]

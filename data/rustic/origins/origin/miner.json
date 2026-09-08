@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:miner_powers"
+  ],
+  "icon": {
+    "id": "minecraft:iron_pickaxe"
+  },
+  "order": 2,
+  "impact": 0
+}

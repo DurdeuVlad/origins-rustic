@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:human_powers"
+  ],
+  "icon": {
+    "id": "minecraft:apple"
+  },
+  "order": 1,
+  "impact": 0
+}

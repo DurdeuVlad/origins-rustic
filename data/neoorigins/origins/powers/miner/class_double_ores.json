@@ -1,8 +1,0 @@
-{
-  "type": "neoorigins:replace_loot_table",
-  "replace": {
-    "([a-z|0-9|\\-|_]).*:blocks\/([a-z|0-9|\\-|_].*)_ore": "neoorigins:double_ores"
-  },
-  "name": "Minereuri bogate",
-  "description": "Dublarea resurselor extrase din minereuri."
-}

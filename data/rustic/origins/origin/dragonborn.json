@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:dragonborn_powers"
+  ],
+  "icon": {
+    "id": "minecraft:dragon_breath"
+  },
+  "order": 5,
+  "impact": 0
+}

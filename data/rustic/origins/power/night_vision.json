@@ -1,0 +1,9 @@
+{
+  "type":"origins:night_vision",
+  "strength":0.5,
+  "condition":{
+    "type":"origins:exposed_to_sky",
+    "inverted": true
+  },
+  "hidden": true
+}

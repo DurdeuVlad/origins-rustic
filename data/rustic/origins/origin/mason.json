@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:mason_powers"
+  ],
+  "icon": {
+    "id": "minecraft:white_glazed_terracotta"
+  },
+  "order": 19,
+  "impact": 2
+}

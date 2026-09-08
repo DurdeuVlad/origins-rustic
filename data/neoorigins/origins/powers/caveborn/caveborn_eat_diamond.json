@@ -1,7 +1,0 @@
-{
-  "type": "neoorigins:edible_item",
-  "tags": ["neoorigins:caveborn_eat_diamond"],
-  "nutrition": 6,
-  "saturation": 1.2,
-  "always_edible": false
-}

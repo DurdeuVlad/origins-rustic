@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "rustic:salahor_size",
+    "rustic:salahor_health",
+    "rustic:salahor_reach",
+    "rustic:salahor_crushing_grip",
+    "rustic:salahor_unmoving",
+    "rustic:salahor_heavy_steps"
+  ]
+}

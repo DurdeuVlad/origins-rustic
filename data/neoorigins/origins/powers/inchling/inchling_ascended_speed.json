@@ -1,1 +1,0 @@
-{ "type": "neoorigins:attribute_modifier", "attribute": "minecraft:movement_speed", "amount": 0.15, "operation": "add_value" }

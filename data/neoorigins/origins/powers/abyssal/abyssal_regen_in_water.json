@@ -1,9 +1,0 @@
-{
-  "type": "neoorigins:condition_passive",
-  "condition": { "type": "neoorigins:in_water" },
-  "entity_action": {
-    "type": "neoorigins:heal",
-    "amount": 0.333
-  },
-  "interval": 20
-}

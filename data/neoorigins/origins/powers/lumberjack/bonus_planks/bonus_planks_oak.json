@@ -1,7 +1,0 @@
-{
-  "type": "neoorigins:craft_amount_bonus",
-  "output_item": "minecraft:oak_planks",
-  "bonus_count": 2,
-  "name": "Îndemânare cu fierăstrăul",
-  "description": "Când creezi planks, primești +2 bonus"
-}

@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:dwarf_powers"
+  ],
+  "icon": {
+    "id": "minecraft:gold_ingot"
+  },
+  "order": 9,
+  "impact": 0
+}

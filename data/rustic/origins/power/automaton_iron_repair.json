@@ -1,0 +1,18 @@
+{
+  "type": "origins:edible_item",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "food_properties": {
+    "nutrition": 0,
+    "saturation": 0.0
+  },
+  "entity_action": {
+    "type": "origins:heal",
+    "amount": 4.0
+  },
+  "consume_animation": "drink"
+}

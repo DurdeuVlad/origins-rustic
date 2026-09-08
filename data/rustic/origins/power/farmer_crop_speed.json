@@ -1,0 +1,23 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "condition": {
+    "type": "origins:block_in_radius",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:crops"
+    },
+    "radius": 4
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:speed",
+      "duration": 40,
+      "amplifier": 0,
+      "ambient": false,
+      "show_particles": false,
+      "show_icon": true
+    }
+  }
+}

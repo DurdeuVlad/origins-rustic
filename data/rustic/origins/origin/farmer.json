@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:farmer_powers"
+  ],
+  "icon": {
+    "id": "minecraft:wheat"
+  },
+  "order": 1,
+  "impact": 0
+}

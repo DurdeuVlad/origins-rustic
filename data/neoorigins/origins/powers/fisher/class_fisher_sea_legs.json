@@ -1,8 +1,0 @@
-{
-  "type": "neoorigins:modify_damage",
-  "direction": "in",
-  "multiplier": 0.5,
-  "damage_type": "drown",
-  "name": "Respirație subacvatică",
-  "description": "Te înneci mai greu în apă"
-}

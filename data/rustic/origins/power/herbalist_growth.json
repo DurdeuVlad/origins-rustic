@@ -1,0 +1,20 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 1000,
+  "entity_action": {
+    "type": "origins:block_action",
+    "action": {
+      "type": "origins:region_apply",
+      "radius": 4,
+      "shape": "cube",
+      "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:crops"
+      },
+      "block_action": {
+        "type": "origins:bonemeal",
+        "effect": false
+      }
+    }
+  }
+}

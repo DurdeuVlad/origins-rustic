@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "rustic:explorer_stamina",
+    "rustic:explorer_climbers_step",
+    "rustic:explorer_campfire_rest"
+  ]
+}

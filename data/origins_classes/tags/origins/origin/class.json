@@ -1,0 +1,17 @@
+{
+    "replace": true,
+    "values": [
+        "rustic:nitwit",
+        "rustic:blacksmith",
+        "rustic:farmer",
+        "rustic:fisherman",
+        "rustic:fisher",
+        "rustic:herbalist",
+        "rustic:lumberjack",
+        "rustic:mason",
+        "rustic:miner",
+        "rustic:archivist",
+        "rustic:explorer",
+        "rustic:salahor"
+    ]
+}

@@ -1,6 +1,0 @@
-{
-  "type": "neoorigins:condition_passive",
-  "condition": { "type": "neoorigins:biome", "tag": "minecraft:is_nether" },
-  "entity_action": { "type": "neoorigins:apply_effect", "effect": "minecraft:speed", "duration": 300, "amplifier": 1 },
-  "interval": 20
-}

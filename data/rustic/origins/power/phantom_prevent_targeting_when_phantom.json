@@ -1,0 +1,10 @@
+{
+    "type": "origins:prevent_targeting",
+    "condition": {
+        "type": "origins:power_active",
+        "power": "origins:phantomize"
+    },
+    "mob_condition": {
+        "type": "origins:hostile"
+    }
+}

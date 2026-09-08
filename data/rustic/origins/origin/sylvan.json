@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:sylvan_powers"
+  ],
+  "icon": {
+    "id": "minecraft:oak_sapling"
+  },
+  "order": 3,
+  "impact": 0
+}

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "rustic:weakness_water",
+        "origins:throw_ender_pearl",
+        "origins:extra_reach",
+        "origins:ender_particles"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "rustic:mason_block_reach",
+    "rustic:mason_break_speed",
+    "rustic:mason_jump_boost"
+  ]
+}

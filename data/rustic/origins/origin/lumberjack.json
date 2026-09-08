@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:lumberjack_powers"
+  ],
+  "icon": {
+    "id": "minecraft:iron_axe"
+  },
+  "order": 13,
+  "impact": 0
+}

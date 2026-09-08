@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rotten_flesh",
+    "butchery:heart",
+    "butchery:liver",
+    "butchery:lungs",
+    "butchery:kidney",
+    "butchery:intestines",
+    "butchery:stomach",
+    "butchery:rotten_heart",
+    "butchery:rotten_liver",
+    "butchery:rotten_lungs",
+    "butchery:rotten_kidney",
+    "butchery:rotten_intestines",
+    "butchery:rotten_stomach"
+  ]
+}

@@ -1,6 +1,0 @@
-{
-  "type": "neoorigins:craft_amount_bonus",
-  "output_item": "minecraft:spruce_planks",
-  "bonus_count": 2,
-  "hidden": true
-}

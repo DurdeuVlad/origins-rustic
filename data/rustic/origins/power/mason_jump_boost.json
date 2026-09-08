@@ -1,0 +1,36 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "badges": [
+      {
+        "type": "origins:keybind",
+        "sprite": "origins:textures/gui/badge/toggle.png",
+        "text": "Apasă %s pentru a activa/dezactiva săritura ridicată."
+      }
+    ]
+  },
+  "jump_boost": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "*:*_toggle"
+    },
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:jump_boost",
+        "duration": 40,
+        "amplifier": 1,
+        "ambient": false,
+        "show_particles": false,
+        "show_icon": true
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "#origins-rustic:hoes",
+    "#origins-rustic:pickaxes",
+    "#origins-rustic:axes",
+    "#origins-rustic:shovels",
+    "#origins-rustic:shears",
+    {
+      "id": "tetra:modular_single",
+      "required": false
+    },
+    {
+      "id": "tetra:modular_double",
+      "required": false
+    }
+  ]
+}

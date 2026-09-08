@@ -1,8 +1,0 @@
-{
-  "type": "neoorigins:modify_damage",
-  "direction": "in",
-  "multiplier": 0.5,
-  "damage_type": "#minecraft:is_fire",
-  "name": "Rezistență la foc",
-  "description": "Ești mai puțin afectat de foc și de căldură."
-}

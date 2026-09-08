@@ -1,0 +1,26 @@
+{
+  "type": "origins:modify_damage_taken",
+  "modifier": {
+    "operation": "multiply_total",
+    "value": -1.0
+  },
+  "damage_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:attacker",
+        "entity_condition": {
+          "type": "origins:living"
+        }
+      },
+      {
+        "type": "origins:projectile",
+        "inverted": true
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:chance",
+    "chance": 0.3
+  }
+}

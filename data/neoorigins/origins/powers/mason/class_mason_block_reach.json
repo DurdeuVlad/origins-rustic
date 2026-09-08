@@ -1,8 +1,0 @@
-{
-    "type": "neoorigins:attribute_modifier",
-    "attribute": "minecraft:block_interaction_range",
-    "amount": 2.0,
-    "operation": "add_value",
-    "name": "Reach Bonus",
-    "description": "Poți ajunge mai cu ușurință la blocuri distante."
-}
