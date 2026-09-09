@@ -5,6 +5,6 @@
     "operation": "add_value",
     "value": 0.5
   },
-  "name": "Brațe de Stejar",
-  "description": "[Pasivă] Atingerea ta la atac și unelte este mărită cu +1.5 blocuri."
+  "name": "Brațe Lungi",
+  "description": "[Pasivă] Rază extinsă de atac și interacțiune cu uneltele."
 }

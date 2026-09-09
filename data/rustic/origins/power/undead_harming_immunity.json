@@ -3,6 +3,6 @@
   "damage_condition": {
     "type": "origins:magic"
   },
-  "name": "Sânge Închegat",
-  "description": "[Pasivă] Efectele de vătămare (Harming) și otrăvurile nu au niciun efect asupra ta."
+  "name": "Sânge Rece",
+  "description": "[Pasivă] Efectele de vătămare (Harming) nu îți provoacă rău."
 }

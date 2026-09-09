@@ -33,6 +33,6 @@
       }
     }
   },
-  "name": "Pasul pe Grindă",
-  "description": "[Pe Piatră] Primești un salt mai înalt când sari de pe blocuri de piatră."
+  "name": "Pas pe Piatră",
+  "description": "[Pe Piatră] Salt mai înalt când te afli pe blocuri masive de piatră."
 }

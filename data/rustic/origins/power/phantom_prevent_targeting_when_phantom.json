@@ -7,6 +7,6 @@
   "mob_condition": {
     "type": "origins:hostile"
   },
-  "name": "Nevăzut de Fiare",
-  "description": "[În Mod Nălucă] Monștrii și fiarele nu te pot zări sau ataca."
+  "name": "Nevăzut de Inamici",
+  "description": "[În Formă Fantomatică] Monștrii nu te pot zări și nu te pot ataca."
 }

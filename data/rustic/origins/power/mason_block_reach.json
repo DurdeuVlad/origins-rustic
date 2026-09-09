@@ -5,6 +5,6 @@
     "operation": "add_value",
     "value": 3.0
   },
-  "name": "Brațul Zidarului",
-  "description": "[Pasivă] Rază de plasare a blocurilor extinsă cu +1.5 blocuri."
+  "name": "Rază de Zidar",
+  "description": "[Pasivă] Rază extinsă de plasare a blocurilor de construcție."
 }

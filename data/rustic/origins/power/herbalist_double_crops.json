@@ -7,6 +7,6 @@
   "block_condition": {
     "type": "origins_classes:harvestable_crops"
   },
-  "name": "Rodiul Vraciului",
-  "description": "[La Cules] Florile și plantele de leac culese se multiplică în inventar."
+  "name": "Recoltă Dublă de Plante",
+  "description": "[La Cules] Florile și plantele de leac culese oferă recoltă dublă."
 }

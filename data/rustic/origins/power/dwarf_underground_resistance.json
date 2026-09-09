@@ -22,6 +22,6 @@
     "comparison": "<=",
     "compare_to": 124
   },
-  "name": "Ocrotirea Adâncului",
-  "description": "[Sub Cota Y=60] Adâncurile pământului îți conferă automat Rezistență II continuă."
+  "name": "Rezistență Subterană",
+  "description": "[Sub Nivelul Y=60] Adâncurile pământului îți conferă automat Rezistență II continuă."
 }

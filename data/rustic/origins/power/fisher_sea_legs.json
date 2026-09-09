@@ -8,6 +8,6 @@
     "type": "origins:type",
     "damage_type": "minecraft:drown"
   },
-  "name": "Pas Călit pe Grind",
-  "description": "[Pasivă] Rezistență sporită la vătămare pe țărmuri și terenuri mlăștinoase."
+  "name": "Picioare de Marinar",
+  "description": "[Pasivă] Rezistență sporită la cădere și oboseală pe țărm și în apă."
 }

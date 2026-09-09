@@ -3,6 +3,6 @@
   "replace": {
     "minecraft:gameplay/fishing": "rustic:gameplay/fishing"
   },
-  "name": "Comorile Tăinuite",
-  "description": "[La Pescuit] Șansă mărită de a scoate din adâncuri comori și odoare de preț."
+  "name": "Comorile Apelor",
+  "description": "[La Pescuit] Șansă mărită de a pescui comori valoroase."
 }

@@ -7,6 +7,6 @@
   "damage_condition": {
     "type": "origins:fire"
   },
-  "name": "Călirea Focului",
-  "description": "[Pasivă] Pielea ta călită la furnal reduce toate daunele de foc și lavă cu 50%."
+  "name": "Călit în Foc",
+  "description": "[Pasivă] Rezistență sporită la foc și căldură acumulată în atelierul de forjă."
 }

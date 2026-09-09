@@ -1,6 +1,6 @@
 {
   "type": "origins:effect_immunity",
   "effect": "minecraft:poison",
-  "name": "Neatins de Otravă",
+  "name": "Imunitate la Otravă",
   "description": "[Pasivă] Imunitate deplină la efectul de otravă."
 }

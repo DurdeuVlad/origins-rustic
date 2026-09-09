@@ -7,6 +7,6 @@
   },
   "order": 2,
   "impact": 0,
-  "name": "Băieș de Baie",
-  "description": "Sfredelitor al adâncurilor. [La Săpat Minereuri] Viteză dublă la spart piatră și roade duble din minereuri. Mineritul costă 50% mai puțină foame/osteneală."
+  "name": "Miner",
+  "description": "Sfredelitor al măruntaielor pământului. [La Săpat Minereuri] Viteză sporită și minereuri dublate. Mineritul consumă cu 50% mai puțină foame."
 }

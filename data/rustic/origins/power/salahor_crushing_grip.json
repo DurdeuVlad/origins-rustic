@@ -5,6 +5,6 @@
     "operation": "add_value",
     "value": 1.0
   },
-  "name": "Strânsoare de Piatră",
-  "description": "[Pasivă] Pumnii tăi uriași provoacă +4.0 daune de atac de bază."
+  "name": "Lovitură Zdrobitoare",
+  "description": "[Pasivă] Pumnii tăi puternici provoacă +4.0 daune la atacul fără arme."
 }

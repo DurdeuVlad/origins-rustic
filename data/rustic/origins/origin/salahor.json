@@ -7,6 +7,6 @@
   },
   "order": 10,
   "impact": 0,
-  "name": "Salahor de Corvoadă",
-  "description": "Gheonoaie uriașă. [Pasivă] +10 inimi de viață (30 inimi totale), +4 atac cu pumnul, +1.5 blocuri rază de lovire și imunitate deplină la recul. [Dezavantaj] Viteză de deplasare redusă cu 20%."
+  "name": "Muncitor",
+  "description": "Uriaș cu forță brută de muncă. [Pasivă] +10 Inimi de viață, rezistență totală la recul (knockback) și pumni ce provoacă daune mari. [Dezavantaj] Mișcare mai greoaie."
 }

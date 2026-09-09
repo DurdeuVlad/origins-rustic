@@ -23,6 +23,6 @@
     "type": "origins:chance",
     "chance": 0.3
   },
-  "name": "Ferișul Umbrei",
-  "description": "[Pasivă] Șansă de a evita complet loviturile inamice devenind umbră."
+  "name": "Eschivă Fantomatică",
+  "description": "[Pasivă] Șansă de a evita complet loviturile primite."
 }

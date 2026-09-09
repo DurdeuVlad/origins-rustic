@@ -7,6 +7,6 @@
   },
   "order": 11,
   "impact": 0,
-  "name": "Ferecătură de Fier",
-  "description": "Plăsmuire de fier și alamă. [Pasivă] +4 Armură naturală. Nu se vindecă din mâncare. [Click Dreapta cu Lingou de Fier] Reface 3 inimi de viață. [Click Dreapta cu Pepită de Fier] Reface 0.75 inimi. [Click Dreapta cu Lingou de Aramă] Se hrănește pentru sațietate."
+  "name": "Automaton",
+  "description": "Făptură mecanică făurită din metal. [Pasivă] +4 Armură naturală. Nu te poți vindeca mâncând. [Click Dreapta cu Fier] Reface viață (3 inimi cu lingou, 0.75 cu pepită). [Click Dreapta cu Cupru] Îți potolește foamea."
 }

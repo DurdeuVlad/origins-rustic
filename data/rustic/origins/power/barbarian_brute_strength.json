@@ -23,6 +23,6 @@
       "text": "Forță Brută: ai +1 atac de bază, dar armura este cu 30% mai puțin eficientă pe tine."
     }
   ],
-  "name": "Vigoare Sălbatică",
-  "description": "[Pasivă] Atacurile tale provoacă cu 25% mai multe daune, dar apărarea oferită de armură este redusă cu 30%."
+  "name": "Forță Brută",
+  "description": "[Pasivă] Atacurile tale melee provoacă cu 25% mai multe daune oricărui inamic."
 }

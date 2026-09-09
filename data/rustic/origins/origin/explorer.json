@@ -7,6 +7,6 @@
   },
   "order": 5,
   "impact": 0,
-  "name": "Călăuză de Hotar",
-  "description": "Drumeț de poteci. [Pas Sprinten] Trece automat peste blocuri de 1 bloc înălțime. Alergarea nu consumă sațietate. [Lângă Foc de Tabără] Se tămăduiește rapid."
+  "name": "Explorator",
+  "description": "Călător sprinten peste văi și munți. [Pasivă] Urcare automată a treptelor (pas de munte), alergarea consumă mult mai puțină hrană, iar odihna la foc de tabără reface viață."
 }

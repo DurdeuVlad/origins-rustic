@@ -103,6 +103,6 @@
       "text": "Apasă %s spre a dezlănțui Mânia Străbună: mistuie merinde pentru Putere II și Rezistență I preț de 10s. La istovire, trupul devine domol și zăbavnic preț de 5s."
     }
   ],
-  "name": "Mânia Străbună",
-  "description": "[Tasta G] Răcnet de luptă ce dăruiește Putere II, Viteză I și Rezistență I timp de 10 secunde (răgaz: 30 secunde)."
+  "name": "Furia Barbarului",
+  "description": "[Tasta G / Primară] Răcnet de luptă ce îți oferă Putere II și Viteză timp de 15 secunde (timp de reîncărcare: 45 secunde)."
 }

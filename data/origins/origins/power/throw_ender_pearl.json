@@ -13,6 +13,6 @@
     "key": "key.origins.primary_active",
     "continuous": false
   },
-  "name": "Teleportare în Negură",
-  "description": "[Tasta G] Azvârli o perlă a neantului fără vătămare trupească, strămutându-te într-o clipită unde privești."
+  "name": "Teleportare cu Perla",
+  "description": "[Tasta G / Primară] Te teleportezi aruncând perle de ender fără a le consuma."
 }

@@ -148,6 +148,6 @@
       "text": "Apasă %s pentru Îngrijire Domnească: revigorează armăsarul cu Regenerare II și Viteză II."
     }
   ],
-  "name": "Îngrijire Domnească",
-  "description": "[Tasta G / Primară] Oferă armăsarului călărit sau aflat în preajmă (sub 4 blocuri) Regenerare II (5s) și Viteză II (8s)."
+  "name": "Îngrijirea Calului",
+  "description": "[Tasta G / Primară] Oferă calului călărit sau din apropiere Regenerare II și Viteză II."
 }

@@ -8,6 +8,6 @@
     "type": "origins:in_tag",
     "tag": "minecraft:logs"
   },
-  "name": "Prăbușirea Trunchiului",
-  "description": "[Tăiere cu Securea] Dobori întregul copac dintr-o singură lovitură de bărdiță, afară de cazul când pășești furișat."
+  "name": "Tăierea Copacilor",
+  "description": "[Pasivă cu Topor] Dobori un copac întreg tăind doar blocul de bază."
 }

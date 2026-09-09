@@ -33,6 +33,6 @@
     }
   },
   "hidden": true,
-  "name": "Neîndemânare la Satâr",
-  "description": "[Restricție] Neavând meșteșugul măcelarului, nu poți folosi satârul și provoci 0 daune dacă încerci să lovești cu el."
+  "name": "Fără Îndemânare la Satâr",
+  "description": "[Restricție] Neavând pregătirea necesară, atacul cu satârul de măcelar provoacă 0 daune."
 }

@@ -7,6 +7,6 @@
   },
   "order": 13,
   "impact": 2,
-  "name": "Haiduc Războinic",
-  "description": "Luptător sălbatic. [Tasta G] Mânia Străbună: Putere II, Viteză I și Rezistență I preț de 10s. [Tasta B] Saltul Haiducesc: salt uriaș fără daune de cădere, producând undă de șoc de 6 daune ce aruncă inamicii în aer pe o rază de 5 blocuri. [Pasivă] +25% atac, dar -30% armură."
+  "name": "Barbar",
+  "description": "Războinic neînfricat al ținuturilor sălbatice. [Pasivă] Provoacă cu 25% mai multe daune melee. [Tasta G] Furia Barbarului: primești Putere II și Viteză timp de 15 secunde. [Tasta B] Saltul Barbarului: salt aerian urmat de undă de șoc la impact."
 }
