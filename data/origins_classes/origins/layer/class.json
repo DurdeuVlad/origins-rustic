@@ -1,10 +1,16 @@
 {
   "order": 10,
   "enabled": true,
-  "name": "Meșteșug & Breaslă",
+  "name": {
+    "text": "Meșteșug & Breaslă"
+  },
   "gui_title": {
-    "choose_origin": "Alege-ți Meșteșugul și Breasla de Căpătâi",
-    "view_origin": "Iată Meșteșugul și Breasla Ta Rânduită"
+    "choose_origin": {
+      "text": "Alege-ți Meșteșugul și Breasla de Căpătâi"
+    },
+    "view_origin": {
+      "text": "Iată Meșteșugul și Breasla Ta Rânduită"
+    }
   },
   "origins": [
     "#origins_classes:class"
