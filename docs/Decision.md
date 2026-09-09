@@ -77,3 +77,21 @@ This document records the architectural and design decisions for the **Origins R
 * **Consequences**:
   * Zero missing reference errors during datapack reload.
   * The datapack remains self-contained without unexpected upstream `origins_classes` breaking changes.
+
+---
+
+## ADR-006: Feature Branch Isolation and Collaborative Approval Prior to Master Promotion
+
+* **Date**: 2026-09-09
+* **Status**: Accepted & Implemented
+* **Context**:
+  As new classes (Barbarian, Knight, Tanner, Farrier) and staged races (Frostborn, Vampire) are introduced, work must not be committed directly to `master` or mixed across unrelated features. Furthermore, all done branches must be integrated into `v2.0` before proceeding with subsequent feature branches.
+* **Decision**:
+  1. Completed feature branches (such as `feature/barbarian`) are integrated directly into `v2.0` via non-fast-forward merges.
+  2. All ongoing development occurs on dedicated feature branches (e.g. `feature/knight`) branched strictly off `v2.0`.
+  3. Work remains on `v2.0` until fully approved by the team.
+  4. Final promotion from `v2.0` to `master` occurs only after all milestones are completed and verified via automated test suites.
+* **Consequences**:
+  * Clean, reversible git history.
+  * Ensures that unfinished features never leak into production `master`.
+  * Allows team members to test release candidates on `v2.0` in staging environments.

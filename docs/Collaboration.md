@@ -36,7 +36,44 @@ Commits must follow Conventional Commits:
 
 ---
 
-## 3. Power Authoring & Quality Gate Checklist
+## 3. Pull Request Delivery Contract
+
+Every Pull Request submitted to `v2.0` or `master` must include the following mandatory sections in its description:
+
+1. **Intent**: Why this change exists, what problem or player fantasy it addresses, and who benefits.
+2. **Expectation**: What is observably true in-game or during datapack loading after this change.
+3. **Acceptance Criteria**: Concrete checklist of testable criteria with evidence or current status.
+4. **Non-Code Context**: RPG design rationale, compatibility limits, and team decisions that cannot be reconstructed from JSON diffs.
+5. **Scope & Non-Goals**: Explicit boundaries on what was implemented and what was deliberately deferred.
+6. **Verification & Risk**: Commands run, tests executed, game client/server checks, and any residual risks.
+
+---
+
+## 4. Feature Branch Lifecycle & Team Sign-Off
+
+1. **Clean Integration Base**: Ensure `v2.0` has all completed predecessor branches integrated before branching.
+2. **Dedicated Branch Creation**:
+   ```bash
+   git checkout v2.0
+   git pull origin v2.0
+   git checkout -b feature/<feature-name>
+   ```
+3. **Implementation & Static Validation**:
+   * Implement all powers, origin tags, and loot tables without placeholder stubs.
+   * Run automated JSON syntax validation:
+     ```powershell
+     Get-ChildItem -Recurse -Filter "*.json" | ForEach-Object { python -m json.tool $_.FullName > $null }
+     ```
+4. **Integration into `v2.0`**:
+   * Merge back into `v2.0` via non-fast-forward merge (`git merge --no-ff feature/<feature-name>`).
+   * Push to `origin/v2.0` for staging deployment on the test server.
+5. **Team Sign-Off & Promotion to `master`**:
+   * Work remains exclusively on `v2.0` until the milestone is complete and approved by the team.
+   * Promotion to `master` occurs strictly through a formal Pull Request reviewed and approved by repository maintainers.
+
+---
+
+## 5. Power Authoring & Quality Gate Checklist
 
 Before proposing any change to an origin, class, or power file:
 1. **JSON Syntax**: The file must parse without syntax errors (`python -m json.tool <file>`).

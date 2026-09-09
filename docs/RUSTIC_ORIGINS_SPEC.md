@@ -306,6 +306,48 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
+### 3.12 Barbarian (`rustic:barbarian`)
+* **Role**: Berserker frontline bruiser trading physical protection and stamina for explosive combat bursts.
+* **Icon**: `minecraft:iron_axe`
+* **Tag**: `#rustic:barbarian_powers`
+* **Powers**:
+  * `rustic:barbarian_rage`: Primary active ability (`key.origins.primary_active`). Exhausts 12.0 food, grants Strength II (amp 1, 200 ticks / 10s) and Resistance I (amp 0, 200 ticks / 10s) accompanied by a ravager roar and angry villager particles. After 200 ticks, applies fatigue penalty: Slowness I (100 ticks / 5s) and Mining Fatigue I (100 ticks / 5s). Cooldown: 600 ticks (30s).
+  * `rustic:barbarian_aerial_leap`: Secondary active ability (`key.origins.secondary_active`). Launches the player upward ($Y$ velocity $+1.1$), plays wind burst audio, and grants complete fall damage immunity. Upon landing (`origins:action_on_land`), triggers an explosive shockwave dealing 4 HP generic damage and launching all entities within 5 blocks into the air (`tp @s ~ ~0.8 ~`). Cooldown: 300 ticks (15s).
+  * `rustic:barbarian_brute_strength`: Passive trait granting $+1.0$ flat base attack damage, but reducing total armor effectiveness by 30% (`multiply_total: -0.3`).
+  * `rustic:prevent_cleaver` & `rustic:prevent_watering_can`: Restricted from specialized butchery and industrial watering cans.
+
+---
+
+### 3.13 Knight (`rustic:knight`) [Milestone 3 — In Progress]
+* **Role**: Disciplined heavy armored vanguard specializing in damage soak and crowd-cleaving charges.
+* **Icon**: `minecraft:iron_chestplate`
+* **Tag**: `#rustic:knight_powers`
+* **Powers**:
+  * `rustic:knight_constitution`: Passive physical hardening reducing all incoming damage by 15% (`multiply_total: -0.15`).
+  * `rustic:knight_mighty_dash`: Primary active ability (`key.origins.primary_active`). Dashes horizontally forward through enemy lines, dealing collision damage to traversed entities.
+  * `rustic:prevent_cleaver` & `rustic:prevent_watering_can`.
+
+---
+
+### 3.14 Tanner (`rustic:tanner`) [Milestone 4 — Roadmap]
+* **Role**: Leatherworking artisan specializing in hide processing and high-yield livestock butchery.
+* **Icon**: `minecraft:leather`
+* **Tag**: `#rustic:tanner_powers`
+* **Powers**:
+  * Custom entity loot table hook [tanner_cow.json](file:///e:/Github2/origins-rustic/data/rustic/loot_table/entities/tanner_cow.json) yielding 1-3 bonus leather and fire-smelted beef.
+  * Permitted to wield butchery cleavers (`butchery:iron_cleaver`).
+
+---
+
+### 3.15 Farrier (`rustic:farrier`) [Milestone 4 — Roadmap]
+* **Role**: Equine master and breeder (Dinoria horse breeder).
+* **Icon**: `minecraft:saddle`
+* **Tag**: `#rustic:farrier_powers`
+* **Powers**:
+  * Mounted movement speed aura, extended horse jump height, rapid breeding cooldowns.
+
+---
+
 ## 4. Tag Registries Map (1.21 Singular Conventions)
 
 | Tag Path | Registry | Usage |
