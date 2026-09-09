@@ -6,5 +6,7 @@
     "id": "minecraft:phantom_membrane"
   },
   "order": 7,
-  "impact": 0
+  "impact": 0,
+  "name": "Phantom",
+  "description": "An ethereal stalker capable of turning intangible and phasing through solid blocks, but physically fragile with lower max health."
 }

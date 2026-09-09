@@ -6,5 +6,7 @@
     "id": "minecraft:poisonous_potato"
   },
   "order": 0,
-  "impact": 0
+  "impact": 0,
+  "name": "Nitwit",
+  "description": "An unskilled laborer without a dedicated economic trade. Restricted from specialized tools."
 }

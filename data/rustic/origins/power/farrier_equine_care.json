@@ -77,5 +77,7 @@
       "sprite": "origins:textures/gui/badge/active.png",
       "text": "Apas\u0103 %s pentru \u00cengrijire Cabalin\u0103: revigoreaz\u0103 montura cu Regenerare II \u0219i Vitez\u0103 II."
     }
-  ]
+  ],
+  "name": "Equine Care",
+  "description": "[Primary Active] Tenderly care for your mounted steed, granting it Regeneration II and Absorption."
 }

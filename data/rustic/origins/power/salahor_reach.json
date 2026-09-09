@@ -4,5 +4,7 @@
     "attribute": "minecraft:player.entity_interaction_range",
     "operation": "add_value",
     "value": 0.5
-  }
+  },
+  "name": "Long Stride",
+  "description": "Your massive limbs grant you +1.0 block extended attack and reach."
 }

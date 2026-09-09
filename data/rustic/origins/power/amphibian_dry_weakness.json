@@ -17,5 +17,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Dehydration",
+  "description": "When outside of water and dry land without rain, you become sluggish and slowed."
 }

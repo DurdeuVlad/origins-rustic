@@ -11,5 +11,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Feather Drift",
+  "description": "You glide softly through the air, descending safely."
 }

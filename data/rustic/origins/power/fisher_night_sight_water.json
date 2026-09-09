@@ -15,5 +15,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Aquatic Sight",
+  "description": "Your eyes penetrate dark waters, granting night vision while submerged."
 }

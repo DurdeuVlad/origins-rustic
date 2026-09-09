@@ -6,5 +6,7 @@
     "id": "minecraft:gold_ingot"
   },
   "order": 9,
-  "impact": 0
+  "impact": 0,
+  "name": "Dwarf",
+  "description": "Master subterranean diggers. Gain continuous pickaxe haste, night vision, and damage resistance deep underground below Y=60."
 }

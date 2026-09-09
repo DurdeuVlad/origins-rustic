@@ -6,5 +6,7 @@
     "id": "minecraft:iron_axe"
   },
   "order": 13,
-  "impact": 0
+  "impact": 0,
+  "name": "Lumberjack",
+  "description": "A seasoned woodsman capable of felling entire trees in a single chop and crafting bonus timber."
 }

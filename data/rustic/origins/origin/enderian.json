@@ -6,5 +6,7 @@
     "id": "minecraft:ender_pearl"
   },
   "order": 8,
-  "impact": 0
+  "impact": 0,
+  "name": "Enderian",
+  "description": "Born of the Void. Capable of innate teleportation and extended reach, but takes constant damage from water and rain."
 }

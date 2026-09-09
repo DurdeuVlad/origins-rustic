@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.step_height",
     "operation": "add_value",
     "value": 0.5
-  }
+  },
+  "name": "Climber's Stride",
+  "description": "Your agile footing allows you to smoothly step up full 1-block obstacles without jumping."
 }

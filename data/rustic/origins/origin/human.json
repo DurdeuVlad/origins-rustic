@@ -6,5 +6,7 @@
     "id": "minecraft:apple"
   },
   "order": 1,
-  "impact": 0
+  "impact": 0,
+  "name": "Human",
+  "description": "A versatile and balanced baseline race, with no innate supernatural weaknesses or magical boons."
 }

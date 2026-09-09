@@ -6,5 +6,7 @@
     "id": "minecraft:white_glazed_terracotta"
   },
   "order": 19,
-  "impact": 2
+  "impact": 2,
+  "name": "Mason",
+  "description": "A fortress stonecutter with extended block reach, increased stone mining speed, and enhanced jump stability on stone."
 }

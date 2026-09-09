@@ -6,5 +6,7 @@
     "id": "minecraft:wheat"
   },
   "order": 1,
-  "impact": 0
+  "impact": 0,
+  "name": "Farmer",
+  "description": "An agricultural expert permitted to use watering cans. Moves quickly near crops and reaps double harvest yields."
 }

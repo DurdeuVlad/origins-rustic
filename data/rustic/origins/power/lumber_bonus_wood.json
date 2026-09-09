@@ -1,190 +1,192 @@
 {
-    "type": "origins:multiple",
-    "oak_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/oak_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:oak_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:oak_planks",
-                "count": 6
-            }
+  "type": "origins:multiple",
+  "oak_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/oak_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:oak_log"
         }
-    },
-    "spruce_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/spruce_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:spruce_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:spruce_planks",
-                "count": 6
-            }
-        }
-    },
-    "birch_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/birch_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:birch_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:birch_planks",
-                "count": 6
-            }
-        }
-    },
-    "jungle_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/jungle_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:jungle_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:jungle_planks",
-                "count": 6
-            }
-        }
-    },
-    "acacia_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/acacia_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:acacia_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:acacia_planks",
-                "count": 6
-            }
-        }
-    },
-    "dark_oak_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/dark_oak_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:dark_oak_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:dark_oak_planks",
-                "count": 6
-            }
-        }
-    },
-    "mangrove_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/mangrove_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:mangrove_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:mangrove_planks",
-                "count": 6
-            }
-        }
-    },
-    "cherry_logs": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/cherry_logs",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:cherry_log"
-                }
-            ],
-            "result": {
-                "id": "minecraft:cherry_planks",
-                "count": 6
-            }
-        }
-    },
-    "crimson_stems": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/crimson_stems",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:crimson_stem"
-                }
-            ],
-            "result": {
-                "id": "minecraft:crimson_planks",
-                "count": 6
-            }
-        }
-    },
-    "warped_stems": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/warped_stems",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:warped_stem"
-                }
-            ],
-            "result": {
-                "id": "minecraft:warped_planks",
-                "count": 6
-            }
-        }
-    },
-    "bamboo_blocks": {
-        "type": "origins:recipe",
-        "replace": true,
-        "recipe": {
-            "id": "rustic:lumber_bonus_wood/bamboo_blocks",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:bamboo_block"
-                }
-            ],
-            "result": {
-                "id": "minecraft:bamboo_planks",
-                "count": 3
-            }
-        }
+      ],
+      "result": {
+        "id": "minecraft:oak_planks",
+        "count": 6
+      }
     }
+  },
+  "spruce_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/spruce_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:spruce_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:spruce_planks",
+        "count": 6
+      }
+    }
+  },
+  "birch_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/birch_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:birch_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:birch_planks",
+        "count": 6
+      }
+    }
+  },
+  "jungle_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/jungle_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:jungle_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:jungle_planks",
+        "count": 6
+      }
+    }
+  },
+  "acacia_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/acacia_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:acacia_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:acacia_planks",
+        "count": 6
+      }
+    }
+  },
+  "dark_oak_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/dark_oak_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:dark_oak_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:dark_oak_planks",
+        "count": 6
+      }
+    }
+  },
+  "mangrove_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/mangrove_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:mangrove_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:mangrove_planks",
+        "count": 6
+      }
+    }
+  },
+  "cherry_logs": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/cherry_logs",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:cherry_log"
+        }
+      ],
+      "result": {
+        "id": "minecraft:cherry_planks",
+        "count": 6
+      }
+    }
+  },
+  "crimson_stems": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/crimson_stems",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:crimson_stem"
+        }
+      ],
+      "result": {
+        "id": "minecraft:crimson_planks",
+        "count": 6
+      }
+    }
+  },
+  "warped_stems": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/warped_stems",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:warped_stem"
+        }
+      ],
+      "result": {
+        "id": "minecraft:warped_planks",
+        "count": 6
+      }
+    }
+  },
+  "bamboo_blocks": {
+    "type": "origins:recipe",
+    "replace": true,
+    "recipe": {
+      "id": "rustic:lumber_bonus_wood/bamboo_blocks",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:bamboo_block"
+        }
+      ],
+      "result": {
+        "id": "minecraft:bamboo_planks",
+        "count": 3
+      }
+    }
+  },
+  "name": "Sawyer's Thrift",
+  "description": "You craft 6 planks per log instead of the ordinary 4."
 }

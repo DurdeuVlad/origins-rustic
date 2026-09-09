@@ -67,7 +67,9 @@
     {
       "type": "origins:keybind",
       "sprite": "origins:textures/gui/badge/active.png",
-      "text": "Apasă %s ținând o carte în mâna principală cu cel puțin 5 niveluri de XP. Consumă 5 niveluri de XP."
+      "text": "Apas\u0103 %s \u021bin\u00e2nd o carte \u00een m\u00e2na principal\u0103 cu cel pu\u021bin 5 niveluri de XP. Consum\u0103 5 niveluri de XP."
     }
-  ]
+  ],
+  "name": "Inscribe Codex",
+  "description": "Using a book while having at least 5 experience levels consumes 5 levels to transmute the book into an enchanted codex."
 }

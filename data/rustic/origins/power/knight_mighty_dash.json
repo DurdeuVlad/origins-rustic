@@ -80,5 +80,7 @@
       "sprite": "origins:textures/gui/badge/active.png",
       "text": "Apas\u0103 %s pentru Mighty Dash: te n\u0103puste\u0219ti \u00eenainte, str\u0103pung\u00e2nd \u0219i r\u0103nind inamicii din calea ta."
     }
-  ]
+  ],
+  "name": "Mighty Dash",
+  "description": "[Primary Active] Thrust forward in an unstoppable charge, bowling through enemy ranks and knocking foes aside."
 }

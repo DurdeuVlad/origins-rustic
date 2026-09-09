@@ -6,5 +6,7 @@
     "id": "minecraft:fishing_rod"
   },
   "order": 3,
-  "impact": 0
+  "impact": 0,
+  "name": "Fisherman",
+  "description": "A seasoned angler blessed with superior luck and doubled treasure yields while fishing."
 }

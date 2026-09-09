@@ -6,5 +6,7 @@
     "id": "minecraft:bookshelf"
   },
   "order": 4,
-  "impact": 0
+  "impact": 0,
+  "name": "Archivist",
+  "description": "A scholarly enchanter who channels experience levels into transmuting blank books into enchanted codices."
 }

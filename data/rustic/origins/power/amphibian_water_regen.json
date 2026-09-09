@@ -17,5 +17,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Aqueous Vigor",
+  "description": "Submerging in water rapidly regenerates your health."
 }

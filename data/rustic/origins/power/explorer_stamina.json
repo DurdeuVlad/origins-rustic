@@ -3,5 +3,7 @@
   "modifier": {
     "operation": "multiply_base_multiplicative",
     "value": -0.4
-  }
+  },
+  "name": "Trail Runner",
+  "description": "Long distance running is second nature, reducing sprinting exhaustion by 30%."
 }

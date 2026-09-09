@@ -6,5 +6,7 @@
     "id": "minecraft:leather"
   },
   "order": 15,
-  "impact": 1
+  "impact": 1,
+  "name": "Tanner",
+  "description": "A leatherworking artisan skilled with butchery cleavers, harvesting bonus hides and leather from livestock."
 }

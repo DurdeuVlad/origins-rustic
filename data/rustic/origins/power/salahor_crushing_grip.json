@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.attack_damage",
     "operation": "add_value",
     "value": 1.0
-  }
+  },
+  "name": "Crushing Grip",
+  "description": "Colossal strength grants you +3.0 base melee attack damage."
 }

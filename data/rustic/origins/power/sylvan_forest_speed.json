@@ -11,5 +11,7 @@
       "type": "origins:in_tag",
       "tag": "minecraft:is_forest"
     }
-  }
+  },
+  "name": "Forest Stride",
+  "description": "You move 30% faster when beneath the canopy of forest biomes."
 }

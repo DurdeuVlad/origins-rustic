@@ -6,5 +6,7 @@
     "id": "minecraft:iron_pickaxe"
   },
   "order": 2,
-  "impact": 0
+  "impact": 0,
+  "name": "Miner",
+  "description": "A subterranean excavator with 50% reduced stamina exhaustion, doubled stone break speed, and doubled ore yields."
 }

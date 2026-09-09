@@ -14,5 +14,7 @@
     "type": "origins:heal",
     "amount": 4.0
   },
-  "consume_animation": "drink"
+  "consume_animation": "drink",
+  "name": "Iron Chassis Repair",
+  "description": "Consuming an iron ingot directly restores 3 hearts of health."
 }

@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.max_health",
     "operation": "add_value",
     "value": -2.0
-  }
+  },
+  "name": "Decaying Vessel",
+  "description": "Your undead body has -2 hearts (-4 Max HP)."
 }

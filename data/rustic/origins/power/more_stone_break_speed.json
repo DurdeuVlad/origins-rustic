@@ -8,5 +8,7 @@
     "type": "origins:in_tag",
     "tag": "rustic:stone"
   },
-  "hidden": true
+  "hidden": true,
+  "name": "Stonebreaker",
+  "description": "You break stone and subterranean minerals at double speed."
 }

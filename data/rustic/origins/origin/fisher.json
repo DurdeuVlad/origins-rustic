@@ -6,5 +6,7 @@
     "id": "minecraft:fishing_rod"
   },
   "order": 18,
-  "impact": 2
+  "impact": 2,
+  "name": "Fisher",
+  "description": "A specialized coastal gatherer with swift swimming speed, underwater night vision, and maritime resilience."
 }

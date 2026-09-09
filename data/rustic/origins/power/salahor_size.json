@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.scale",
     "operation": "add_value",
     "value": 0.25
-  }
+  },
+  "name": "Colossal Stature",
+  "description": "You stand at 1.25x the height of an ordinary human."
 }

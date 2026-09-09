@@ -6,5 +6,7 @@
     "id": "minecraft:cobweb"
   },
   "order": 10,
-  "impact": 0
+  "impact": 0,
+  "name": "Arachnid",
+  "description": "An agile subterranean predator capable of vertical wall climbing and dampening fall damage."
 }

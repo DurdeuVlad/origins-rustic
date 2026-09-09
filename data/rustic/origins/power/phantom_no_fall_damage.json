@@ -3,5 +3,7 @@
   "damage_condition": {
     "type": "origins:id",
     "value": "minecraft:fall"
-  }
+  },
+  "name": "Weightless Fall",
+  "description": "You are completely immune to fall damage."
 }

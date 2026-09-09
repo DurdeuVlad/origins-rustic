@@ -4,5 +4,7 @@
     "id": "minecraft:packed_ice"
   },
   "order": 23,
-  "impact": 0
+  "impact": 0,
+  "name": "Frostborn",
+  "description": "Beings of ice and permafrost, thriving in frozen biomes but vulnerable to heat."
 }

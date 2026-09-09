@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.max_health",
     "operation": "add_value",
     "value": 4.0
-  }
+  },
+  "name": "Titan's Bulk",
+  "description": "Your colossal physique grants you +10 hearts (+20 Max HP)."
 }

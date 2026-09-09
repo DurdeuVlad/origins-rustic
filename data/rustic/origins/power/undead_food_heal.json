@@ -8,5 +8,7 @@
   "entity_action": {
     "type": "origins:heal",
     "amount": 1.0
-  }
+  },
+  "name": "Flesh Mend",
+  "description": "Consuming rotten flesh directly heals 2 hearts of health."
 }

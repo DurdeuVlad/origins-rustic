@@ -6,5 +6,7 @@
     "id": "minecraft:wheat"
   },
   "order": 7,
-  "impact": 0
+  "impact": 0,
+  "name": "Herbalist",
+  "description": "A botanical expert who accelerates natural plant growth and gathers rare double flora."
 }

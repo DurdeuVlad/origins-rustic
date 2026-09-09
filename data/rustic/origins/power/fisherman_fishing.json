@@ -36,5 +36,7 @@
         }
       }
     ]
-  }
+  },
+  "name": "Angler's Fortune",
+  "description": "Holding a fishing rod bestows you with Luck II."
 }

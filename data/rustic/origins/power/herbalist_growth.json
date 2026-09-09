@@ -16,5 +16,7 @@
         "effect": false
       }
     }
-  }
+  },
+  "name": "Nature's Touch",
+  "description": "Crops in your presence mature at a noticeably accelerated rate."
 }

@@ -12,10 +12,16 @@
   },
   "condition": {
     "type": "origins:distance_from_coordinates",
-    "offset": [0, -64, 0],
+    "offset": [
+      0,
+      -64,
+      0
+    ],
     "ignore_x": true,
     "ignore_z": true,
     "comparison": "<=",
     "compare_to": 124
-  }
+  },
+  "name": "Deep Earth Hardiness",
+  "description": "While deep below ground (Y <= 60), you receive Resistance II against all damage."
 }

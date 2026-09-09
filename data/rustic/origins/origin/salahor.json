@@ -6,5 +6,7 @@
     "id": "minecraft:iron_block"
   },
   "order": 10,
-  "impact": 0
+  "impact": 0,
+  "name": "Salahor",
+  "description": "A colossal titan with massive bonus health, extended melee reach, high attack power, and complete knockback immunity, at the cost of movement speed."
 }

@@ -3,10 +3,16 @@
   "strength": 1.0,
   "condition": {
     "type": "origins:distance_from_coordinates",
-    "offset": [0, -64, 0],
+    "offset": [
+      0,
+      -64,
+      0
+    ],
     "ignore_x": true,
     "ignore_z": true,
     "comparison": "<=",
     "compare_to": 124
-  }
+  },
+  "name": "Darkvision",
+  "description": "Your eyes are naturally adapted to the dark caverns below Y <= 60, granting night vision."
 }

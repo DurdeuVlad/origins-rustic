@@ -10,7 +10,7 @@
       {
         "type": "origins:keybind",
         "sprite": "origins:textures/gui/badge/toggle.png",
-        "text": "Apasă %s pentru a activa/dezactiva zborul estic."
+        "text": "Apas\u0103 %s pentru a activa/dezactiva zborul estic."
       }
     ]
   },
@@ -41,5 +41,7 @@
       "type": "origins:exhaust",
       "amount": 1.0
     }
-  }
+  },
+  "name": "Draconic Wings",
+  "description": "You can sprout wings and take flight, provided you are not weighed down by heavy armor."
 }

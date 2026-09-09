@@ -19,5 +19,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Pickaxe Affinity",
+  "description": "Wielding any pickaxe invigorates you, providing continuous Haste I."
 }

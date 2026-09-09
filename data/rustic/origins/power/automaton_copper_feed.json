@@ -10,5 +10,7 @@
     "nutrition": 2,
     "saturation": 2.0
   },
-  "consume_animation": "eat"
+  "consume_animation": "eat",
+  "name": "Copper Nutrition",
+  "description": "You sustain your mechanical core by consuming copper ingots."
 }

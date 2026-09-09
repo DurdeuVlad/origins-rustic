@@ -11,5 +11,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Draconic Scales",
+  "description": "Tough fiery scales grant you fire resistance when in flames or lava."
 }

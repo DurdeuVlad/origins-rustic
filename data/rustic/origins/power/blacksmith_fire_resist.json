@@ -6,5 +6,7 @@
   },
   "damage_condition": {
     "type": "origins:fire"
-  }
+  },
+  "name": "Forge Tolerance",
+  "description": "Years working the blazing forge grant you a 50% resistance to all fire and lava damage."
 }

@@ -1,4 +1,6 @@
 {
   "type": "origins:effect_immunity",
-  "effect": "minecraft:poison"
+  "effect": "minecraft:poison",
+  "name": "Toxin Immunity",
+  "description": "As an undead being, you are completely immune to poison."
 }

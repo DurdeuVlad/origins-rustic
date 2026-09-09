@@ -19,5 +19,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Harvester's Rush",
+  "description": "Walking amongst ripening crops grants you increased movement speed."
 }

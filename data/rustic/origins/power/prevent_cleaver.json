@@ -10,5 +10,7 @@
     "type": "apoli:execute_command",
     "command": "title @s actionbar {\"text\":\"Only a Butcher can wield specialized butcher tools!\",\"color\":\"red\"}"
   },
-  "hidden": true
+  "hidden": true,
+  "name": "Cleaver Inexperience",
+  "description": "You lack the training to wield heavy butchery cleavers effectively."
 }

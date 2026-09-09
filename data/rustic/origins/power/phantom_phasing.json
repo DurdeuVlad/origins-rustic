@@ -10,16 +10,18 @@
   "phase_down_condition": {
     "type": "origins:and",
     "conditions": [
-        {
-          "type": "origins:sneaking"
-        },
-        {
-          "type": "origins:on_block"
-        },
-        {
-          "type": "origins:power_active",
-          "power": "origins:phantomize"
-        }
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:on_block"
+      },
+      {
+        "type": "origins:power_active",
+        "power": "origins:phantomize"
+      }
     ]
-  }
+  },
+  "name": "Phase Walking",
+  "description": "While phantomized, you can drift straight through solid walls and blocks."
 }

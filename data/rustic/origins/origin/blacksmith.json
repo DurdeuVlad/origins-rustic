@@ -6,5 +6,7 @@
     "id": "minecraft:anvil"
   },
   "order": 5,
-  "impact": 0
+  "impact": 0,
+  "name": "Blacksmith",
+  "description": "A master of metallurgy and weapon forging with innate fire resistance and superior tool repairing efficiency."
 }

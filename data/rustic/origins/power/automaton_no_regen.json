@@ -1,3 +1,5 @@
 {
-  "type": "origins:disable_regen"
+  "type": "origins:disable_regen",
+  "name": "Non-Biological",
+  "description": "You have no biological metabolism and cannot naturally regenerate health from food saturation."
 }

@@ -6,5 +6,7 @@
     "id": "minecraft:iron_chestplate"
   },
   "order": 14,
-  "impact": 1
+  "impact": 1,
+  "name": "Knight",
+  "description": "A heavily armored vanguard with 15% physical damage reduction, cleaver proficiency, and a piercing Mighty Dash."
 }

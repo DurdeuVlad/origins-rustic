@@ -4,5 +4,7 @@
     "attribute": "minecraft:player.block_interaction_range",
     "operation": "add_value",
     "value": 3.0
-  }
+  },
+  "name": "Mason's Reach",
+  "description": "Extends your block interaction and placing reach by +1.5 blocks."
 }

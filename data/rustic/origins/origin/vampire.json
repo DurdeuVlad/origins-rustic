@@ -4,5 +4,7 @@
     "id": "minecraft:bat_spawn_egg"
   },
   "order": 22,
-  "impact": 0
+  "impact": 0,
+  "name": "Vampire",
+  "description": "Creatures of the night that feast on vitality and burn in sunlight."
 }

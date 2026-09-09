@@ -9,5 +9,7 @@
       "sprite": "origins:textures/gui/badge/passive.png",
       "text": "T\u0103b\u0103car Maestru: prelucrarea bovinelor ofer\u0103 piele \u0219i carne suplimentar\u0103 din bel\u0219ug."
     }
-  ]
+  ],
+  "name": "Hide Processing",
+  "description": "Striking livestock with a butchery cleaver extracts 1 to 2 bonus leather hides."
 }

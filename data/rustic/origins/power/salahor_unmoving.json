@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.knockback_resistance",
     "operation": "add_value",
     "value": 0.2
-  }
+  },
+  "name": "Immovable",
+  "description": "Your tremendous mass makes you 100% immune to knockback."
 }

@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.max_health",
     "operation": "add_value",
     "value": -6.0
-  }
+  },
+  "name": "Incorporeal Frailty",
+  "description": "Existing partially between planes leaves you with -3 hearts (-6 Max HP)."
 }

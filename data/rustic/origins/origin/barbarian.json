@@ -6,5 +6,7 @@
     "id": "minecraft:iron_axe"
   },
   "order": 13,
-  "impact": 2
+  "impact": 2,
+  "name": "Barbarian",
+  "description": "A ferocious berserker who sacrifices armor defense for brute strength, high-flying aerial shockwave leaps, and adrenal combat rage."
 }

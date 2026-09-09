@@ -19,5 +19,7 @@
       "show_particles": false,
       "show_icon": true
     }
-  }
+  },
+  "name": "Campfire Solace",
+  "description": "Resting near an active campfire steadily regenerates your health."
 }

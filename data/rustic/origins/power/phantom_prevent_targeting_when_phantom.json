@@ -1,10 +1,12 @@
 {
-    "type": "origins:prevent_targeting",
-    "condition": {
-        "type": "origins:power_active",
-        "power": "origins:phantomize"
-    },
-    "mob_condition": {
-        "type": "origins:hostile"
-    }
+  "type": "origins:prevent_targeting",
+  "condition": {
+    "type": "origins:power_active",
+    "power": "origins:phantomize"
+  },
+  "mob_condition": {
+    "type": "origins:hostile"
+  },
+  "name": "Ghostly Camouflage",
+  "description": "Monsters cannot target or detect you while you are phased into phantom form."
 }

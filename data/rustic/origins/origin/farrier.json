@@ -6,5 +6,7 @@
     "id": "minecraft:saddle"
   },
   "order": 16,
-  "impact": 1
+  "impact": 1,
+  "name": "Farrier",
+  "description": "An equestrian master who empowers ridden mounts with increased speed, higher jumps, and active regenerative care."
 }

@@ -6,5 +6,7 @@
     "id": "minecraft:dragon_breath"
   },
   "order": 5,
-  "impact": 0
+  "impact": 0,
+  "name": "Dragonborn",
+  "description": "Descendants of noble dragons, bearing innate draconic resilience against fire and the gift of short-burst flight."
 }

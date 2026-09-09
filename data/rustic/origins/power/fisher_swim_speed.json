@@ -10,5 +10,7 @@
     "fluid": "minecraft:water",
     "comparison": ">",
     "compare_to": 0.0
-  }
+  },
+  "name": "Pelagic Fins",
+  "description": "You swim 40% faster through open water."
 }

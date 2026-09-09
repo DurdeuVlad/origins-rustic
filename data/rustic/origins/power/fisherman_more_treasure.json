@@ -2,5 +2,7 @@
   "type": "origins:replace_loot_table",
   "replace": {
     "minecraft:gameplay/fishing": "rustic:gameplay/fishing"
-  }
+  },
+  "name": "Sunken Salvage",
+  "description": "Fishing reels in rare treasures and high-tier salvaged loot far more often."
 }

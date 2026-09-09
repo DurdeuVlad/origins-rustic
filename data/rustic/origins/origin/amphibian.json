@@ -6,5 +6,7 @@
     "id": "minecraft:turtle_egg"
   },
   "order": 6,
-  "impact": 0
+  "impact": 0,
+  "name": "Amphibian",
+  "description": "An aquatic race excelling in oceans and rivers with water regeneration and free movement, but weakened when dehydrated."
 }

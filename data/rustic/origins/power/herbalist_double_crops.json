@@ -6,5 +6,7 @@
   },
   "block_condition": {
     "type": "origins_classes:harvestable_crops"
-  }
+  },
+  "name": "Floral Bounty",
+  "description": "Harvesting wild plants and crops yields bonus specimens."
 }

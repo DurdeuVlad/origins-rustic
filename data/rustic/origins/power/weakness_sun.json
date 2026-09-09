@@ -16,5 +16,7 @@
         "type": "origins:daytime"
       }
     ]
-  }
+  },
+  "name": "Sunlight Combustion",
+  "description": "You burst into flames under direct sunlight unless sheltered or wearing a helmet."
 }

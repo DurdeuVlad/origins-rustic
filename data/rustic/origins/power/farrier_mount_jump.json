@@ -18,5 +18,7 @@
       }
     }
   },
-  "hidden": true
+  "hidden": true,
+  "name": "Equestrian Jump",
+  "description": "Your mounted riding guidance grants your steed increased jump height (Jump Boost I)."
 }

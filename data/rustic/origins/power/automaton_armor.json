@@ -4,5 +4,7 @@
     "attribute": "minecraft:generic.armor",
     "operation": "add_value",
     "value": 8
-  }
+  },
+  "name": "Iron Plating",
+  "description": "Your chassis is constructed of solid iron, providing natural innate armor (+4 Armor)."
 }

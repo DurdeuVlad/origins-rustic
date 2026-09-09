@@ -7,5 +7,7 @@
   "damage_condition": {
     "type": "origins:id",
     "value": "minecraft:fall"
-  }
+  },
+  "name": "Silken Dampening",
+  "description": "Your lightweight arachnid frame cushions your descents, reducing fall damage by 60%."
 }

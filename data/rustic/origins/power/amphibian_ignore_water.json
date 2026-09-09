@@ -1,3 +1,5 @@
 {
-  "type": "origins:ignore_water"
+  "type": "origins:ignore_water",
+  "name": "Hydrodynamic",
+  "description": "You move freely through water without fluid drag or velocity penalties."
 }

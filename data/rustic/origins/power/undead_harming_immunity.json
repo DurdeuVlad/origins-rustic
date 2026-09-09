@@ -2,5 +2,7 @@
   "type": "origins:invulnerability",
   "damage_condition": {
     "type": "origins:magic"
-  }
+  },
+  "name": "Unholy Body",
+  "description": "Instant Harming magic heals you rather than damaging you."
 }

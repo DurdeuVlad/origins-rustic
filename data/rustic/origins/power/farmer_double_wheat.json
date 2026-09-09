@@ -3,5 +3,7 @@
   "replace": {
     "minecraft:blocks/wheat": "rustic:farmer_wheat"
   },
-  "hidden": true
+  "hidden": true,
+  "name": "Bountiful Sheaves",
+  "description": "Harvesting mature wheat yields doubled crops."
 }

@@ -6,5 +6,7 @@
     "id": "minecraft:oak_sapling"
   },
   "order": 3,
-  "impact": 0
+  "impact": 0,
+  "name": "Sylvan",
+  "description": "Nature spirits attuned to lush forests and canopies, moving with increased speed under dense tree foliage."
 }

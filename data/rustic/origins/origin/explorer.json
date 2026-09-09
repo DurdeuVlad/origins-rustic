@@ -6,5 +6,7 @@
     "id": "minecraft:compass"
   },
   "order": 5,
-  "impact": 0
+  "impact": 0,
+  "name": "Explorer",
+  "description": "A swift overland trailblazer with enhanced step height, reduced sprinting exhaustion, and campfire rejuvenation."
 }

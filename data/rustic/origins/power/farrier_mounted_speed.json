@@ -24,5 +24,7 @@
       "sprite": "origins:textures/gui/badge/passive.png",
       "text": "Potcovar din Dinoria: c\u0103l\u0103ria ta este impecabil\u0103, acord\u00e2nd monturii tale vitez\u0103 sporit\u0103 (Vitez\u0103 I)."
     }
-  ]
+  ],
+  "name": "Mounted Stride",
+  "description": "Ridden mounts move 25% faster under your expert guidance (Speed I)."
 }

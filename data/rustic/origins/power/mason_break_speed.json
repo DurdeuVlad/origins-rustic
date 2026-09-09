@@ -3,5 +3,7 @@
   "modifier": {
     "operation": "multiply_base_multiplicative",
     "value": 0.25
-  }
+  },
+  "name": "Stone Carving",
+  "description": "You break masonry and stone blocks 30% faster."
 }
