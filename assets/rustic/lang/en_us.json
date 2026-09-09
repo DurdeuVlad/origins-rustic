@@ -8,7 +8,7 @@
   "origin.rustic.automaton.name": "Ferecătură de Fier",
   "origin.rustic.automaton.description": "Plăsmuire de fier și alamă. [Pasivă] +4 Armură naturală. Nu se vindecă din mâncare. [Click Dreapta cu Lingou de Fier] Reface 3 inimi de viață. [Click Dreapta cu Pepită de Fier] Reface 0.75 inimi. [Click Dreapta cu Lingou de Aramă] Se hrănește pentru sațietate.",
   "origin.rustic.dragonborn.name": "Sămânță de Balaur",
-  "origin.rustic.dragonborn.description": "Odraslă cu sânge de balaur. [Pasivă] Imunitate completă la foc și lavă. [Tasta Spațiu în Cădere] Planare și zbor cu aripi de zmeu când nu poartă armură grea.",
+  "origin.rustic.dragonborn.description": "Odraslă cu sânge de balaur. [Pasivă] Imunitate completă la foc și lavă. [Tasta G] Activează sau dezactivează aripile de zmeu pentru zbor de elitră când nu poartă armură grea.",
   "origin.rustic.dwarf.name": "Pitac de Baie",
   "origin.rustic.dwarf.description": "Meșter al adâncurilor. [Sub Cota Y=60] Primește automat Rezistență II continuă și Vedere Nocturnă în beznă. [Cu Târnăcop în Mână] Primește Grăbire I continuă la săpat.",
   "origin.rustic.enderian.name": "Rătăcitor din Negură",
@@ -294,7 +294,7 @@
   "power.rustic.no_mining_exhaustion.nullify_damage.name": "Braț Neostenit",
   "power.rustic.no_mining_exhaustion.nullify_damage.description": "[Pasivă] Activitățile de minerit și săpat consumă cu 50% mai puțină foame.",
   "power.rustic.dragonborn_flight.name": "Aripi de Zmeu",
-  "power.rustic.dragonborn_flight.description": "[Tasta Spațiu în Aer] Deschide aripile și planează în aer când nu porți armură grea.",
+  "power.rustic.dragonborn_flight.description": "[Tasta G / Primară] Activează/dezactivează aripile de zmeu pentru zbor de elitră când nu poartă armură grea.",
   "power.rustic.dragonborn_flight.leap.name": "Aripi de Zmeu",
   "power.rustic.dragonborn_flight.leap.description": "[Tasta Spațiu în Aer] Deschide aripile și planează în aer când nu porți armură grea.",
   "power.rustic.dragonborn_flight.landing_shockwave.name": "Aripi de Zmeu (Undă de Șoc)",
@@ -1023,4 +1023,4 @@
   "power.rustic.night_vision.nullify_damage.description": "[Pasivă] Privirea ta străpunge întunericul fără nevoie de făclie.",
   "layer.origins.origin.name": "Seminție",
   "layer.origins_classes.class.name": "Meșteșug & Breaslă"
-}
+}\n

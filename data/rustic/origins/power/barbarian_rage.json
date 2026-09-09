@@ -30,8 +30,10 @@
         }
       },
       {
-        "type": "origins:execute_command",
-        "command": "playsound minecraft:entity.ravager.roar neutral @a ~ ~ ~ 1.5 0.9"
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.ravager.roar",
+        "volume": 1.5,
+        "pitch": 0.9
       },
       {
         "type": "origins:spawn_particles",
@@ -76,8 +78,10 @@
               }
             },
             {
-              "type": "origins:execute_command",
-              "command": "playsound minecraft:entity.player.breath neutral @a ~ ~ ~ 1.0 0.8"
+              "type": "origins:play_sound",
+              "sound": "minecraft:entity.player.breath",
+              "volume": 1.0,
+              "pitch": 0.8
             }
           ]
         }
@@ -100,5 +104,5 @@
     }
   ],
   "name": "Mânia Străbună",
-  "description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (cooldown: 45 secunde)."
+  "description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (cooldown: 30 secunde)."
 }
