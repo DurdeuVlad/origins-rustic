@@ -224,9 +224,9 @@
   "power.rustic.barbarian_brute_strength.nullify_damage.name": "Vigoare Sălbatică",
   "power.rustic.barbarian_brute_strength.nullify_damage.description": "[Pasivă] Atacurile tale provoacă cu 25% mai multe daune, dar apărarea oferită de armură este redusă cu 30%.",
   "power.rustic.barbarian_rage.name": "Mânia Străbună",
-  "power.rustic.barbarian_rage.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (cooldown: 45 secunde).",
+  "power.rustic.barbarian_rage.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (răgaz: 45 secunde).",
   "power.rustic.barbarian_rage.leap.name": "Mânia Străbună",
-  "power.rustic.barbarian_rage.leap.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (cooldown: 45 secunde).",
+  "power.rustic.barbarian_rage.leap.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (răgaz: 45 secunde).",
   "power.rustic.barbarian_rage.landing_shockwave.name": "Mânia Străbună (Undă de Șoc)",
   "power.rustic.barbarian_rage.landing_shockwave.description": "La aterizare, creează o undă de șoc ce rănește și aruncă inamicii în aer.",
   "power.rustic.barbarian_rage.ingot.name": "Mânia Străbună (Lingou)",
@@ -234,9 +234,9 @@
   "power.rustic.barbarian_rage.nugget.name": "Mânia Străbună (Pepită)",
   "power.rustic.barbarian_rage.nugget.description": "Mănâncă o pepită de fier pentru a reface 0.75 inimi de viață.",
   "power.rustic.barbarian_rage.prevent_use.name": "Mânia Străbună",
-  "power.rustic.barbarian_rage.prevent_use.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (cooldown: 45 secunde).",
+  "power.rustic.barbarian_rage.prevent_use.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (răgaz: 45 secunde).",
   "power.rustic.barbarian_rage.nullify_damage.name": "Mânia Străbună",
-  "power.rustic.barbarian_rage.nullify_damage.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (cooldown: 45 secunde).",
+  "power.rustic.barbarian_rage.nullify_damage.description": "[Tasta G / Primară] Răcnet de luptă ce acordă Putere II, Viteză I și Rezistență I timp de 10 secunde (răgaz: 45 secunde).",
   "power.rustic.blacksmith_fire_resist.name": "Călirea Focului",
   "power.rustic.blacksmith_fire_resist.description": "[Pasivă] Pielea ta călită la furnal reduce toate daunele de foc și lavă cu 50%.",
   "power.rustic.blacksmith_fire_resist.leap.name": "Călirea Focului",
@@ -1023,4 +1023,4 @@
   "power.rustic.night_vision.nullify_damage.description": "[Pasivă] Privirea ta străpunge întunericul fără nevoie de făclie.",
   "layer.origins.origin.name": "Seminție",
   "layer.origins_classes.class.name": "Meșteșug & Breaslă"
-}\n
+}
