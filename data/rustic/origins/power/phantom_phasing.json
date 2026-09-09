@@ -23,5 +23,17 @@
     ]
   },
   "name": "Formă Fantomatică",
-  "description": "[Tasta G / Primară] Treci prin ziduri și obstacole solide cât timp puterea este activă."
+  "description": {
+    "text": "[Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Treci prin ziduri și obstacole solide cât timp puterea este activă."
+      }
+    ]
+  }
 }

@@ -104,5 +104,17 @@
     }
   ],
   "name": "Furia Barbarului",
-  "description": "[Tasta G / Primară] Răcnet de luptă ce îți oferă Putere II și Viteză timp de 15 secunde (timp de reîncărcare: 45 secunde)."
+  "description": {
+    "text": "[Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Răcnet de luptă ce îți oferă Putere II și Viteză timp de 15 secunde (timp de reîncărcare: 45 secunde)."
+      }
+    ]
+  }
 }

@@ -156,5 +156,17 @@
     }
   ],
   "name": "Șarja Cavalerului",
-  "description": "[Tasta G / Primară] Te năpustești fulgerător înainte, străpungând inamicii și provocându-le 6 daune (3 inimi)."
+  "description": {
+    "text": "[Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Te năpustești fulgerător înainte, străpungând inamicii și provocându-le 6 daune (3 inimi)."
+      }
+    ]
+  }
 }

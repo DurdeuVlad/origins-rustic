@@ -125,5 +125,17 @@
     }
   },
   "name": "Saltul Barbarului",
-  "description": "[Tasta B / Secundară] Sari puternic în aer. La aterizare declanșezi o undă de șoc ce aruncă inamicii și le provoacă 6 daune."
+  "description": {
+    "text": "[Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.secondary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Secundară)] Sari puternic în aer. La aterizare declanșezi o undă de șoc ce aruncă inamicii și le provoacă 6 daune."
+      }
+    ]
+  }
 }

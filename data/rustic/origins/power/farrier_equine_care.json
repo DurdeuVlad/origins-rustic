@@ -149,5 +149,17 @@
     }
   ],
   "name": "Îngrijirea Calului",
-  "description": "[Tasta G / Primară] Oferă calului călărit sau din apropiere Regenerare II și Viteză II."
+  "description": {
+    "text": "[Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Oferă calului călărit sau din apropiere Regenerare II și Viteză II."
+      }
+    ]
+  }
 }

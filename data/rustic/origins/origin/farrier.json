@@ -8,5 +8,17 @@
   "order": 16,
   "impact": 1,
   "name": "Potcovar",
-  "description": "Crescător și stăpân al cailor. [Călare] Caii tăi aleargă mai repede și sar mai sus. [Tasta G] Tratează calul din apropiere cu viteză și regenerare."
+  "description": {
+    "text": "Crescător și stăpân al cailor. [Călare] Caii tăi aleargă mai repede și sar mai sus. [Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Tratează calul din apropiere cu viteză și regenerare."
+      }
+    ]
+  }
 }

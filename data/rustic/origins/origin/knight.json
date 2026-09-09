@@ -8,5 +8,17 @@
   "order": 14,
   "impact": 1,
   "name": "Cavaler",
-  "description": "Războinic blindat în armură grea. [Pasivă] Armură călită: suferi cu 15% mai puține daune din orice atac. Poți mânui satârul de măcelar. [Tasta G] Șarja Cavalerului: năpustire rapidă înainte ce provoacă 6 daune (3 inimi) inamicilor străpunși."
+  "description": {
+    "text": "Războinic blindat în armură grea. [Pasivă] Armură călită: suferi cu 15% mai puține daune din orice atac. Poți mânui satârul de măcelar. [Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Șarja Cavalerului: năpustire rapidă înainte ce provoacă 6 daune (3 inimi) inamicilor străpunși."
+      }
+    ]
+  }
 }

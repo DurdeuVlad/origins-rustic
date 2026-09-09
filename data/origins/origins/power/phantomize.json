@@ -11,5 +11,17 @@
     "compare_to": 6
   },
   "name": "Formă Fantomatică",
-  "description": "[Tasta G / Primară] Treci prin blocuri și devii intangibil."
+  "description": {
+    "text": "[Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Treci prin blocuri și devii intangibil."
+      }
+    ]
+  }
 }

@@ -8,5 +8,25 @@
   "order": 13,
   "impact": 2,
   "name": "Barbar",
-  "description": "Războinic neînfricat al ținuturilor sălbatice. [Pasivă] Provoacă cu 25% mai multe daune melee. [Tasta G] Furia Barbarului: primești Putere II și Viteză timp de 15 secunde. [Tasta B] Saltul Barbarului: salt aerian urmat de undă de șoc la impact."
+  "description": {
+    "text": "Războinic neînfricat al ținuturilor sălbatice. [Pasivă] Provoacă cu 25% mai multe daune melee. [Apasă ",
+    "extra": [
+      {
+        "keybind": "key.origins.primary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Primară)] Furia Barbarului: primești Putere II și Viteză. [Apasă "
+      },
+      {
+        "keybind": "key.origins.secondary_active",
+        "bold": true,
+        "color": "gold"
+      },
+      {
+        "text": " (Abilitate Secundară)] Saltul Barbarului: salt aerian urmat de undă de șoc la impact."
+      }
+    ]
+  }
 }
