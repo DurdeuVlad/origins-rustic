@@ -23,6 +23,7 @@ Per the `/flux-docs` standard, the documentation base is organized into baseline
 | [`Milestones.md`](file:///e:/Github2/origins-rustic/docs/Milestones.md) | **Baseline** | Outcome-based release checkpoints (M1 to M6) mapping all open GitHub issues (#1 to #14), acceptance criteria, and verification surfaces. | `Complete` | Project Milestones |
 | [`Collaboration.md`](file:///e:/Github2/origins-rustic/docs/Collaboration.md) | **Mode-Specific** | Team collaboration policy, branch strategy (`master` <- `v2.0` <- `feature/*`), PR delivery contract, quality gates, and Conventional Commits. | `Complete` | Contribution Guide |
 | [`RUSTIC_ORIGINS_SPEC.md`](file:///e:/Github2/origins-rustic/docs/RUSTIC_ORIGINS_SPEC.md) | **Domain Spec** | Exhaustive technical specification of all 12 Races and 13+ Classes, mathematical attribute modifiers, keybinds, cooldowns, and 1.21 singular tag registries. | `Complete` | Technical Specification |
+| [`TESTING.md`](file:///e:/Github2/origins-rustic/docs/TESTING.md) | **Domain Spec** | Live server test harness, automated test batches, empirical verification procedures, attribute query formulas, and Knight FAQ. | `Complete` | Testing Harness |
 | [`README.md`](file:///e:/Github2/origins-rustic/README.md) | **Root Entrypoint** | Central repository introduction, installation instructions for singleplayer and dedicated servers, mod dependencies, and documentation links. | `Complete` | Repository Root |
 
 ---
