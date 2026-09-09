@@ -1,0 +1,84 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:add_velocity",
+        "space": "local_horizontal",
+        "x": 0.0,
+        "y": 0.15,
+        "z": 1.6,
+        "set": true
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:item.armor.equip_iron player @a ~ ~ ~ 1.5 0.8"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1.3 1.0"
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:sweep_attack"
+        },
+        "count": 3,
+        "speed": 0.1,
+        "force": true,
+        "spread": [
+          0.5,
+          0.2,
+          0.5
+        ]
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "damage @e[distance=0.3..3.5,limit=6] 5 minecraft:generic by @s"
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 3,
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:execute_command",
+              "command": "damage @e[distance=0.3..3.5,limit=6] 5 minecraft:generic by @s"
+            },
+            {
+              "type": "origins:spawn_particles",
+              "particle": {
+                "type": "minecraft:crit"
+              },
+              "count": 6,
+              "speed": 0.1,
+              "force": true,
+              "spread": [
+                0.3,
+                0.3,
+                0.3
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "cooldown": 200,
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 0
+  },
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "badges": [
+    {
+      "type": "origins:keybind",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Apas\u0103 %s pentru Mighty Dash: te n\u0103puste\u0219ti \u00eenainte, str\u0103pung\u00e2nd \u0219i r\u0103nind inamicii din calea ta."
+    }
+  ]
+}

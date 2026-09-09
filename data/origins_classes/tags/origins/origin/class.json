@@ -13,6 +13,7 @@
         "rustic:archivist",
         "rustic:explorer",
         "rustic:salahor",
-        "rustic:barbarian"
+        "rustic:barbarian",
+        "rustic:knight"
     ]
 }
