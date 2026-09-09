@@ -34,9 +34,11 @@ BlockEvents.rightClicked(event => {
     try {
         let item = event.getItem();
         let itemId = item && item.id ? String(item.id) : '';
-        if (itemId === 'hearthandharvest:watering_can') {
-            let player = event.getPlayer();
-            if (hasOriginOrClass(player, 'rustic:nitwit')) {
+        let player = event.getPlayer();
+        if (player && itemId.includes('watering_can')) {
+            let isN = hasOriginOrClass(player, 'rustic:nitwit');
+            console.log("[DEBUG] BlockEvents.rightClicked: player=" + player.username + " item=" + itemId + " isNitwit=" + isN);
+            if (isN) {
                 player.displayClientMessage(Text.literal("§cNu stăpânești meșteșugul stropirii ogoarelor!"), true);
                 player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
                 event.cancel();
@@ -52,9 +54,11 @@ ItemEvents.rightClicked(event => {
     try {
         let item = event.getItem();
         let itemId = item && item.id ? String(item.id) : '';
-        if (itemId === 'hearthandharvest:watering_can') {
-            let player = event.getPlayer();
-            if (hasOriginOrClass(player, 'rustic:nitwit')) {
+        let player = event.getPlayer();
+        if (player && itemId.includes('watering_can')) {
+            let isN = hasOriginOrClass(player, 'rustic:nitwit');
+            console.log("[DEBUG] ItemEvents.rightClicked: player=" + player.username + " item=" + itemId + " isNitwit=" + isN);
+            if (isN) {
                 player.displayClientMessage(Text.literal("§cNu stăpânești meșteșugul stropirii ogoarelor!"), true);
                 player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
                 event.cancel();
@@ -76,7 +80,9 @@ EntityEvents.beforeHurt(event => {
             let item = attacker.mainHandItem || (attacker.getMainHandItem ? attacker.getMainHandItem() : null);
             let itemId = item && item.id ? String(item.id) : '';
             if (itemId.includes('cleaver') || (item.hasTag && (item.hasTag('c:cleaver') || item.hasTag('forge:cleaver')))) {
-                if (hasOriginOrClass(attacker, 'rustic:nitwit')) {
+                let isN = hasOriginOrClass(attacker, 'rustic:nitwit');
+                console.log("[DEBUG] beforeHurt: attacker=" + attacker.username + " item=" + itemId + " isNitwit=" + isN);
+                if (isN) {
                     attacker.displayClientMessage(Text.literal("§cNu ai puterea și învățătura de a mânui satârul de măcelar!"), true);
                     attacker.playSound('minecraft:block.chest.locked', 1.0, 1.0);
                     event.setDamage(0);
@@ -94,9 +100,11 @@ ItemEvents.entityInteracted(event => {
     try {
         let item = event.getItem();
         let itemId = item && item.id ? String(item.id) : '';
+        let player = event.getPlayer();
         if (itemId.includes('cleaver') || (item.hasTag && (item.hasTag('c:cleaver') || item.hasTag('forge:cleaver')))) {
-            let player = event.getPlayer();
-            if (hasOriginOrClass(player, 'rustic:nitwit')) {
+            let isN = hasOriginOrClass(player, 'rustic:nitwit');
+            console.log("[DEBUG] entityInteracted: player=" + (player ? player.username : "null") + " item=" + itemId + " isNitwit=" + isN);
+            if (isN) {
                 player.displayClientMessage(Text.literal("§cNu ai puterea și învățătura de a mânui satârul de măcelar!"), true);
                 player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
                 event.cancel();
@@ -127,53 +135,7 @@ ItemEvents.rightClicked(event => {
     }
 });
 
-// Direct NeoForge event hooks for robust engine-level prevention
-try {
-    const $NeoForge = Java.loadClass('net.neoforged.neoforge.common.NeoForge');
-    const $AttackEntityEvent = Java.loadClass('net.neoforged.neoforge.event.entity.player.AttackEntityEvent');
-    const $RightClickBlock = Java.loadClass('net.neoforged.neoforge.event.entity.player.PlayerInteractEvent$RightClickBlock');
-    const $TriState = Java.loadClass('net.neoforged.neoforge.common.util.TriState');
 
-    $NeoForge.EVENT_BUS.addListener($AttackEntityEvent, event => {
-        try {
-            let player = event.getEntity();
-            if (!player || !player.isPlayer()) return;
-            let item = player.mainHandItem;
-            let itemId = item && item.id ? String(item.id) : '';
-            if (itemId.includes('cleaver') || (item.hasTag && (item.hasTag('c:cleaver') || item.hasTag('forge:cleaver')))) {
-                if (hasOriginOrClass(player, 'rustic:nitwit')) {
-                    player.displayClientMessage(Text.literal("§cNu ai puterea și învățătura de a mânui satârul de măcelar!"), true);
-                    player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
-                    event.setCanceled(true);
-                }
-            }
-        } catch (e) {
-            console.error("Error in NeoForge AttackEntityEvent: " + e);
-        }
-    });
-
-    $NeoForge.EVENT_BUS.addListener($RightClickBlock, event => {
-        try {
-            let item = event.getItemStack();
-            let itemId = item && item.kjs$getId ? String(item.kjs$getId()) : '';
-            if (itemId === 'hearthandharvest:watering_can') {
-                let player = event.getEntity();
-                if (player && player.isPlayer() && hasOriginOrClass(player, 'rustic:nitwit')) {
-                    player.displayClientMessage(Text.literal("§cNu stăpânești meșteșugul stropirii ogoarelor!"), true);
-                    player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
-                    event.setUseItem($TriState.FALSE);
-                    event.setCanceled(true);
-                }
-            }
-        } catch (e) {
-            console.error("Error in NeoForge RightClickBlock: " + e);
-        }
-    });
-
-    console.log("[RUSTIC] Registered NeoForge EVENT_BUS listeners successfully!");
-} catch (e) {
-    console.error("[RUSTIC] Failed to register NeoForge EVENT_BUS listeners: " + e);
-}
 
 // Debug command to verify player origins and classes
 ServerEvents.commandRegistry(event => {
