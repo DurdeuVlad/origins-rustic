@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:tanner_powers"
+  ],
+  "icon": {
+    "id": "minecraft:leather"
+  },
+  "order": 15,
+  "impact": 1
+}
