@@ -53,19 +53,5 @@
         "item": "minecraft:firework_rocket"
       }
     }
-  },
-  "name": "Aripi de Dragon",
-  "description": {
-    "text": "[Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Activează zborul asemănător cu elytrele. Poți zbura liber prin văzduh. [Restricție] Zborul de dragon este organic și nu poate fi propulsat cu artificii."
-      }
-    ]
   }
 }

@@ -2,7 +2,6 @@
     "replace": false,
     "values": [
         "rustic:no_mining_exhaustion",
-        "rustic:double_ores",
         "rustic:more_stone_break_speed"
     ]
 }

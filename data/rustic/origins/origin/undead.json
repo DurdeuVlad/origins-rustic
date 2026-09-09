@@ -6,7 +6,5 @@
     "id": "minecraft:bone"
   },
   "order": 4,
-  "impact": 0,
-  "name": "Nemort",
-  "description": "Ființă readusă la viață din mormânt. [Click Dreapta cu Carne Putredă] Mănânci fără efecte negative și te vindeci. [Pasivă] Imun la otravă și efecte de vătămare. [Dezavantaj] Arzi la lumina soarelui."
+  "impact": 0
 }

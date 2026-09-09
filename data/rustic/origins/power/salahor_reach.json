@@ -4,7 +4,5 @@
     "attribute": "minecraft:player.entity_interaction_range",
     "operation": "add_value",
     "value": 0.5
-  },
-  "name": "Brațe Lungi",
-  "description": "[Pasivă] Rază extinsă de atac și interacțiune cu uneltele."
+  }
 }

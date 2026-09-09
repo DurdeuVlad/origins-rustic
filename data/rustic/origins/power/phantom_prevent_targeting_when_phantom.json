@@ -6,7 +6,5 @@
   },
   "mob_condition": {
     "type": "origins:hostile"
-  },
-  "name": "Nevăzut de Inamici",
-  "description": "[În Formă Fantomatică] Monștrii nu te pot zări și nu te pot ataca."
+  }
 }

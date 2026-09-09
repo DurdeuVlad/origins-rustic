@@ -12,7 +12,5 @@
     "ignore_z": true,
     "comparison": "<=",
     "compare_to": 124
-  },
-  "name": "Vedere în Întuneric",
-  "description": "[Sub Nivelul Y=60] Primești automat Vedere Nocturnă în beznă."
+  }
 }

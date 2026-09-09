@@ -4,7 +4,5 @@
     "id": "minecraft:bat_spawn_egg"
   },
   "order": 22,
-  "impact": 0,
-  "name": "Vampir",
-  "description": "Prădător al nopții însetat de sânge. [Atac Melee] Furi viață din inamici cu fiecare lovitură. [Pasivă] Viteză și putere nocturnă. [Dezavantaj] Arzi violent când ești expus la soare."
+  "impact": 0
 }

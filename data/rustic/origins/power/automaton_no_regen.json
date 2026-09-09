@@ -1,5 +1,3 @@
 {
-  "type": "origins:disable_regen",
-  "name": "Fără Regenerare Naturală",
-  "description": "[Pasivă] Nu te poți vindeca mâncând hrană obișnuită. Folosește lingouri sau pepite de fier pentru reparație."
+  "type": "origins:disable_regen"
 }

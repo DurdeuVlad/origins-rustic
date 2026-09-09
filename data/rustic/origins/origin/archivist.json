@@ -6,7 +6,5 @@
     "id": "minecraft:bookshelf"
   },
   "order": 4,
-  "impact": 0,
-  "name": "Cronicar",
-  "description": "Păstrător al cunoașterii și magiei. [Click Dreapta cu o Carte] Folosește experiența pentru a scrie cărți fermecate. Cărțile din bibliotecă îi sporesc înțelepciunea."
+  "impact": 0
 }

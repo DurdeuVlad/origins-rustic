@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 2.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cocoa_beans",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "add": false,
+              "conditions": [
+                {
+                  "block": "minecraft:cocoa",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "2"
+                  }
+                }
+              ],
+              "count": 3.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

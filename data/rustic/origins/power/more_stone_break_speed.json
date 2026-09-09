@@ -8,7 +8,5 @@
     "type": "origins:in_tag",
     "tag": "rustic:stone"
   },
-  "hidden": true,
-  "name": "Spargere Rapidă a Pietrei",
-  "description": "[Pasivă] Sparge piatra și blocurile subterane mult mai repede."
+  "hidden": true
 }

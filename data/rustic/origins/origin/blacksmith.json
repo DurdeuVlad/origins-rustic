@@ -6,7 +6,5 @@
     "id": "minecraft:anvil"
   },
   "order": 5,
-  "impact": 0,
-  "name": "Fierar",
-  "description": "Maestru al nicovalei și metalelor. [La Nicovală] Reducere substanțială a costului de experiență și reparare mai eficientă a armurilor și uneltelor. [Pasivă] Rezistență sporită la foc."
+  "impact": 0
 }

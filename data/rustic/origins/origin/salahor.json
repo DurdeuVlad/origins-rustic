@@ -6,7 +6,5 @@
     "id": "minecraft:iron_block"
   },
   "order": 10,
-  "impact": 0,
-  "name": "Muncitor",
-  "description": "Uriaș cu forță brută de muncă. [Pasivă] +10 Inimi de viață, rezistență totală la recul (knockback) și pumni ce provoacă daune mari. [Dezavantaj] Mișcare mai greoaie."
+  "impact": 0
 }

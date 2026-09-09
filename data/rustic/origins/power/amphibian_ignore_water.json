@@ -1,5 +1,3 @@
 {
-  "type": "origins:ignore_water",
-  "name": "Mersul prin Unde",
-  "description": "[Pasivă] Te miști și înoți prin apă fără rezistență la fluide sau încetinire."
+  "type": "origins:ignore_water"
 }

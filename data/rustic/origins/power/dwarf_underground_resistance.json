@@ -21,7 +21,5 @@
     "ignore_z": true,
     "comparison": "<=",
     "compare_to": 124
-  },
-  "name": "Rezistență Subterană",
-  "description": "[Sub Nivelul Y=60] Adâncurile pământului îți conferă automat Rezistență II continuă."
+  }
 }

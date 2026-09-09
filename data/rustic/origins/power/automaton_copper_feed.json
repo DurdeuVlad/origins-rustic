@@ -10,7 +10,5 @@
     "nutrition": 2,
     "saturation": 2.0
   },
-  "consume_animation": "eat",
-  "name": "Alimentare cu Cupru",
-  "description": "[Click Dreapta cu Lingou de Aramă] Hrănește mecanismele interne, refăcând 4 puncte de sațietate și hrană."
+  "consume_animation": "eat"
 }

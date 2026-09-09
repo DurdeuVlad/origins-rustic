@@ -39,7 +39,5 @@
     },
     "consume_animation": "eat",
     "consume_sound": "minecraft:entity.iron_golem.repair"
-  },
-  "name": "Reparație cu Fier",
-  "description": "[Click Dreapta cu Lingou de Fier] Reface 6 puncte de viață (3 inimi). [Cu Pepită de Fier] Reface 1.5 puncte de viață."
+  }
 }

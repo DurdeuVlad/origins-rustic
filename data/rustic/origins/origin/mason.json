@@ -6,7 +6,5 @@
     "id": "minecraft:white_glazed_terracotta"
   },
   "order": 19,
-  "impact": 2,
-  "name": "Pietrar",
-  "description": "Zidar și cioplitor de cetăți. [Pe Piatră] Viteză crescută de spargere a blocurilor de piatră și rază extinsă de plasare a blocurilor."
+  "impact": 2
 }

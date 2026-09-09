@@ -6,7 +6,5 @@
     "id": "minecraft:compass"
   },
   "order": 5,
-  "impact": 0,
-  "name": "Explorator",
-  "description": "Călător sprinten peste văi și munți. [Pasivă] Urcare automată a treptelor (pas de munte), alergarea consumă mult mai puțină hrană, iar odihna la foc de tabără reface viață."
+  "impact": 0
 }

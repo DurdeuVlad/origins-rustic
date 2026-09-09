@@ -6,7 +6,5 @@
     "id": "minecraft:iron_axe"
   },
   "order": 13,
-  "impact": 0,
-  "name": "Tăietor de Lemne",
-  "description": "Tăietor iscusit al pădurilor. [La Tăiere Lemn] Recolta de bușteni este dublată. [Topor] Dobori copaci întregi dintr-o singură lovitură."
+  "impact": 0
 }

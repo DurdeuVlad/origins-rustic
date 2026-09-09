@@ -1,10 +1,8 @@
 {
-  "replace": false,
-  "values": [
-    "rustic:prevent_cleaver",
-    "rustic:prevent_watering_can",
-    "rustic:farrier_mounted_speed",
-    "rustic:farrier_mount_jump",
-    "rustic:farrier_equine_care"
-  ]
+    "replace": false,
+    "values": [
+        "rustic:farrier_mounted_speed",
+        "rustic:farrier_mount_jump",
+        "rustic:farrier_equine_care"
+    ]
 }

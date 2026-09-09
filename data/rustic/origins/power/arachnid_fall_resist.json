@@ -7,7 +7,5 @@
   "damage_condition": {
     "type": "origins:id",
     "value": "minecraft:fall"
-  },
-  "name": "Aterizare Domoală",
-  "description": "[Pasivă] Trupul mlădios atenuează 60% din daunele provocate de cădere."
+  }
 }

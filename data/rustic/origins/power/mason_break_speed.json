@@ -3,7 +3,5 @@
   "modifier": {
     "operation": "multiply_base_multiplicative",
     "value": 0.25
-  },
-  "name": "Cioplire Rapidă",
-  "description": "[Pasivă] Viteză crescută la spargerea și prelucrarea pietrei."
+  }
 }

@@ -11,7 +11,5 @@
       "type": "origins:in_tag",
       "tag": "minecraft:is_forest"
     }
-  },
-  "name": "Viteza Pădurii",
-  "description": "[În Pădure] Viteză sporită de mișcare când alergi printre copaci."
+  }
 }

@@ -3,7 +3,5 @@
   "allow_holding": true,
   "condition": {
     "type": "origins:collided_horizontally"
-  },
-  "name": "Cățărătura pe Stâncă",
-  "description": "[Mers spre Zid] Ține tasta de mers înainte pentru a te cățăra pe orice perete vertical."
+  }
 }

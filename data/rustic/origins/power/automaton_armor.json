@@ -4,7 +4,5 @@
     "attribute": "minecraft:generic.armor",
     "operation": "add_value",
     "value": 8
-  },
-  "name": "Armură de Fier",
-  "description": "[Pasivă] Trupul mecanic oferă natural +4 puncte de armură continuă."
+  }
 }

@@ -6,19 +6,5 @@
     "id": "minecraft:ender_pearl"
   },
   "order": 8,
-  "impact": 0,
-  "name": "Enderian",
-  "description": {
-    "text": "Călător misterios între dimensiuni. [Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Teleportare: arunci perle de teleportare fără să le consumi. [Pasivă] Rază mai mare de atingere. [Dezavantaj] Apa îți provoacă daune."
-      }
-    ]
-  }
+  "impact": 0
 }

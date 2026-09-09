@@ -4,7 +4,5 @@
     "attribute": "minecraft:generic.max_health",
     "operation": "add_value",
     "value": -6.0
-  },
-  "name": "Trup Fragil",
-  "description": "[Dezavantaj] Trupul fantomatic are cu 3 inimi mai puțin."
+  }
 }

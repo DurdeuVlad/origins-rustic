@@ -147,19 +147,5 @@
       "sprite": "origins:textures/gui/badge/active.png",
       "text": "Apasă %s pentru Îngrijire Domnească: revigorează armăsarul cu Regenerare II și Viteză II."
     }
-  ],
-  "name": "Îngrijirea Calului",
-  "description": {
-    "text": "[Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Oferă calului călărit sau din apropiere Regenerare II și Viteză II."
-      }
-    ]
-  }
+  ]
 }

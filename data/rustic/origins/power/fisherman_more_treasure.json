@@ -2,7 +2,5 @@
   "type": "origins:replace_loot_table",
   "replace": {
     "minecraft:gameplay/fishing": "rustic:gameplay/fishing"
-  },
-  "name": "Comorile Apelor",
-  "description": "[La Pescuit] Șansă mărită de a pescui comori valoroase."
+  }
 }

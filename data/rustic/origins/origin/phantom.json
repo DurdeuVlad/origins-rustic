@@ -6,19 +6,5 @@
     "id": "minecraft:phantom_membrane"
   },
   "order": 7,
-  "impact": 0,
-  "name": "Fantomă",
-  "description": {
-    "text": "Spirit plutitor ce sfidează materia. [Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Formă Fantomatică: devii invizibil și poți trece prin blocuri. [Pasivă] Fără daune din cădere, șansă de eschivă la atacuri. [Dezavantaj] Arzi la soare și ai viață redusă."
-      }
-    ]
-  }
+  "impact": 0
 }

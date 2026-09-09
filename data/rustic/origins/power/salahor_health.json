@@ -4,7 +4,5 @@
     "attribute": "minecraft:generic.max_health",
     "operation": "add_value",
     "value": 4.0
-  },
-  "name": "Forță de Uriaș",
-  "description": "[Pasivă] Trupul masiv îți conferă +10 inimi suplimentare de viață (20 HP)."
+  }
 }

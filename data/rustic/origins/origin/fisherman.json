@@ -6,7 +6,5 @@
     "id": "minecraft:fishing_rod"
   },
   "order": 3,
-  "impact": 0,
-  "name": "Pescar",
-  "description": "Stăpân al apelor și undițelor. [La Pescuit] Peștii mușcă de două ori mai repede și ai șanse mult mai mari să găsești comori valoroase."
+  "impact": 0
 }

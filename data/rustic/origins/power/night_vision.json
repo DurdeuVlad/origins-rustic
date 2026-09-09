@@ -5,7 +5,5 @@
     "type": "origins:exposed_to_sky",
     "inverted": true
   },
-  "hidden": true,
-  "name": "Vedere Nocturnă",
-  "description": "[Pasivă] Privirea ta străpunge întunericul nopții."
+  "hidden": true
 }

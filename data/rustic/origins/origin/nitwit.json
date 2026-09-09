@@ -6,7 +6,5 @@
     "id": "minecraft:poisonous_potato"
   },
   "order": 0,
-  "impact": 0,
-  "name": "Hoinar",
-  "description": "Aventurier simplu fără o meserie învățată. [Restricții] Nu poate uda culturile cu stropitoarea și provoacă 0 daune dacă încearcă să lovească cu satârul de măcelar."
+  "impact": 0
 }

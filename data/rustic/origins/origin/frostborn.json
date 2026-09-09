@@ -4,7 +4,5 @@
     "id": "minecraft:packed_ice"
   },
   "order": 23,
-  "impact": 0,
-  "name": "Născut din Gheață",
-  "description": "Făptură stăpână peste ger și viscol. [În Zone Înghețate] Putere și regenerare crescute. [Atac] Îngheață inamicii la lovitură. [Dezavantaj] Focul și lava îți provoacă daune duble."
+  "impact": 0
 }

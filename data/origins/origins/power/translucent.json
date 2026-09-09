@@ -1,6 +1,4 @@
 {
   "type": "origins:model_color",
-  "alpha": 0.5,
-  "name": "Străveziu",
-  "description": "Trupul tău devine parțial invizibil în formă fantomatică."
+  "alpha": 0.5
 }

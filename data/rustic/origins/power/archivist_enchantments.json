@@ -69,7 +69,5 @@
       "sprite": "origins:textures/gui/badge/active.png",
       "text": "Apasă %s ținând o carte în mâna principală cu cel puțin 5 niveluri de XP. Consumă 5 niveluri de XP."
     }
-  ],
-  "name": "Scrierea Cărților Magice",
-  "description": "[Click Dreapta cu o Carte Albă] Consumă 5 nivele de experiență pentru a scrie o carte vrăjită la întâmplare."
+  ]
 }

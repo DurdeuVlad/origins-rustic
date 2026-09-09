@@ -59,14 +59,6 @@ Hidden: true
 
 Multiplies all exhaustion gained by the player by 0.5 (50% reduction). Applies to every source of exhaustion, not just mining.
 
-### ⚠ `rustic:double_ores` — BROKEN (power file missing)
-The tag references this power but `data/rustic/origins/power/double_ores.json` does not exist as a power file.
-A loot table `data/rustic/loot_table/double_ores.json` exists and rolls the base loot table twice (2 rolls of the replaced table), which is the intended mechanism for doubling drops.
-
-Should use LootJS in tandem with OriginJS to implement the drop doubling.
-
-**Fix:** create `data/rustic/origins/power/double_ores.json` as a power that hooks the existing loot table.
-
 ### `rustic:more_stone_break_speed`
 Type: `origins:modify_break_speed`
 Operation: `multiply_base_multiplicative` | Value: `1.0`
@@ -89,5 +81,30 @@ Action: applies `minecraft:speed` — amplifier 0 (Speed I), duration 40 ticks, 
 
 Every second, if any crop block exists within 4 blocks of the player, refreshes Speed I for 2 seconds. Net result: continuous Speed I while near crops.
 
-### `origins_classes:more_crop_drops` (external)
-Should use LootJS in tandem with OriginJS to implement the drop doubling.
+### Individual Crop Doubling Powers
+Each crop doubling power uses `origins:modify_harvest` with `origins:block` checking the specific crop block and full maturity (e.g. `age: 7`), replacing the block loot table with a 2x roll rustic loot table:
+- `rustic:farmer_double_wheat` → `rustic:farmer_wheat` (`minecraft:wheat[age=7]`)
+- `rustic:farmer_double_carrots` → `rustic:farmer_carrots` (`minecraft:carrots[age=7]`)
+- `rustic:farmer_double_potatoes` → `rustic:farmer_potatoes` (`minecraft:potatoes[age=7]`)
+- `rustic:farmer_double_beetroots` → `rustic:farmer_beetroots` (`minecraft:beetroots[age=3]`)
+- `rustic:farmer_double_nether_wart` → `rustic:farmer_nether_wart` (`minecraft:nether_wart[age=3]`)
+- `rustic:farmer_double_cocoa` → `rustic:farmer_cocoa` (`minecraft:cocoa[age=2]`)
+
+---
+
+## Undead
+
+Tag: `#rustic:undead_powers` → `data/rustic/tags/origins/power/undead_powers.json`
+
+### `rustic:undead_harming_immunity`
+Type: `origins:effect_immunity`
+Effect: `minecraft:instant_damage`
+
+Grants immunity to Instant Damage (Harming) status effects, correctly modeling undead physiology.
+
+### `rustic:undead_poison_immunity`
+Type: `origins:effect_immunity`
+Effects: `["minecraft:poison", "minecraft:hunger"]`
+
+Grants immunity to both Poison and Hunger effects.
+

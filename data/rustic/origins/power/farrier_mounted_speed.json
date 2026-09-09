@@ -24,7 +24,5 @@
       "sprite": "origins:textures/gui/badge/passive.png",
       "text": "Potcovar din Dinoria: călăria ta este impecabilă, acordând monturii tale viteză sporită (Viteză I)."
     }
-  ],
-  "name": "Viteză la Călărie",
-  "description": "[Călare] Caii conduși de tine se deplasează cu viteză crescută."
+  ]
 }

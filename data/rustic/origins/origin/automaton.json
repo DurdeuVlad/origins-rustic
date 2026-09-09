@@ -6,7 +6,5 @@
     "id": "minecraft:iron_ingot"
   },
   "order": 11,
-  "impact": 0,
-  "name": "Automaton",
-  "description": "Făptură mecanică făurită din metal. [Pasivă] +4 Armură naturală. Nu te poți vindeca mâncând. [Click Dreapta cu Fier] Reface viață (3 inimi cu lingou, 0.75 cu pepită). [Click Dreapta cu Cupru] Îți potolește foamea."
+  "impact": 0
 }

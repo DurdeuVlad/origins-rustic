@@ -11,7 +11,5 @@
   "saturation_modifier": {
     "operation": "add_base_early",
     "value": 0.5
-  },
-  "name": "Hrană de Nemort",
-  "description": "[Click Dreapta cu Carne Putredă] Mănânci carne alterată fără efecte nocive."
+  }
 }

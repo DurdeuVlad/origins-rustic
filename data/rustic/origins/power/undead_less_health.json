@@ -4,7 +4,5 @@
     "attribute": "minecraft:generic.max_health",
     "operation": "add_value",
     "value": -2.0
-  },
-  "name": "Viață Redusă",
-  "description": "[Dezavantaj] Trupul trecut prin moarte pornește cu 3 inimi mai puțin."
+  }
 }

@@ -6,7 +6,5 @@
   },
   "damage_condition": {
     "type": "origins:fire"
-  },
-  "name": "Călit în Foc",
-  "description": "[Pasivă] Rezistență sporită la foc și căldură acumulată în atelierul de forjă."
+  }
 }

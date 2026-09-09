@@ -12,19 +12,5 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": false
-  },
-  "name": "Teleportare cu Perla",
-  "description": {
-    "text": "[Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Te teleportezi aruncând perle de ender fără a le consuma."
-      }
-    ]
   }
 }

@@ -6,7 +6,5 @@
     "id": "minecraft:apple"
   },
   "order": 1,
-  "impact": 0,
-  "name": "Om",
-  "description": "Om simplu și adaptabil. [Pasivă] Fără slăbiciuni magice și fără avantaje supranaturale, având toate atributele de bază echilibrate."
+  "impact": 0
 }

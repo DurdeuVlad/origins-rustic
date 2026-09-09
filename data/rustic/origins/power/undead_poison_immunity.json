@@ -1,6 +1,7 @@
 {
   "type": "origins:effect_immunity",
-  "effect": "minecraft:poison",
-  "name": "Imunitate la Otravă",
-  "description": "[Pasivă] Imunitate deplină la efectul de otravă."
+  "effect": [
+    "minecraft:poison",
+    "minecraft:hunger"
+  ]
 }

@@ -22,7 +22,5 @@
   "condition": {
     "type": "origins:chance",
     "chance": 0.3
-  },
-  "name": "Eschivă Fantomatică",
-  "description": "[Pasivă] Șansă de a evita complet loviturile primite."
+  }
 }

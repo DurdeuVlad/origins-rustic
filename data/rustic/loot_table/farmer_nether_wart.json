@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 2.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nether_wart",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "add": false,
+              "conditions": [
+                {
+                  "block": "minecraft:nether_wart",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2.0,
+                "max": 4.0
+              }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:uniform_bonus_count",
+              "parameters": {
+                "bonusMultiplier": 1
+              },
+              "conditions": [
+                {
+                  "block": "minecraft:nether_wart",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

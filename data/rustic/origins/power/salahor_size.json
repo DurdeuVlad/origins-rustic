@@ -4,7 +4,5 @@
     "attribute": "minecraft:generic.scale",
     "operation": "add_value",
     "value": 0.25
-  },
-  "name": "Statură Uriașă",
-  "description": "[Pasivă] Statura ta este mult mai înaltă decât a oamenilor obișnuiți."
+  }
 }

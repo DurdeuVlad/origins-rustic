@@ -6,19 +6,5 @@
     "id": "minecraft:dragon_breath"
   },
   "order": 5,
-  "impact": 0,
-  "name": "Născut din Dragon",
-  "description": {
-    "text": "Moștenitor al sângelui străvechi de dragon. [Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Aripi de Dragon: activează zborul asemănător cu elytrele (fără artificii). [Pasivă] Complet imun la foc și lavă. [Dezavantaj] Mănâncă de două ori mai des."
-      }
-    ]
-  }
+  "impact": 0
 }

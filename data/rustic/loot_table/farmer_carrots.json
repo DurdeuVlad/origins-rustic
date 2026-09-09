@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 2.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot"
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 2.0,
+      "conditions": [
+        {
+          "block": "minecraft:carrots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot",
+          "functions": [
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "parameters": {
+                "extra": 3,
+                "probability": 0.5714286
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

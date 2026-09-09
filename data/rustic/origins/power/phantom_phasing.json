@@ -21,19 +21,5 @@
         "power": "origins:phantomize"
       }
     ]
-  },
-  "name": "Formă Fantomatică",
-  "description": {
-    "text": "[Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Treci prin ziduri și obstacole solide cât timp puterea este activă."
-      }
-    ]
   }
 }

@@ -9,19 +9,5 @@
     "type": "origins:food_level",
     "comparison": ">",
     "compare_to": 6
-  },
-  "name": "Formă Fantomatică",
-  "description": {
-    "text": "[Apasă ",
-    "extra": [
-      {
-        "keybind": "key.origins.primary_active",
-        "bold": true,
-        "color": "gold"
-      },
-      {
-        "text": " (Abilitate Primară)] Treci prin blocuri și devii intangibil."
-      }
-    ]
   }
 }

@@ -171,8 +171,8 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
   * `rustic:undead_less_health`: -4 HP max health penalty.
   * `rustic:undead_enhanced_food`: Multiplies nutritional yield from food items in `#rustic:undead_food` (Rotten Flesh, Spider Eyes).
   * `rustic:undead_food_heal`: Consuming rotten flesh directly heals 2 hearts.
-  * `rustic:undead_poison_immunity`: Immunity to poison status effects.
-  * `rustic:undead_harming_immunity`: Reverses / negates instantaneous harming damage.
+  * `rustic:undead_poison_immunity`: Grants immunity to `minecraft:poison` and `minecraft:hunger` via `origins:effect_immunity`.
+  * `rustic:undead_harming_immunity`: Grants immunity to Instant Damage (`minecraft:instant_damage`) via `origins:effect_immunity`.
 
 ---
 
@@ -185,13 +185,13 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ## 3. Classes Specification (Jobs Layer)
 
+The system includes 11 active classes registered in `#origins_classes:class`.
+
 ### 3.1 Nitwit (`rustic:nitwit`)
-* **Role**: Unskilled laborer without economic specialization; restricted from specialized trade tools.
+* **Role**: Unskilled laborer without economic specialization.
 * **Icon**: `minecraft:poisonous_potato`
-* **Tag**: `#rustic:nitwit_powers`
-* **Powers**:
-  * `rustic:prevent_cleaver`: Restricted from using `butchery:iron_cleaver`.
-  * `rustic:prevent_watering_can`: Restricted from using `hearthandharvest:watering_can`.
+* **Tag**: `#rustic:nitwit_powers` (empty)
+* **Restrictions**: Enforced server-side via KubeJS (`OriginsJS.hasOrigin(player, 'rustic:nitwit')`), preventing usage of `hearthandharvest:watering_can` and `butchery:iron_cleaver`.
 
 ---
 
@@ -201,7 +201,6 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 * **Tag**: `#rustic:blacksmith_powers`
 * **Powers**:
   * `rustic:blacksmith_fire_resist`: -50% damage taken from fire and lava sources (`multiply_base_multiplicative: -0.5`).
-  * `rustic:prevent_cleaver` & `rustic:prevent_watering_can`.
   * Integrated Item Modifiers: Custom repair rates in [item_repair.json](file:///e:/Github2/origins-rustic/data/rustic/item_modifier/item_repair.json) and blacksmith equipment modifiers in `data/rustic/item_modifier/blacksmith/`.
 
 ---
@@ -212,35 +211,26 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 * **Tag**: `#rustic:farmer_powers`
 * **Powers**:
   * `rustic:farmer_crop_speed`: Applies Speed I continuously while within 4 blocks of `#minecraft:crops`.
-  * `rustic:farmer_double_wheat`: Replaces `minecraft:blocks/wheat` loot table with `rustic:farmer_wheat`.
-  * `rustic:more_crop_drops`: Multiplies crop drops by 2x on harvestable crops via `origins_classes:modify_block_loot`.
-  * `rustic:prevent_cleaver`. (Exempt from `prevent_watering_can`).
+  * `rustic:farmer_double_wheat`: Replaces `minecraft:blocks/wheat` loot table with 2x drop table `rustic:farmer_wheat`.
+  * `rustic:farmer_double_carrots`: Replaces `minecraft:blocks/carrots` loot table with 2x drop table `rustic:farmer_carrots`.
+  * `rustic:farmer_double_potatoes`: Replaces `minecraft:blocks/potatoes` loot table with 2x drop table `rustic:farmer_potatoes`.
+  * `rustic:farmer_double_beetroots`: Replaces `minecraft:blocks/beetroots` loot table with 2x drop table `rustic:farmer_beetroots`.
+  * `rustic:farmer_double_nether_wart`: Replaces `minecraft:blocks/nether_wart` loot table with 2x drop table `rustic:farmer_nether_wart`.
+  * `rustic:farmer_double_cocoa`: Replaces `minecraft:blocks/cocoa` loot table with 2x drop table `rustic:farmer_cocoa`.
 
 ---
 
-### 3.4 Fisherman (`rustic:fisherman`) & Fisher (`rustic:fisher`)
-* **Fisherman** (`#rustic:fisherman_powers`):
+### 3.4 Fisherman (`rustic:fisherman`)
+* **Role**: Skilled angler capable of pulling valuable treasures from open waters.
+* **Icon**: `minecraft:fishing_rod`
+* **Tag**: `#rustic:fisherman_powers`
+* **Powers**:
   * `rustic:fisherman_fishing`: Applies Luck II continuously while holding a fishing rod in mainhand or offhand.
   * `rustic:fisherman_more_treasure`: Replaces `minecraft:gameplay/fishing` with `rustic:gameplay/fishing` loot table.
-* **Fisher** (`#rustic:fisher_powers`):
-  * `rustic:fisher_waters_luck`: Passive ambient Luck I while submerged in water.
-  * `rustic:fisher_swim_speed`: +40% swimming speed in water.
-  * `rustic:fisher_sea_legs`: 15% overall damage reduction while in aquatic environments.
-  * `rustic:fisher_night_sight_water`: Grants Night Vision while underwater.
 
 ---
 
-### 3.5 Herbalist (`rustic:herbalist`)
-* **Role**: Botanist accelerating crop maturation and gathering rare flora.
-* **Icon**: `minecraft:wheat`
-* **Tag**: `#rustic:herbalist_powers`
-* **Powers**:
-  * `rustic:herbalist_growth`: Accelerates crop tick growth in immediate radius.
-  * `rustic:herbalist_double_crops`: Adds flat +1 bonus drop on harvested plants.
-
----
-
-### 3.6 Lumberjack (`rustic:lumberjack`)
+### 3.5 Lumberjack (`rustic:lumberjack`)
 * **Role**: Forestry laborer with rapid wood harvesting and higher plank yields.
 * **Icon**: `minecraft:iron_axe`
 * **Tag**: `#rustic:lumberjack_powers`
@@ -251,7 +241,7 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
-### 3.7 Mason (`rustic:mason`)
+### 3.6 Mason (`rustic:mason`)
 * **Role**: Stonecutter and fortress builder with extended block manipulation and stone mobility.
 * **Icon**: `minecraft:white_glazed_terracotta`
 * **Tag**: `#rustic:mason_powers`
@@ -262,18 +252,17 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
-### 3.8 Miner (`rustic:miner`)
-* **Role**: Deep excavator with extreme stamina efficiency and doubled ore extraction.
+### 3.7 Miner (`rustic:miner`)
+* **Role**: Deep excavator with extreme stamina efficiency and high stone break speed.
 * **Icon**: `minecraft:iron_pickaxe`
 * **Tag**: `#rustic:miner_powers`
 * **Powers**:
   * `rustic:no_mining_exhaustion`: -50% exhaustion across all actions (`multiply_base_multiplicative: -0.5`).
   * `rustic:more_stone_break_speed`: 2x break speed (`+100%`) when hitting blocks in `#rustic:stone`.
-  * `rustic:double_ores`: Replaces block ore drops with [double_ores.json](file:///e:/Github2/origins-rustic/data/rustic/loot_table/double_ores.json), rolling ore drops twice.
 
 ---
 
-### 3.9 Archivist (`rustic:archivist`)
+### 3.8 Archivist (`rustic:archivist`)
 * **Role**: Scholar capable of transmuting experience and blank tomes into enchanted codices.
 * **Icon**: `minecraft:bookshelf`
 * **Tag**: `#rustic:archivist_powers`
@@ -282,7 +271,7 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
-### 3.10 Explorer (`rustic:explorer`)
+### 3.9 Explorer (`rustic:explorer`)
 * **Role**: Long-distance scout with high stamina efficiency and terrain scaling.
 * **Icon**: `minecraft:compass`
 * **Tag**: `#rustic:explorer_powers`
@@ -293,7 +282,7 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
-### 3.11 Salahor (`rustic:salahor`)
+### 3.10 Salahor (`rustic:salahor`)
 * **Role**: Colossal titan class designed for high durability and heavy crowd control at the cost of speed.
 * **Icon**: `minecraft:iron_block`
 * **Tag**: `#rustic:salahor_powers`
@@ -307,45 +296,15 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
-### 3.12 Barbarian (`rustic:barbarian`)
-* **Role**: Berserker frontline bruiser trading physical protection and stamina for explosive combat bursts.
-* **Icon**: `minecraft:iron_axe`
-* **Tag**: `#rustic:barbarian_powers`
-* **Powers**:
-  * `rustic:barbarian_rage`: Primary active ability (`key.origins.primary_active`). Exhausts 12.0 food, grants Strength II (amp 1, 200 ticks / 10s) and Resistance I (amp 0, 200 ticks / 10s) accompanied by a ravager roar and angry villager particles. After 200 ticks, applies fatigue penalty: Slowness I (100 ticks / 5s) and Mining Fatigue I (100 ticks / 5s). Cooldown: 600 ticks (30s).
-  * `rustic:barbarian_aerial_leap`: Secondary active ability (`key.origins.secondary_active`). Launches the player upward ($Y$ velocity $+1.1$), plays wind burst audio, and grants complete fall damage immunity. Upon landing (`origins:action_on_land`), triggers an explosive shockwave dealing 4 HP generic damage and launching all entities within 5 blocks into the air (`tp @s ~ ~0.8 ~`). Cooldown: 300 ticks (15s).
-  * `rustic:barbarian_brute_strength`: Passive trait granting $+1.0$ flat base attack damage, but reducing total armor effectiveness by 30% (`multiply_total: -0.3`).
-  * `rustic:prevent_cleaver` & `rustic:prevent_watering_can`: Restricted from specialized butchery and industrial watering cans.
-
----
-
-### 3.13 Knight (`rustic:knight`) [Milestone 3 — In Progress]
-* **Role**: Disciplined heavy armored vanguard specializing in damage soak and crowd-cleaving charges.
-* **Icon**: `minecraft:iron_chestplate`
-* **Tag**: `#rustic:knight_powers`
-* **Powers**:
-  * `rustic:knight_constitution`: Passive physical hardening reducing all incoming damage by 15% (`multiply_total: -0.15`).
-  * `rustic:knight_mighty_dash`: Primary active ability (`key.origins.primary_active`). Dashes horizontally forward through enemy lines, dealing collision damage to traversed entities.
-  * `rustic:prevent_cleaver` & `rustic:prevent_watering_can`.
-
----
-
-### 3.14 Tanner (`rustic:tanner`) [Milestone 4 — Roadmap]
-* **Role**: Leatherworking artisan specializing in hide processing and high-yield livestock butchery.
-* **Icon**: `minecraft:leather`
-* **Tag**: `#rustic:tanner_powers`
-* **Powers**:
-  * Custom entity loot table hook [tanner_cow.json](file:///e:/Github2/origins-rustic/data/rustic/loot_table/entities/tanner_cow.json) yielding 1-3 bonus leather and fire-smelted beef.
-  * Permitted to wield butchery cleavers (`butchery:iron_cleaver`).
-
----
-
-### 3.15 Farrier (`rustic:farrier`) [Milestone 4 — Roadmap]
+### 3.11 Farrier (`rustic:farrier`)
 * **Role**: Equine master and breeder (Dinoria horse breeder).
 * **Icon**: `minecraft:saddle`
 * **Tag**: `#rustic:farrier_powers`
 * **Powers**:
-  * Mounted movement speed aura, extended horse jump height, rapid breeding cooldowns.
+  * `rustic:farrier_mounted_speed`: Mounted movement speed aura.
+  * `rustic:farrier_mount_jump`: Extended horse jump height.
+  * `rustic:farrier_equine_care`: Passive health recovery for mounts.
+
 
 ---
 
@@ -354,7 +313,7 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 | Tag Path | Registry | Usage |
 | :--- | :--- | :--- |
 | `data/rustic/tags/block/stone.json` | `minecraft:block` | Stone blocks triggering Miner double break speed. |
-| `data/rustic/tags/block/crops_all.json` | `minecraft:block` | All crop types recognized by Farmer and Herbalist. |
+| `data/rustic/tags/block/crops_all.json` | `minecraft:block` | All crop types recognized by Farmer. |
 | `data/rustic/tags/item/heavy_armor.json` | `minecraft:item` | Restricts Dragonborn flight and applies speed penalties. |
 | `data/rustic/tags/item/light_weapons.json` | `minecraft:item` | Agile weapons (daggers, rapiers, shortswords). |
 | `data/rustic/tags/item/heavy_weapons.json` | `minecraft:item` | Two-handed greatswords, polearms, halberds. |

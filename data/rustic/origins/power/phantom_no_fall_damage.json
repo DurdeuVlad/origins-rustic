@@ -3,7 +3,5 @@
   "damage_condition": {
     "type": "origins:id",
     "value": "minecraft:fall"
-  },
-  "name": "Plutire Lină",
-  "description": "[Pasivă] Imunitate completă la orice daună provocată de cădere."
+  }
 }

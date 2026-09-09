@@ -6,7 +6,5 @@
     "id": "minecraft:wheat"
   },
   "order": 1,
-  "impact": 0,
-  "name": "Fermier",
-  "description": "Cultivator priceput al pământului. [La Recoltare] Șansă de a obține recolte duble. [Lângă Culturi] Te miști mai repede. [Unelte] Singurul capabil să folosească stropitoarea."
+  "impact": 0
 }

@@ -1,8 +1,4 @@
 {
-  "type": "origins:invulnerability",
-  "damage_condition": {
-    "type": "origins:magic"
-  },
-  "name": "Sânge Rece",
-  "description": "[Pasivă] Efectele de vătămare (Harming) nu îți provoacă rău."
+  "type": "origins:effect_immunity",
+  "effect": "minecraft:instant_damage"
 }

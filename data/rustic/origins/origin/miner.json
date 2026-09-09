@@ -6,7 +6,5 @@
     "id": "minecraft:iron_pickaxe"
   },
   "order": 2,
-  "impact": 0,
-  "name": "Miner",
-  "description": "Sfredelitor al măruntaielor pământului. [La Săpat Minereuri] Viteză sporită și minereuri dublate. Mineritul consumă cu 50% mai puțină foame."
+  "impact": 0
 }

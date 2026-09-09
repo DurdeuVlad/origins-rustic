@@ -4,7 +4,5 @@
     "attribute": "minecraft:generic.max_health",
     "value": -6,
     "operation": "add_value"
-  },
-  "name": "Fragilitate",
-  "description": "[Dezavantaj] Ai cu 3 inimi mai puțin decât un om obișnuit."
+  }
 }

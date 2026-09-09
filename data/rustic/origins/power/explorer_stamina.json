@@ -3,7 +3,5 @@
   "modifier": {
     "operation": "multiply_base_multiplicative",
     "value": -0.4
-  },
-  "name": "Drumeție Fără Capăt",
-  "description": "[Pasivă] Alergarea pe distanțe lungi nu îți consumă din bara de hrană."
+  }
 }

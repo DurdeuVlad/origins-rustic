@@ -1,8 +1,6 @@
 {
     "replace": false,
     "values": [
-        "rustic:prevent_watering_can",
-        "rustic:prevent_cleaver",
         "rustic:fisherman_fishing",
         "rustic:fisherman_more_treasure"
     ]

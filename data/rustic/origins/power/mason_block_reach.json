@@ -4,7 +4,5 @@
     "attribute": "minecraft:player.block_interaction_range",
     "operation": "add_value",
     "value": 3.0
-  },
-  "name": "Rază de Zidar",
-  "description": "[Pasivă] Rază extinsă de plasare a blocurilor de construcție."
+  }
 }

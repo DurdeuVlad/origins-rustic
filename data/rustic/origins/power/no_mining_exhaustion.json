@@ -4,7 +4,5 @@
     "operation": "multiply_base_multiplicative",
     "value": -0.5
   },
-  "hidden": true,
-  "name": "Minerit Eficient",
-  "description": "[Pasivă] Activitățile de minerit și săpat consumă cu 50% mai puțină foame."
+  "hidden": true
 }

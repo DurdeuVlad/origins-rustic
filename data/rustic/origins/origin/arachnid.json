@@ -6,7 +6,5 @@
     "id": "minecraft:cobweb"
   },
   "order": 10,
-  "impact": 0,
-  "name": "Arahnid",
-  "description": "Stăpân al pânzelor și umbrelor. [Mers spre Zid] Te poți cățăra pe orice suprafață verticală. [Pasivă] Suferi cu 60% mai puține daune din cădere. [Dezavantaj] Ai cu 3 inimi mai puțin."
+  "impact": 0
 }

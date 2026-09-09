@@ -8,7 +8,5 @@
   "entity_action": {
     "type": "origins:heal",
     "amount": 1.0
-  },
-  "name": "Vindecare cu Carne Putredă",
-  "description": "[Click Dreapta cu Carne Putredă] Consumarea cărnii putrede îți reface viața."
+  }
 }

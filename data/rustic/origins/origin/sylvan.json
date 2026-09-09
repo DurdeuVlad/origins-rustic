@@ -6,7 +6,5 @@
     "id": "minecraft:oak_sapling"
   },
   "order": 3,
-  "impact": 0,
-  "name": "Silvan",
-  "description": "Spirit protector al naturii și pădurilor. [În Pădure] Viteză sporită de mișcare. [Pasivă] Prieten al animalelor și plantelor. [Dezavantaj] Suferi daune sporite din foc."
+  "impact": 0
 }

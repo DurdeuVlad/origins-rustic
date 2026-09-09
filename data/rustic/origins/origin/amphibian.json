@@ -6,7 +6,5 @@
     "id": "minecraft:turtle_egg"
   },
   "order": 6,
-  "impact": 0,
-  "name": "Amfibian",
-  "description": "Făptură a adâncurilor. [În Apă] Înoți cu viteză, respiri sub apă și te vindeci. [Pe Uscat] Slăbești treptat dacă ești departe de apă sau dacă nu plouă."
+  "impact": 0
 }

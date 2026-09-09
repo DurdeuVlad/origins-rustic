@@ -1,7 +1,4 @@
 {
     "replace": false,
-    "values": [
-        "rustic:prevent_watering_can",
-        "rustic:prevent_cleaver"
-    ]
+    "values": []
 }
