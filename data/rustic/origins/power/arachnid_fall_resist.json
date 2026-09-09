@@ -5,7 +5,7 @@
     "value": -0.5
   },
   "damage_condition": {
-    "type": "origins:name",
-    "name": "fall"
+    "type": "origins:id",
+    "value": "minecraft:fall"
   }
 }

@@ -4,7 +4,7 @@
     "type": "origins:attribute",
     "modifier": {
       "attribute": "minecraft:generic.armor",
-      "operation": "multiply_total",
+      "operation": "add_multiplied_total",
       "value": -0.3
     }
   },

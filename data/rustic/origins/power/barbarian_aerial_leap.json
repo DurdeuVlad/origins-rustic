@@ -52,12 +52,12 @@
   "no_fall_damage": {
     "type": "origins:modify_damage_taken",
     "modifier": {
-      "operation": "multiply_total",
+      "operation": "multiply_total_additive",
       "value": -1.0
     },
     "damage_condition": {
-      "type": "origins:name",
-      "name": "fall"
+      "type": "origins:id",
+      "value": "minecraft:fall"
     }
   },
   "landing_shockwave": {

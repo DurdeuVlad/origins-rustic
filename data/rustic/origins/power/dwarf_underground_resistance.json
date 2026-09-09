@@ -12,9 +12,7 @@
   },
   "condition": {
     "type": "origins:distance_from_coordinates",
-    "offset": {
-      "y": -64
-    },
+    "offset": [0, -64, 0],
     "ignore_x": true,
     "ignore_z": true,
     "comparison": "<=",
