@@ -1,0 +1,13 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:entities/cow": "rustic:entities/tanner_cow"
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/passive.png",
+      "text": "T\u0103b\u0103car Maestru: prelucrarea bovinelor ofer\u0103 piele \u0219i carne suplimentar\u0103 din bel\u0219ug."
+    }
+  ]
+}
