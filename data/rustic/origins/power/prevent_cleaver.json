@@ -1,16 +1,38 @@
 {
-  "type": "origins:prevent_item_use",
-  "item_condition": {
-    "type": "origins:ingredient",
-    "ingredient": {
-      "item": "butchery:iron_cleaver"
+  "type": "origins:multiple",
+  "prevent_use": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "butchery:iron_cleaver"
+      }
     }
   },
-  "entity_action": {
-    "type": "apoli:execute_command",
-    "command": "title @s actionbar {\"text\":\"Only a Butcher can wield specialized butcher tools!\",\"color\":\"red\"}"
+  "nullify_damage": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total_additive",
+      "value": -1.0
+    },
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "butchery:iron_cleaver"
+        }
+      }
+    },
+    "self_action": {
+      "type": "origins:play_sound",
+      "sound": "minecraft:block.anvil.hit",
+      "volume": 0.8,
+      "pitch": 0.6
+    }
   },
   "hidden": true,
-  "name": "Cleaver Inexperience",
-  "description": "You lack the training to wield heavy butchery cleavers effectively."
+  "name": "Neîndemânare la Satâr",
+  "description": "Nu ai puterea și învățătura de a mânui satârele grele de măcelar."
 }

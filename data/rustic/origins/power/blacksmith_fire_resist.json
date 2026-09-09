@@ -7,6 +7,6 @@
   "damage_condition": {
     "type": "origins:fire"
   },
-  "name": "Forge Tolerance",
-  "description": "Years working the blazing forge grant you a 50% resistance to all fire and lava damage."
+  "name": "Călirea Focului",
+  "description": "Anii petrecuți lângă vatra furnalului ți-au deprins pielea cu dogoarea, suferind jumătate din vătămarea focului și a lavei."
 }

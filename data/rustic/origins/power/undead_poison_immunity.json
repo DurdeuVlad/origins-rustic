@@ -1,6 +1,6 @@
 {
   "type": "origins:effect_immunity",
   "effect": "minecraft:poison",
-  "name": "Toxin Immunity",
-  "description": "As an undead being, you are completely immune to poison."
+  "name": "Neatins de Otravă",
+  "description": "Veninul de șarpe și ciupercile otrăvitoare sunt ca apa chioară pentru sângele tău rece."
 }

@@ -22,9 +22,9 @@
     {
       "type": "origins:tooltip",
       "sprite": "origins:textures/gui/badge/passive.png",
-      "text": "Potcovar din Dinoria: c\u0103l\u0103ria ta este impecabil\u0103, acord\u00e2nd monturii tale vitez\u0103 sporit\u0103 (Vitez\u0103 I)."
+      "text": "Potcovar din Dinoria: călăria ta este impecabilă, acordând monturii tale viteză sporită (Viteză I)."
     }
   ],
-  "name": "Mounted Stride",
-  "description": "Ridden mounts move 25% faster under your expert guidance (Speed I)."
+  "name": "Pasul Potcovit",
+  "description": "Caii mânați de mâna ta aleargă cu 25% mai iute datorită potcoavelor meșteșugite (Viteză I)."
 }

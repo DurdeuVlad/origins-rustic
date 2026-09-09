@@ -4,6 +4,6 @@
   "condition": {
     "type": "origins:collided_horizontally"
   },
-  "name": "Wall Climbing",
-  "description": "You can climb directly up vertical solid surfaces by moving into them."
+  "name": "Cățărătura pe Stâncă",
+  "description": "Pășești nestingherit în sus pe ziduri abrupte și stâncării prăpăstioase."
 }

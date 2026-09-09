@@ -14,8 +14,10 @@
           "set": false
         },
         {
-          "type": "origins:execute_command",
-          "command": "playsound minecraft:entity.wind_charge.wind_burst player @a ~ ~ ~ 1.2 0.8"
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.wind_charge.wind_burst",
+          "volume": 1.2,
+          "pitch": 0.8
         },
         {
           "type": "origins:spawn_particles",
@@ -45,7 +47,7 @@
       {
         "type": "origins:keybind",
         "sprite": "origins:textures/gui/badge/active.png",
-        "text": "Apas\u0103 %s pentru Aerial Leap: sari puternic \u00een aer. La aterizare, creezi o und\u0103 de \u0219oc care arunc\u0103 \u00een aer entit\u0103\u021bile din jur."
+        "text": "Apasă %s pentru Saltul Haiducesc: sari puternic în aer. La aterizare, creezi o undă de șoc ce aruncă și rănește vrăjmașii."
       }
     ]
   },
@@ -66,24 +68,62 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:execute_command",
-          "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.8 1.4"
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.generic.explode",
+          "volume": 0.8,
+          "pitch": 1.4
+        },
+        {
+          "type": "origins:spawn_particles",
+          "particle": {
+            "type": "minecraft:explosion"
+          },
+          "count": 4,
+          "speed": 0.1,
+          "force": true,
+          "spread": [
+            0.5,
+            0.1,
+            0.5
+          ]
+        },
+        {
+          "type": "origins:region_apply",
+          "radius": 5.0,
+          "shape": "sphere",
+          "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:damage_target",
+                "damage_type": "minecraft:player_attack",
+                "amount": 6.0
+              },
+              {
+                "type": "origins:add_velocity",
+                "x": 0.0,
+                "y": 0.8,
+                "z": 0.0
+              }
+            ]
+          },
+          "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+              "type": "origins:entity_type",
+              "entity_type": "minecraft:player",
+              "inverted": true
+            }
+          },
+          "includeActor": false
         },
         {
           "type": "origins:execute_command",
-          "command": "particle minecraft:explosion ~ ~ ~ 0.5 0.1 0.5 0 6"
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "execute at @s as @e[type=!player,distance=0.1..5] run damage @s 6 minecraft:player_attack by @p"
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "execute at @s as @e[type=!player,distance=0.1..5] run tp @s ~ ~0.8 ~"
+          "command": "execute at @s as @e[type=!player,distance=..5.0] run damage @s 6.0 minecraft:player_attack by @p"
         }
       ]
     }
   },
-  "name": "Aerial Leap",
-  "description": "[Secondary Active] Launch yourself skyward with immunity to fall damage, releasing a concussive shockwave upon landing that damages and launches foes."
+  "name": "Saltul Haiducesc",
+  "description": "[Tastă Secundară / Primară] Te arunci năpraznic spre văzduh imun la cădere, stârnind la aterizare o undă de șoc ce rănește și aruncă vrăjmașii în aer."
 }

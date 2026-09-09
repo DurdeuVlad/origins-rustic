@@ -20,9 +20,9 @@
     {
       "type": "origins:tooltip",
       "sprite": "origins:textures/gui/badge/passive.png",
-      "text": "For\u021b\u0103 Brut\u0103: ai +1 atac de baz\u0103, dar armura este cu 30% mai pu\u021bin eficient\u0103 pe tine."
+      "text": "Forță Brută: ai +1 atac de bază, dar armura este cu 30% mai puțin eficientă pe tine."
     }
   ],
-  "name": "Brute Strength",
-  "description": "Your raw physical strength grants +25% attack damage, but your recklessness reduces armor effectiveness by 30%."
+  "name": "Vigoare Sălbatică",
+  "description": "Lovești cu puterea ursului din codru (+25% putere de atac), însă nesocotești apărarea platoșei (-30% eficiență la armură)."
 }

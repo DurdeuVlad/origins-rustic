@@ -22,6 +22,6 @@
     "comparison": "<=",
     "compare_to": 124
   },
-  "name": "Deep Earth Hardiness",
-  "description": "While deep below ground (Y <= 60), you receive Resistance II against all damage."
+  "name": "Ocrotirea Adâncului",
+  "description": "În hrubele adânci de sub pământ (sub cota Y=60), piatra străbună te îmbracă în Rezistență II."
 }

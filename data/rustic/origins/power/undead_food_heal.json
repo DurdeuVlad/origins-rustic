@@ -9,6 +9,6 @@
     "type": "origins:heal",
     "amount": 1.0
   },
-  "name": "Flesh Mend",
-  "description": "Consuming rotten flesh directly heals 2 hearts of health."
+  "name": "Întremarea cu Hoit",
+  "description": "Mâncând carne putredă, oasele și carnea moartă ți se leagă la loc, recăpătându-ți viața."
 }

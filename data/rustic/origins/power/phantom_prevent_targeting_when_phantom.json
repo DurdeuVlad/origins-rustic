@@ -7,6 +7,6 @@
   "mob_condition": {
     "type": "origins:hostile"
   },
-  "name": "Ghostly Camouflage",
-  "description": "Monsters cannot target or detect you while you are phased into phantom form."
+  "name": "Nevăzut de Fiare",
+  "description": "În starea de nălucă, sălbăticiunile și dușmanii nu te pot zări."
 }

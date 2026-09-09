@@ -96,9 +96,9 @@
     {
       "type": "origins:keybind",
       "sprite": "origins:textures/gui/badge/active.png",
-      "text": "Apas\u0103 %s pentru Rage (Furie): consum\u0103 hran\u0103 pentru For\u021b\u0103 II \u0219i Rezisten\u021b\u0103 I timp de 10s. La expirare, prime\u0219ti \u00cencetinire \u0219i Oboseal\u0103 timp de 5s."
+      "text": "Apasă %s pentru Rage (Furie): consumă hrană pentru Forță II și Rezistență I timp de 10s. La expirare, primești Încetinire și Oboseală timp de 5s."
     }
   ],
-  "name": "Barbarian Rage",
-  "description": "[Primary Active] Unleash a ferocious battle cry, gaining Strength II, Speed I, and Resistance I for 10 seconds, followed by temporary fatigue."
+  "name": "Mânia Străbună",
+  "description": "[Tastă Activă Primară] Scoți un răcnet înfiorător de luptă, căpătând Putere II, Viteză I și Rezistență I preț de 10 secunde, urmat de osteneală trecătoare."
 }

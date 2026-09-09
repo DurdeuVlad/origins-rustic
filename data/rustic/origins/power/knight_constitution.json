@@ -8,9 +8,9 @@
     {
       "type": "origins:tooltip",
       "sprite": "origins:textures/gui/badge/passive.png",
-      "text": "Constitu\u021bie de Cavaler: armura \u0219i antrenamentul t\u0103u reduc toate daunele suferite cu 15%."
+      "text": "Constituție de Cavaler: armura și antrenamentul tău reduc toate daunele suferite cu 15%."
     }
   ],
-  "name": "Knightly Constitution",
-  "description": "Disciplined combat training and physical hardening reduce all incoming damage by 15%."
+  "name": "Călire de Cavaler",
+  "description": "Trupul tău învățat cu greul războiului îndură loviturile vrăjmașilor, suferind cu 15% mai puține daune din orice atac."
 }

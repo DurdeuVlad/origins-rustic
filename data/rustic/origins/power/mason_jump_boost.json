@@ -10,7 +10,7 @@
       {
         "type": "origins:keybind",
         "sprite": "origins:textures/gui/badge/toggle.png",
-        "text": "Apas\u0103 %s pentru a activa/dezactiva s\u0103ritura ridicat\u0103."
+        "text": "Apasă %s pentru a activa/dezactiva săritura ridicată."
       }
     ]
   },
@@ -33,6 +33,6 @@
       }
     }
   },
-  "name": "Solid Footing",
-  "description": "Standing on stone or brick masonry grants you elevated jumping ability."
+  "name": "Pasul pe Grindă",
+  "description": "Cumpătul pe schele și ziduri înalte îți dăruiește un salt sigur când calci pe piatră."
 }

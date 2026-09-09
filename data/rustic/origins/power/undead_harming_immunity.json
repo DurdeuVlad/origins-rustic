@@ -3,6 +3,6 @@
   "damage_condition": {
     "type": "origins:magic"
   },
-  "name": "Unholy Body",
-  "description": "Instant Harming magic heals you rather than damaging you."
+  "name": "Sânge Închegat",
+  "description": "Blestemele de vătămare și descântecele rele nu au putere asupra ta, căci ești deja trecut prin moarte."
 }

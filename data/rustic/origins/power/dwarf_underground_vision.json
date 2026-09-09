@@ -13,6 +13,6 @@
     "comparison": "<=",
     "compare_to": 124
   },
-  "name": "Darkvision",
-  "description": "Your eyes are naturally adapted to the dark caverns below Y <= 60, granting night vision."
+  "name": "Privire de Beznă",
+  "description": "Ochii tăi străpung întunericul peșterilor adânci de sub Y=60, dăruindu-ți vedere nocturnă."
 }

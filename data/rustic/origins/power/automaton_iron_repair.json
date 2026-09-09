@@ -1,20 +1,45 @@
 {
-  "type": "origins:edible_item",
-  "item_condition": {
-    "type": "origins:ingredient",
-    "ingredient": {
-      "item": "minecraft:iron_nugget"
-    }
+  "type": "origins:multiple",
+  "ingot": {
+    "type": "origins:edible_item",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "food_properties": {
+      "nutrition": 0,
+      "saturation": 0.0,
+      "can_always_eat": true
+    },
+    "entity_action": {
+      "type": "origins:heal",
+      "amount": 6.0
+    },
+    "consume_animation": "eat",
+    "consume_sound": "minecraft:entity.iron_golem.repair"
   },
-  "food_properties": {
-    "nutrition": 0,
-    "saturation": 0.0
+  "nugget": {
+    "type": "origins:edible_item",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:iron_nugget"
+      }
+    },
+    "food_properties": {
+      "nutrition": 0,
+      "saturation": 0.0,
+      "can_always_eat": true
+    },
+    "entity_action": {
+      "type": "origins:heal",
+      "amount": 1.5
+    },
+    "consume_animation": "eat",
+    "consume_sound": "minecraft:entity.iron_golem.repair"
   },
-  "entity_action": {
-    "type": "origins:heal",
-    "amount": 4.0
-  },
-  "consume_animation": "drink",
-  "name": "Iron Chassis Repair",
-  "description": "Consuming an iron ingot directly restores 3 hearts of health."
+  "name": "Repararea Șasiului de Fier",
+  "description": "Îți dregi trupul mecanic consumând lingouri de fier pentru a reface 3 inimi de viață sau pepite de fier pentru o jumătate de inimă."
 }

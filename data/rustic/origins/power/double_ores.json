@@ -4,6 +4,6 @@
     "(.*):blocks?/(.*)_ore": "rustic:double_ores"
   },
   "hidden": true,
-  "name": "Ore Duplication",
-  "description": "Your deep expertise in mining veins yields double the minerals from ores."
+  "name": "Vână Bogată",
+  "description": "Ochiul tău deprins deslușește filoanele de preț, scoțând roade îndoite din minereuri."
 }

@@ -5,6 +5,6 @@
     "operation": "add_multiplied_base",
     "value": -0.1
   },
-  "name": "Heavy Footsteps",
-  "description": "Your massive size slows your overall movement speed by 20%."
+  "name": "Pas Împovărat",
+  "description": "Trupul tău uriaș pășește cu greutate (-20% viteză de mișcare)."
 }

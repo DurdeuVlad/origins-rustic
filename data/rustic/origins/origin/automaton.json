@@ -7,6 +7,6 @@
   },
   "order": 11,
   "impact": 0,
-  "name": "Automaton",
-  "description": "A mechanical construct forged from iron. Does not naturally regenerate health, but repairs itself with iron ingots and feeds on copper."
+  "name": "Ferecătură de Fier",
+  "description": "Plăsmuire mecanică făurită din fier și aramă. Trupul său nu cunoaște vindecarea cărnii, ci se drege cu lingouri de fier și se hrănește cu aramă."
 }

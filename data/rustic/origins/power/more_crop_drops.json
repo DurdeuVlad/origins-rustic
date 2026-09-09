@@ -7,6 +7,6 @@
   "block_condition": {
     "type": "origins_classes:harvestable_crops"
   },
-  "name": "Crop Abundance",
-  "description": "You expertly harvest farm crops, doubling their total yield."
+  "name": "Recolte Îndoite",
+  "description": "Priceperea ta la cules aduce roade și semințe duble din toate semănăturile gliei."
 }

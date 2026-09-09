@@ -3,6 +3,6 @@
   "replace": {
     "minecraft:gameplay/fishing": "rustic:gameplay/fishing"
   },
-  "name": "Sunken Salvage",
-  "description": "Fishing reels in rare treasures and high-tier salvaged loot far more often."
+  "name": "Comorile Tăinuite",
+  "description": "Scoți din adâncuri sipete și odoare vechi mult mai des decât pescarii de rând."
 }

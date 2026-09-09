@@ -1,5 +1,5 @@
 {
   "type": "origins:disable_regen",
-  "name": "Non-Biological",
-  "description": "You have no biological metabolism and cannot naturally regenerate health from food saturation."
+  "name": "Fără Sânge și Carne",
+  "description": "Nu ai inimă de carne și nici sânge cald; bucatele obișnuite nu-ți pot obloji trupul de fier."
 }

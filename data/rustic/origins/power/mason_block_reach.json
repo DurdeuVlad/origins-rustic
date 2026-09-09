@@ -5,6 +5,6 @@
     "operation": "add_value",
     "value": 3.0
   },
-  "name": "Mason's Reach",
-  "description": "Extends your block interaction and placing reach by +1.5 blocks."
+  "name": "Brațul Zidarului",
+  "description": "Așezi și clădești lespezi de piatră de la depărtare mai mare."
 }
