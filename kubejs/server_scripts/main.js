@@ -29,48 +29,59 @@ function hasOriginOrClass(player, originId) {
     return false;
 }
 
-// Gating for watering can (hearthandharvest:watering_can)
+// Gating for watering can (hearthandharvest:watering_can) on blocks
 BlockEvents.rightClicked(event => {
+    let cancel = false;
     try {
         let item = event.getItem();
         let itemId = item && item.id ? String(item.id) : '';
         let player = event.getPlayer();
         if (player && itemId.includes('watering_can')) {
             let isN = hasOriginOrClass(player, 'rustic:nitwit');
-            console.log("[DEBUG] BlockEvents.rightClicked: player=" + player.username + " item=" + itemId + " isNitwit=" + isN);
             if (isN) {
                 player.displayClientMessage(Text.literal("§cNu stăpânești meșteșugul stropirii ogoarelor!"), true);
                 player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
-                event.cancel();
+                cancel = true;
             }
         }
     } catch (e) {
-        if (String(e).includes('EventExit')) throw e;
         console.error("Error in BlockEvents.rightClicked: " + e);
     }
+    if (cancel) {
+        event.cancel();
+    }
 });
 
+// Gating for watering can (air/use) and dragonborn firework rocket
 ItemEvents.rightClicked(event => {
+    let cancel = false;
     try {
         let item = event.getItem();
         let itemId = item && item.id ? String(item.id) : '';
         let player = event.getPlayer();
         if (player && itemId.includes('watering_can')) {
             let isN = hasOriginOrClass(player, 'rustic:nitwit');
-            console.log("[DEBUG] ItemEvents.rightClicked: player=" + player.username + " item=" + itemId + " isNitwit=" + isN);
             if (isN) {
                 player.displayClientMessage(Text.literal("§cNu stăpânești meșteșugul stropirii ogoarelor!"), true);
                 player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
-                event.cancel();
+                cancel = true;
+            }
+        } else if (itemId === 'minecraft:firework_rocket') {
+            if (player && player.isFallFlying() && hasOriginOrClass(player, 'rustic:dragonborn')) {
+                player.displayClientMessage(Text.literal("§cZborul de dragon este organic și nu poate fi propulsat cu artificii!"), true);
+                player.playSound('minecraft:block.fire.extinguish', 1.0, 1.0);
+                cancel = true;
             }
         }
     } catch (e) {
-        if (String(e).includes('EventExit')) throw e;
         console.error("Error in ItemEvents.rightClicked: " + e);
+    }
+    if (cancel) {
+        event.cancel();
     }
 });
 
-// Gating for butcher's cleaver (butchery:iron_cleaver, butchery:netherite_cleaver, etc.) on attack
+// Gating for butcher's cleaver on attack (deals 0 damage if nitwit)
 EntityEvents.beforeHurt(event => {
     try {
         let source = event.getSource();
@@ -81,61 +92,40 @@ EntityEvents.beforeHurt(event => {
             let itemId = item && item.id ? String(item.id) : '';
             if (itemId.includes('cleaver') || (item.hasTag && (item.hasTag('c:cleaver') || item.hasTag('forge:cleaver')))) {
                 let isN = hasOriginOrClass(attacker, 'rustic:nitwit');
-                console.log("[DEBUG] beforeHurt: attacker=" + attacker.username + " item=" + itemId + " isNitwit=" + isN);
                 if (isN) {
                     attacker.displayClientMessage(Text.literal("§cNu ai puterea și învățătura de a mânui satârul de măcelar!"), true);
                     attacker.playSound('minecraft:block.chest.locked', 1.0, 1.0);
                     event.setDamage(0);
-                    event.cancel();
                 }
             }
         }
     } catch (e) {
-        if (String(e).includes('EventExit')) throw e;
         console.error("Error in beforeHurt cleaver check: " + e);
     }
 });
 
+// Gating for butcher's cleaver on entity right-click interaction
 ItemEvents.entityInteracted(event => {
+    let cancel = false;
     try {
         let item = event.getItem();
         let itemId = item && item.id ? String(item.id) : '';
         let player = event.getPlayer();
         if (itemId.includes('cleaver') || (item.hasTag && (item.hasTag('c:cleaver') || item.hasTag('forge:cleaver')))) {
             let isN = hasOriginOrClass(player, 'rustic:nitwit');
-            console.log("[DEBUG] entityInteracted: player=" + (player ? player.username : "null") + " item=" + itemId + " isNitwit=" + isN);
             if (isN) {
                 player.displayClientMessage(Text.literal("§cNu ai puterea și învățătura de a mânui satârul de măcelar!"), true);
                 player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
-                event.cancel();
+                cancel = true;
             }
         }
     } catch (e) {
-        if (String(e).includes('EventExit')) throw e;
         console.error("Error in entityInteracted cleaver check: " + e);
     }
-});
-
-// Restriction for Dragonborn firework rocket flight boost
-ItemEvents.rightClicked(event => {
-    try {
-        let item = event.getItem();
-        let itemId = item && item.id ? String(item.id) : '';
-        if (itemId === 'minecraft:firework_rocket') {
-            let player = event.getPlayer();
-            if (player.isFallFlying() && hasOriginOrClass(player, 'rustic:dragonborn')) {
-                player.displayClientMessage(Text.literal("§cZborul de dragon este organic și nu poate fi propulsat cu artificii!"), true);
-                player.playSound('minecraft:block.fire.extinguish', 1.0, 1.0);
-                event.cancel();
-            }
-        }
-    } catch (e) {
-        if (String(e).includes('EventExit')) throw e;
-        console.error("Error in firework check: " + e);
+    if (cancel) {
+        event.cancel();
     }
 });
-
-
 
 // Debug command to verify player origins and classes
 ServerEvents.commandRegistry(event => {
@@ -156,5 +146,3 @@ ServerEvents.commandRegistry(event => {
             })
     );
 });
-
-
