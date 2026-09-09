@@ -15,6 +15,7 @@
         "rustic:salahor",
         "rustic:barbarian",
         "rustic:knight",
-        "rustic:tanner"
+        "rustic:tanner",
+        "rustic:farrier"
     ]
 }
