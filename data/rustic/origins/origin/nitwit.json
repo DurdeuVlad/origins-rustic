@@ -8,5 +8,5 @@
   "order": 0,
   "impact": 0,
   "name": "Neisprăvit",
-  "description": "Om de curte fără meșteșug învățat și fără căpătâi. Nu pricepe rânduiala uneltelor meșteșugite precum satârul sau stropitoarea."
+  "description": "Om de rând fără meșteșug. [Restricții] Nu poate uda culturile cu stropitoarea și provoacă 0 daune dacă încearcă să lovească cu satârul de măcelar."
 }

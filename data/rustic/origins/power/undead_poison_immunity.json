@@ -2,5 +2,5 @@
   "type": "origins:effect_immunity",
   "effect": "minecraft:poison",
   "name": "Neatins de Otravă",
-  "description": "Veninul de șarpe și ciupercile otrăvitoare sunt ca apa chioară pentru sângele tău rece."
+  "description": "[Pasivă] Imunitate deplină la efectul de otravă."
 }

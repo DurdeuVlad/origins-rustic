@@ -41,5 +41,5 @@
     "consume_sound": "minecraft:entity.iron_golem.repair"
   },
   "name": "Repararea Șasiului de Fier",
-  "description": "Îți dregi trupul mecanic consumând lingouri de fier pentru a reface 3 inimi de viață sau pepite de fier pentru o jumătate de inimă."
+  "description": "[Click Dreapta cu Lingou de Fier] Reface instant 3 inimi de viață (sau 0.75 inimi cu o pepită de fier) chiar și la sațietate maximă."
 }
