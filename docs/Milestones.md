@@ -57,61 +57,184 @@ graph LR
 ---
 
 ## Milestone 3: Combat & RPG Classes Expansion
-* **Strategic Intent**: Expand party combat depth in Rustic Craft 2 by introducing high-impact frontline combatants.
-* **Status**: **IN PROGRESS**
-* **Scope Boundary**: Barbarian class (completed on `feature/barbarian`), Knight class (in progress on `feature/knight`).
 
-### Issue 3.1: Barbarian Class (#1, #2, #3)
-* **Status**: **DONE** (Merged into `v2.0` via `feature/barbarian`).
+* **Strategic Intent**: Introduce tactical party combat roles for Rustic Craft 2 by implementing high-impact frontline combatants with balanced active cooldowns and trade-offs.
+* **Status**: **IN PROGRESS**
+* **Scope Boundary**: Barbarian class (Issues #1, #2, #3), Knight class (Issues #5, #6).
+
+### Issue #1: Barbarian Class (`class`)
+* **Title**: Barbarian Class
+* **Status**: **DONE** (Implemented on `feature/barbarian`, merged into `v2.0`).
 * **Intent**: Provide a berserker combatant who trades sustainability and defense for explosive offensive bursts.
 * **Expectation**:
-  * Primary active `Rage`: Costs 12 exhaustion, grants Strength II and Resistance I for 10 seconds; inflicts Slowness I and Mining Fatigue I for 5 seconds upon expiration.
-  * Secondary active `Aerial Leap`: Launches 1.1 velocity vertical leap, negates fall damage, creates an explosive shockwave upon landing that damages nearby entities by 4 HP and knocks them upward.
-  * Passive `Brute Strength`: Grants +1 flat base attack damage, but reduces total armor protection by 30%.
-* **Affected Files**:
-  * `data/rustic/origins/origin/barbarian.json`
-  * `data/rustic/origins/power/barbarian_rage.json`
-  * `data/rustic/origins/power/barbarian_aerial_leap.json`
-  * `data/rustic/origins/power/barbarian_brute_strength.json`
-  * `data/rustic/tags/origins/power/barbarian_powers.json`
-  * `data/origins_classes/tags/origins/origin/class.json`
-
-### Issue 3.2: Knight Class & Mighty Dash (#5, #6)
-* **Status**: **IN PROGRESS** (Target Branch: `feature/knight`)
-* **Intent**: Provide a disciplined armored vanguard who excels in crowd piercing and damage mitigation.
-* **Expectation**:
-  * Passive `Knight Constitution`: Reduces all damage taken by 15% (`multiply_total: -0.15`).
-  * Active `Mighty Dash`: Primary ability launching forward $n$ blocks in horizontal facing direction, detecting entities along the trajectory and applying physical damage.
+  * Selectable in Origins: Classes selection screen.
+  * Grants primary active `Rage` (`rustic:barbarian_rage`), secondary active `Aerial Leap` (`rustic:barbarian_aerial_leap`), and passive `Brute Strength` (`rustic:barbarian_brute_strength`).
+  * Restricted from specialized trade tools (`rustic:prevent_cleaver`, `rustic:prevent_watering_can`).
 * **Acceptance Criteria**:
-  - [ ] `data/rustic/origins/origin/knight.json` registered in `data/origins_classes/tags/origins/origin/class.json`.
-  - [ ] `knight_constitution.json` reduces incoming attack, projectile, and explosion damage by 15%.
-  - [ ] `knight_mighty_dash.json` dashes forward with audio cues, particle trail, cooldown indicator, and pierces entities in path.
-  - [ ] Tool restrictions: restricted from `butchery:iron_cleaver` and `hearthandharvest:watering_can`.
-* **Verification**:
-  * Test with standard Origins active keybinding (`key.origins.primary_active`), verify cooldown renders on HUD, verify damage reduction against vanilla attacks.
+  - [x] Registered in `data/origins_classes/tags/origins/origin/class.json`.
+  - [x] Origin file `data/rustic/origins/origin/barbarian.json` references `#rustic:barbarian_powers`.
+  - [x] Tag `data/rustic/tags/origins/power/barbarian_powers.json` contains all 5 power entries.
+* **Verification**: Verify class appears in selection screen; powers trigger on configured keybinds.
+
+### Issue #2: Barbarian - Aerial Leap (`power`)
+* **Title**: Barbarian - Aerial Leap
+* **Status**: **DONE** (Implemented on `feature/barbarian`, merged into `v2.0`).
+* **Intent**: Give Barbarians vertical mobility and initiating crowd control.
+* **Expectation**:
+  * Triggered via secondary active keybind (`key.origins.secondary_active`).
+  * Launches player into the air ($Y$ velocity $+1.1$), plays wind burst sound, negates all fall damage.
+  * Upon landing, creates an explosive shockwave dealing 4 HP generic damage and launching all entities within 5 blocks into the air. Cooldown: 300 ticks (15s).
+* **Acceptance Criteria**:
+  - [x] Vertical launch velocity triggers consistently when grounded.
+  - [x] Fall damage negated during leap.
+  - [x] Landing triggers shockwave sound, explosion particle, 4 HP damage, and vertical displacement.
+  - [x] Cooldown bar renders on HUD with 300 ticks.
+* **Verification**: In-game execution and landing next to test mobs.
+
+### Issue #3: Barbarian - Rage (`power`)
+* **Title**: Barbarian - Rage
+* **Status**: **DONE** (Implemented on `feature/barbarian`, merged into `v2.0`).
+* **Intent**: Berserker damage surge at the expense of severe hunger and post-rage exhaustion.
+* **Expectation**:
+  * Triggered via primary active keybind (`key.origins.primary_active`).
+  * Costs 12.0 exhaustion. Grants Strength II and Resistance I for 200 ticks (10s).
+  * Plays ravager roar and angry villager particles.
+  * Delayed by 200 ticks: applies Slowness I (100 ticks / 5s) and Mining Fatigue I (100 ticks / 5s). Cooldown: 600 ticks (30s).
+* **Acceptance Criteria**:
+  - [x] Consumes 12.0 exhaustion immediately.
+  - [x] Strength II and Resistance I applied for exactly 10s.
+  - [x] Slowness I and Mining Fatigue I applied immediately upon buff expiration for 5s.
+  - [x] 30-second cooldown displayed on HUD.
+* **Verification**: Inspect active potion effects and timing in client HUD.
+
+### Issue #5: Knight Class (`class`)
+* **Title**: Knight Class
+* **Status**: **IN PROGRESS** (Target Branch: `feature/knight`).
+* **Intent**: Provide a disciplined armored vanguard who excels in damage mitigation and crowd piercing.
+* **Expectation**:
+  * Selectable in Origins: Classes GUI with icon `minecraft:iron_chestplate`.
+  * Possesses passive damage mitigation `Knight Constitution` and active dash `Mighty Dash`.
+  * Restricted from `butchery:iron_cleaver` and `hearthandharvest:watering_can`.
+* **Acceptance Criteria**:
+  - [ ] `data/rustic/origins/origin/knight.json` created and added to `class.json`.
+  - [ ] `#rustic:knight_powers` registered with constitution, dash, and tool restrictions.
+* **Verification**: Class selection test in-game.
+
+### Issue #6: Knight - Mighty Leap / Mighty Dash (`power`)
+* **Title**: Knight - Mighty Dash
+* **Status**: **IN PROGRESS** (Target Branch: `feature/knight`).
+* **Intent**: Tactical vanguard gap-closer that damages and breaches enemy lines.
+* **Expectation**:
+  * Triggered via primary active keybind (`key.origins.primary_active`).
+  * Launches the player forward horizontally in facing direction for $n$ blocks.
+  * Detects intervening entities in trajectory and deals physical damage.
+  * Plays armor clatter audio and sweep particles. Cooldown: 200 ticks (10s).
+* **Acceptance Criteria**:
+  - [ ] Horizontal dash impulse applied along facing vector without launching excessively into the air.
+  - [ ] Detects and damages entities within dash collision box.
+  - [ ] Cooldown indicator renders cleanly on HUD.
+* **Verification**: Target dummy collision testing in-game.
 
 ---
 
 ## Milestone 4: Trade & Gathering Classes Porting
+
 * **Strategic Intent**: Complete the vocational crafting ecosystem, porting legacy RC1 jobs and establishing full tool-gating exclusivity.
 * **Status**: **SCHEDULED**
 
-### Issue 4.1: Tanner Class (#9)
-* **Intent**: Leathercraft and hide extraction specialist.
-* **Expectation**: Exclusive animal processing efficiency; hooks `data/rustic/loot_table/entities/tanner_cow.json` for bonus hides, cooked beef, and pelt drops.
-* **Files**: `data/rustic/origins/origin/tanner.json`, `data/rustic/origins/power/tanner_*.json`, `data/rustic/tags/origins/power/tanner_powers.json`.
+### Issue #4: Old Jobs (`class`)
+* **Title**: Old Jobs Porting & Verification
+* **Status**: **SCHEDULED**
+* **Intent**: Verify that all legacy job classes from RC1 function reliably in RC2 on Minecraft 1.21.1.
+* **Expectation**:
+  * Full audit of Sylvan, Dwarf, Miner, Farmer, Lumberjack, Mason, Archivist, Explorer, Salahor, Fisherman, Fisher, and Herbalist.
+  * Confirm all tool restrictions, loot tables, and potion auras resolve without console warnings.
+* **Acceptance Criteria**:
+  - [ ] All 12 base classes load and display localized badges in Origins GUI.
+  - [ ] Zero missing tag warnings in server logs during `/reload`.
 
-### Issue 4.2: Farrier Class (#11)
-* **Intent**: Equine master and breeder (Dinoria horse breeder lore).
-* **Expectation**: Passive mount speed buff, extended horse jump height, rapid equine breeding cooldowns, specialized saddle crafting/repair.
+### Issue #7: Farmer Class (`class`)
+* **Title**: Farmer Class Verification & Tool Exclusivity
+* **Status**: **SCHEDULED**
+* **Intent**: Agricultural specialist with exclusive watering can access, speed near crops, and double harvests.
+* **Expectation**:
+  * Exclusive permission for `hearthandharvest:watering_can`.
+  * Applies Speed I within 4 blocks of `#minecraft:crops`.
+  * Replaces wheat loot table with `rustic:farmer_wheat` and 2x crop drops via `rustic:more_crop_drops`.
+* **Acceptance Criteria**:
+  - [ ] Non-farmers cannot use watering can.
+  - [ ] Breaking mature wheat yields doubled crops.
+  - [ ] Speed I buff applies only when within 4 blocks of crops.
 
-### Issue 4.3: Verification of Existing Gathering Classes (#7, #8, #10, #12, #14, #4)
-* **Farmer (#7)**: Validate watering can exclusivity, crop aura, and harvest doubling.
-* **Blacksmith (#8)**: Validate repair item modifier and thermal damage mitigation.
-* **Archivist (#10)**: Validate XP-to-tome transmutation ritual (`archivist_enchantment.json`).
-* **Fisherman (#12)**: Validate Luck II passive and treasure fishing table.
-* **Nitwit (#14)**: Validate strict tool lockouts from specialized trades.
-* **Old Jobs (#4)**: Audit full feature parity against RC1 modpack requirements.
+### Issue #8: Blacksmith Class (`class`)
+* **Title**: Blacksmith Class & Gear Maintenance
+* **Status**: **SCHEDULED**
+* **Intent**: Metallurgy master with fire resistance and superior tool restoration.
+* **Expectation**:
+  * -50% fire and lava damage taken (`rustic:blacksmith_fire_resist`).
+  * Enhanced repair rates via `data/rustic/item_modifier/item_repair.json`.
+  * Exclusive access to blacksmith equipment modifiers.
+* **Acceptance Criteria**:
+  - [ ] Lava/fire damage verified at 50% reduction.
+  - [ ] Repair rates match RC2 design specifications.
+
+### Issue #9: Tanner Class (`class`)
+* **Title**: Tanner Class
+* **Status**: **SCHEDULED**
+* **Intent**: Leatherworking artisan specializing in hide processing and high-yield livestock processing.
+* **Expectation**:
+  * Allowed to wield `butchery:iron_cleaver`.
+  * Hooks `data/rustic/loot_table/entities/tanner_cow.json` for 1-3 bonus leather and fire-smelted beef.
+* **Acceptance Criteria**:
+  - [ ] `data/rustic/origins/origin/tanner.json` registered in `class.json`.
+  - [ ] Killing cows yields bonus leather and cooked beef per loot table.
+  - [ ] Permitted to use butchery cleaver without actionbar cancellation.
+
+### Issue #10: Archivist Class (`class`)
+* **Title**: Archivist Class & Enchantment Ritual
+* **Status**: **SCHEDULED**
+* **Intent**: Scholar capable of transmuting experience levels and blank books into enchanted codices.
+* **Expectation**:
+  * Active ritual (`key.use` with book and $\ge 5$ XP levels).
+  * Deducts 5 levels and rolls `data/rustic/loot_table/generic/archivist_enchantment.json`.
+* **Acceptance Criteria**:
+  - [ ] XP check strictly enforces $\ge 5$ levels.
+  - [ ] Deducts 5 levels and replaces held book with rolled enchanted book.
+  - [ ] Plays enchantment sound and particle surge.
+
+### Issue #11: Farrier Class (`class`)
+* **Title**: Farrier Class (Dinoria Horse Breeder)
+* **Status**: **SCHEDULED**
+* **Intent**: Equine master specializing in horse breeding, mount agility, and saddle maintenance.
+* **Expectation**:
+  * Passive mount speed boost and extended horse jump height.
+  * Reduced breeding cooldowns on horses.
+  * Restricted from `butchery:iron_cleaver` and `hearthandharvest:watering_can`.
+* **Acceptance Criteria**:
+  - [ ] `data/rustic/origins/origin/farrier.json` registered in `class.json`.
+  - [ ] Mounted player observes increased mount speed attribute.
+
+### Issue #12: Fisherman Class (`class`)
+* **Title**: Fisherman Class & Treasure Fishing
+* **Status**: **SCHEDULED**
+* **Intent**: Master angler with Luck II and custom treasure loot tables.
+* **Expectation**:
+  * Applies Luck II while holding fishing rod in mainhand or offhand.
+  * Replaces `minecraft:gameplay/fishing` with `rustic:gameplay/fishing`.
+* **Acceptance Criteria**:
+  - [ ] Holding fishing rod grants Luck II icon on HUD.
+  - [ ] Fishing loot rolls match `rustic:gameplay/fishing`.
+
+### Issue #14: Nitwit Class (`class`)
+* **Title**: Nitwit Class & Tool Lockouts
+* **Status**: **SCHEDULED**
+* **Intent**: Unskilled laborer restricted from specialized trade tools to prevent bypass of vocational economy.
+* **Expectation**:
+  * Restricted from `butchery:iron_cleaver` and `hearthandharvest:watering_can`.
+  * Receives clear actionbar feedback when attempting restricted item use.
+* **Acceptance Criteria**:
+  - [ ] Attempting to use cleaver or watering can displays error notice.
+  - [ ] Items are never destroyed or deleted.
 
 ---
 
