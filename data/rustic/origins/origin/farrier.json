@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "#rustic:farrier_powers"
+  ],
+  "icon": {
+    "id": "minecraft:saddle"
+  },
+  "order": 16,
+  "impact": 1
+}
