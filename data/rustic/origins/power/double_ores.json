@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "(.*):blocks?/(.*)_ore": "rustic:double_ores"
+  },
+  "hidden": true
+}
