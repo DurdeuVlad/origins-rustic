@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/potatoes": "rustic:farmer_potatoes"
+  },
+  "hidden": true
+}

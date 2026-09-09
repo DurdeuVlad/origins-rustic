@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "rustic:farrier_mounted_speed",
+        "rustic:farrier_mount_jump",
+        "rustic:farrier_equine_care"
+    ]
+}

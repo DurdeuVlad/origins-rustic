@@ -1,0 +1,22 @@
+{
+  "order": 10,
+  "enabled": true,
+  "name": {
+    "text": "Clasă"
+  },
+  "gui_title": {
+    "choose_origin": {
+      "text": "Alege-ți Clasa"
+    },
+    "view_origin": {
+      "text": "Clasa Ta"
+    }
+  },
+  "origins": [
+    "#origins_classes:class"
+  ],
+  "allow_random": true,
+  "exclude_random": [
+    "rustic:nitwit"
+  ]
+}

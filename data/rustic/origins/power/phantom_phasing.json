@@ -10,16 +10,16 @@
   "phase_down_condition": {
     "type": "origins:and",
     "conditions": [
-        {
-          "type": "origins:sneaking"
-        },
-        {
-          "type": "origins:on_block"
-        },
-        {
-          "type": "origins:power_active",
-          "power": "origins:phantomize"
-        }
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:on_block"
+      },
+      {
+        "type": "origins:power_active",
+        "power": "origins:phantomize"
+      }
     ]
   }
 }

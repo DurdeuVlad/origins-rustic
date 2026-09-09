@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/cocoa": "rustic:farmer_cocoa"
+  },
+  "hidden": true
+}

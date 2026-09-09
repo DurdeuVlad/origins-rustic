@@ -1,0 +1,22 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "condition": {
+    "type": "origins:riding"
+  },
+  "entity_action": {
+    "type": "origins:riding_action",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:jump_boost",
+        "duration": 40,
+        "amplifier": 0,
+        "ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      }
+    }
+  },
+  "hidden": true
+}

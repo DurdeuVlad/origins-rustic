@@ -5,11 +5,11 @@
     "tag": "rustic:undead_food"
   },
   "food_modifier": {
-    "operation": "add_value",
+    "operation": "add_base_early",
     "value": 4.0
   },
   "saturation_modifier": {
-    "operation": "add_value",
+    "operation": "add_base_early",
     "value": 0.5
   }
 }

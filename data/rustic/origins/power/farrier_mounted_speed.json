@@ -1,0 +1,28 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "condition": {
+    "type": "origins:riding"
+  },
+  "entity_action": {
+    "type": "origins:riding_action",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:speed",
+        "duration": 40,
+        "amplifier": 0,
+        "ambient": false,
+        "show_particles": false,
+        "show_icon": true
+      }
+    }
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/passive.png",
+      "text": "Potcovar din Dinoria: călăria ta este impecabilă, acordând monturii tale viteză sporită (Viteză I)."
+    }
+  ]
+}

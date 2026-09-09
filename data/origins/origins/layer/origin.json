@@ -1,0 +1,22 @@
+{
+  "order": 0,
+  "enabled": true,
+  "name": {
+    "text": "Origine"
+  },
+  "gui_title": {
+    "choose_origin": {
+      "text": "Alege-ți Originea"
+    },
+    "view_origin": {
+      "text": "Originea Ta"
+    }
+  },
+  "origins": [
+    "#origins:origin"
+  ],
+  "allow_random": true,
+  "exclude_random": [
+    "rustic:human"
+  ]
+}

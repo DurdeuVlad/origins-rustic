@@ -1,6 +1,4 @@
 {
-  "type": "origins:invulnerability",
-  "damage_condition": {
-    "type": "origins:magic"
-  }
+  "type": "origins:effect_immunity",
+  "effect": "minecraft:instant_damage"
 }

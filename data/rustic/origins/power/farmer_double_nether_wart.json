@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/nether_wart": "rustic:farmer_nether_wart"
+  },
+  "hidden": true
+}

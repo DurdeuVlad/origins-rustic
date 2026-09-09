@@ -1,10 +1,12 @@
 {
     "replace": false,
     "values": [
-        "rustic:prevent_watering_can",
-        "rustic:prevent_cleaver",
-        "origins_classes:more_crop_drops",
         "rustic:farmer_crop_speed",
-        "rustic:farmer_double_wheat"
+        "rustic:farmer_double_wheat",
+        "rustic:farmer_double_carrots",
+        "rustic:farmer_double_potatoes",
+        "rustic:farmer_double_beetroots",
+        "rustic:farmer_double_nether_wart",
+        "rustic:farmer_double_cocoa"
     ]
 }

@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/beetroots": "rustic:farmer_beetroots"
+  },
+  "hidden": true
+}

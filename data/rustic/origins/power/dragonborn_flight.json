@@ -10,7 +10,7 @@
       {
         "type": "origins:keybind",
         "sprite": "origins:textures/gui/badge/toggle.png",
-        "text": "Apasă %s pentru a activa/dezactiva zborul estic."
+        "text": "Apasă %s pentru a activa/dezactiva zborul de dragon."
       }
     ]
   },
@@ -40,6 +40,18 @@
     "entity_action": {
       "type": "origins:exhaust",
       "amount": 1.0
+    }
+  },
+  "prevent_firework": {
+    "type": "origins:prevent_item_use",
+    "condition": {
+      "type": "origins:fall_flying"
+    },
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:firework_rocket"
+      }
     }
   }
 }
