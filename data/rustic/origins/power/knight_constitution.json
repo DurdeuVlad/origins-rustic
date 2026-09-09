@@ -1,0 +1,14 @@
+{
+  "type": "origins:modify_damage_taken",
+  "modifier": {
+    "operation": "multiply_total",
+    "value": -0.15
+  },
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/passive.png",
+      "text": "Constituție de Cavaler: armura și antrenamentul tău reduc toate daunele suferite cu 15%."
+    }
+  ]
+}
