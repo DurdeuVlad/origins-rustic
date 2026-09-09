@@ -1,0 +1,87 @@
+{
+  "type": "origins:multiple",
+  "leap": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:add_velocity",
+          "x": 0.0,
+          "y": 1.1,
+          "z": 0.0,
+          "space": "velocity",
+          "set": false
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.wind_charge.wind_burst player @a ~ ~ ~ 1.2 0.8"
+        },
+        {
+          "type": "origins:spawn_particles",
+          "particle": {
+            "type": "minecraft:cloud"
+          },
+          "count": 12,
+          "speed": 0.2,
+          "force": true,
+          "spread": [
+            0.4,
+            0.1,
+            0.4
+          ]
+        }
+      ]
+    },
+    "cooldown": 300,
+    "hud_render": {
+      "should_render": true,
+      "bar_index": 1
+    },
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "badges": [
+      {
+        "type": "origins:keybind",
+        "sprite": "origins:textures/gui/badge/active.png",
+        "text": "Apasă %s pentru Aerial Leap: sari puternic în aer. La aterizare, creezi o undă de șoc care aruncă în aer entitățile din jur."
+      }
+    ]
+  },
+  "no_fall_damage": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": -1.0
+    },
+    "damage_condition": {
+      "type": "origins:name",
+      "name": "fall"
+    }
+  },
+  "landing_shockwave": {
+    "type": "origins:action_on_land",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.8 1.4"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "particle minecraft:explosion ~ ~ ~ 0.5 0.1 0.5 0 6"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "damage @e[distance=0.1..5,limit=10] 4 minecraft:generic"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "execute at @s as @e[distance=0.1..5,limit=10] run tp @s ~ ~0.8 ~"
+        }
+      ]
+    }
+  }
+}

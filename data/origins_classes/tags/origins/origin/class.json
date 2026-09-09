@@ -12,6 +12,7 @@
         "rustic:miner",
         "rustic:archivist",
         "rustic:explorer",
-        "rustic:salahor"
+        "rustic:salahor",
+        "rustic:barbarian"
     ]
 }
