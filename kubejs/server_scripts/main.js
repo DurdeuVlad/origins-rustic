@@ -1,4 +1,6 @@
 const $OriginsJS = Java.loadClass('com.iafenvoy.origins.js.binding.OriginsJSBindings');
+const $NeoForge = Java.loadClass('net.neoforged.neoforge.common.NeoForge');
+const $AttackEntityEvent = Java.loadClass('net.neoforged.neoforge.event.entity.player.AttackEntityEvent');
 
 function hasOriginOrClass(player, originId) {
     if (!player) return false;
@@ -81,7 +83,29 @@ ItemEvents.rightClicked(event => {
     }
 });
 
-// Gating for butcher's cleaver on attack (deals 0 damage if nitwit)
+// Gating for butcher's cleaver on attack using NeoForge AttackEntityEvent (cancels attack before it lands)
+let attackConsumer = (event) => {
+    try {
+        let player = event.getEntity();
+        if (!player) return;
+        let item = player.mainHandItem || (player.getMainHandItem ? player.getMainHandItem() : null);
+        let itemId = item && item.id ? String(item.id) : '';
+        if (itemId.includes('cleaver') || (item.hasTag && (item.hasTag('c:cleaver') || item.hasTag('forge:cleaver')))) {
+            let isN = hasOriginOrClass(player, 'rustic:nitwit');
+            if (isN) {
+                player.displayClientMessage(Text.literal("§cNu ai puterea și învățătura de a mânui satârul de măcelar!"), true);
+                player.playSound('minecraft:block.chest.locked', 1.0, 1.0);
+                event.setCanceled(true);
+            }
+        }
+    } catch (e) {
+        console.error("Error in AttackEntityEvent listener: " + e);
+    }
+};
+
+$NeoForge.EVENT_BUS['addListener(java.lang.Class,java.util.function.Consumer)']($AttackEntityEvent, attackConsumer);
+
+// Fallback damage prevention in case attack somehow bypassed AttackEntityEvent
 EntityEvents.beforeHurt(event => {
     try {
         let source = event.getSource();
