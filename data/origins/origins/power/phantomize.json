@@ -1,0 +1,15 @@
+{
+  "type": "origins:toggle",
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "retain_state": false,
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": ">",
+    "compare_to": 6
+  },
+  "name": "Trup de Nălucă",
+  "description": "[Tasta G] Te preschimbi după voie între trup de om și nălucă diafană, dacă ești destul de sătul spre a alerga."
+}

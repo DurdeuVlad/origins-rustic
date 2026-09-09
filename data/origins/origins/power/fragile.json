@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.max_health",
+    "value": -6,
+    "operation": "add_value"
+  },
+  "name": "Trup Zmuls din Fire",
+  "description": "[Dezavantaj] Trupul tău firav are cu 3 inimi mai puțină viață decât un pământean (7 inimi maxime)."
+}

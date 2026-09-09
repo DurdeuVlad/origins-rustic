@@ -1,0 +1,16 @@
+{
+  "order": 0,
+  "enabled": true,
+  "name": "Seminție & Făptură",
+  "gui_title": {
+    "choose_origin": "Alege-ți Seminția și Făptura de Obârșie",
+    "view_origin": "Iată Seminția și Făptura Ta Rânduită"
+  },
+  "origins": [
+    "#origins:origin"
+  ],
+  "allow_random": true,
+  "exclude_random": [
+    "rustic:human"
+  ]
+}
