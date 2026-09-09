@@ -102,6 +102,33 @@ data get entity <player> active_effects
 
 ---
 
+### Batch 5: KubeJS Live Class & Origin Restrictions
+
+1. **Nitwit Tool Restrictions (Watering Can & Cleaver)**:
+   ```mcfunction
+   origin set <player> origins_classes:class rustic:nitwit
+   give <player> hearthandharvest:watering_can 1
+   give <player> butchery:iron_cleaver 1
+   execute at <player> run summon minecraft:pig ~1 ~ ~ {NoAI:1b,CustomName:'"Porc Test"'}
+
+   # Right-click crop/block with Watering Can:
+   # Expected: Sound minecraft:block.chest.locked, red message on actionbar, watering cancelled.
+
+   # Left-click (attack) pig with Butcher's Cleaver:
+   # Expected: Sound minecraft:block.chest.locked, red message on actionbar, attack cancelled before landing (0 damage, no hit animation, no knockback).
+   ```
+
+2. **Dragonborn Flight Restriction (Firework Rocket Boost Blocked)**:
+   ```mcfunction
+   origin set <player> origins:origin rustic:dragonborn
+   give <player> minecraft:firework_rocket 1
+
+   # Jump from height to glide with innate dragon wings, then right-click firework rocket:
+   # Expected: Sound minecraft:block.fire.extinguish, actionbar message "Zborul de dragon este organic și nu poate fi propulsat cu artificii!", firework not consumed.
+   ```
+
+---
+
 ## 3. Knight Damage Reduction Caveat (FAQ)
 
 When testing or reviewing Knight's damage mitigation, note the following:
