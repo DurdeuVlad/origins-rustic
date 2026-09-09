@@ -10,7 +10,7 @@
       {
         "type": "origins:keybind",
         "sprite": "origins:textures/gui/badge/toggle.png",
-        "text": "Apasă %s pentru a activa/dezactiva zborul estic."
+        "text": "Apasă %s pentru a activa/dezactiva zborul de dragon."
       }
     ]
   },
@@ -42,6 +42,18 @@
       "amount": 1.0
     }
   },
+  "prevent_firework": {
+    "type": "origins:prevent_item_use",
+    "condition": {
+      "type": "origins:fall_flying"
+    },
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:firework_rocket"
+      }
+    }
+  },
   "name": "Aripi de Dragon",
   "description": {
     "text": "[Apasă ",
@@ -52,7 +64,7 @@
         "color": "gold"
       },
       {
-        "text": " (Abilitate Primară)] Activează zborul asemănător cu elytrele. Poți zbura liber prin văzduh."
+        "text": " (Abilitate Primară)] Activează zborul asemănător cu elytrele. Poți zbura liber prin văzduh. [Restricție] Zborul de dragon este organic și nu poate fi propulsat cu artificii."
       }
     ]
   }

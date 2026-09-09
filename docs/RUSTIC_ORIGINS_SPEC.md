@@ -112,7 +112,8 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
     * Action: Applies `minecraft:fire_resistance` (Duration: 60 ticks).
   * `rustic:dragonborn_flight`:
     * Type: `origins:multiple`
-    * Bundles creative flight capability with a resource gauge, disabled if player wears `#rustic:heavy_armor`.
+    * Bundles elytra flight capability toggled via Primary Active key (`key.origins.primary_active`).
+    * Includes `prevent_firework` (`origins:prevent_item_use`): Prevents boosting with `minecraft:firework_rocket` while `origins:fall_flying` to eliminate infinite flight exploitation.
 
 ---
 
