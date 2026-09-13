@@ -1,5 +1,9 @@
 {
   "type": "origins:phasing",
+  "condition": {
+    "type": "origins:power_active",
+    "power": "origins:phantomize"
+  },
   "blacklist": true,
   "render_type": "blindness",
   "view_distance": 10,
