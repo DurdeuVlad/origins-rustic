@@ -68,7 +68,7 @@
   "power.rustic.blacksmith_fire_resist.name": "Călirea Focului",
   "power.rustic.blacksmith_fire_resist.description": "[Pasivă] Pielea ta călită la furnal reduce toate daunele de foc și lavă cu 50%.",
   "power.rustic.dragonborn_flight.name": "Aripi de Zmeu",
-  "power.rustic.dragonborn_flight.description": "[Tasta G / Primară] Activează/dezactivează aripile de zmeu pentru zbor de elitră când nu poartă armură grea.",
+  "power.rustic.dragonborn_flight.description": "[Tasta G / Primară] Activează/dezactivează aripile de zmeu pentru zbor de elitră doar când nu porți nicio armură.",
   "power.rustic.dragonborn_resistance.name": "Solzi de Balaur",
   "power.rustic.dragonborn_resistance.description": "[Pasivă] Solzii tari te fac complet imun la daunele provocate de foc și lavă.",
   "power.rustic.dwarf_pickaxe_haste.name": "Meșteșugul Târnăcopului",
