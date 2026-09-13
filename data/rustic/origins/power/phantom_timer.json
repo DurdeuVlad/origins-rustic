@@ -1,0 +1,13 @@
+{
+  "type": "origins:resource",
+  "min": 0,
+  "max": 20,
+  "start_value": 0,
+  "hud_render": {
+    "should_render": false
+  },
+  "max_action": {
+    "type": "origins:toggle",
+    "power": "origins:phantomize"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "condition": {
+    "type": "origins:power_active",
+    "power": "origins:phantomize"
+  },
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "rustic:phantom_timer",
+    "change": 1,
+    "operation": "add"
+  },
+  "falling_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:trigger_cooldown",
+        "power": "rustic:phantom_cooldown"
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "rustic:phantom_timer",
+        "change": 0,
+        "operation": "set"
+      }
+    ]
+  }
+}
