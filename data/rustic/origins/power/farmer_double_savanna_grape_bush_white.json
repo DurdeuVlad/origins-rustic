@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "vinery:blocks/savanna_grape_bush_white": "rustic:farmer_savanna_grape_bush_white"
+  },
+  "hidden": true
+}

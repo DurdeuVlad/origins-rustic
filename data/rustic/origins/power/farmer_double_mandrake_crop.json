@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "hexalia:blocks/mandrake_crop": "rustic:farmer_mandrake_crop"
+  },
+  "hidden": true
+}

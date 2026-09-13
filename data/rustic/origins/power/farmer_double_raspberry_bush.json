@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "hearthandharvest:blocks/raspberry_bush": "rustic:farmer_raspberry_bush"
+  },
+  "hidden": true
+}

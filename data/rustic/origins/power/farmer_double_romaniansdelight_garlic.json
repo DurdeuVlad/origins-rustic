@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "romaniansdelight:blocks/garlic": "rustic:farmer_romaniansdelight_garlic"
+  },
+  "hidden": true
+}

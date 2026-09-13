@@ -140,12 +140,5 @@
   },
   "key": {
     "key": "key.origins.primary_active"
-  },
-  "badges": [
-    {
-      "type": "origins:keybind",
-      "sprite": "origins:textures/gui/badge/active.png",
-      "text": "Apasă %s pentru Îngrijire Domnească: revigorează armăsarul cu Regenerare II și Viteză II."
-    }
-  ]
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/emerald_ore": "rustic:miner_emerald_ore"
+  },
+  "hidden": true
+}

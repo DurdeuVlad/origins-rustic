@@ -62,12 +62,5 @@
         "compare_to": 5
       }
     ]
-  },
-  "badges": [
-    {
-      "type": "origins:keybind",
-      "sprite": "origins:textures/gui/badge/active.png",
-      "text": "Apasă %s ținând o carte în mâna principală cu cel puțin 5 niveluri de XP. Consumă 5 niveluri de XP."
-    }
-  ]
+  }
 }

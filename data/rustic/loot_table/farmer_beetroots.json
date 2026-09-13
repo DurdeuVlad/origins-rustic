@@ -8,7 +8,7 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -18,8 +18,8 @@
               "name": "minecraft:beetroot",
               "conditions": [
                 {
-                  "block": "minecraft:beetroots",
                   "condition": "minecraft:block_state_property",
+                  "block": "minecraft:beetroots",
                   "properties": {
                     "age": "3"
                   }
@@ -36,11 +36,11 @@
     },
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "conditions": [
         {
-          "block": "minecraft:beetroots",
           "condition": "minecraft:block_state_property",
+          "block": "minecraft:beetroots",
           "properties": {
             "age": "3"
           }
@@ -56,11 +56,30 @@
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 3,
-                "probability": 0.5714286
+                "probability": 0.5714286,
+                "extra": 3
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:beetroots",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beetroot"
         }
       ]
     }

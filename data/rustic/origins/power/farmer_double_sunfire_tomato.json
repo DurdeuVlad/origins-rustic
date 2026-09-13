@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "hexalia:blocks/sunfire_tomato_crop": "rustic:farmer_sunfire_tomato"
+  },
+  "hidden": true
+}

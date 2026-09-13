@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "butchery:blocks/deepslate_sulfur_ore": "rustic:miner_deepslate_sulfur_ore"
+  },
+  "hidden": true
+}

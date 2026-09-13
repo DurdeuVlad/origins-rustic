@@ -8,7 +8,7 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -18,11 +18,11 @@
     },
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "conditions": [
         {
-          "block": "minecraft:potatoes",
           "condition": "minecraft:block_state_property",
+          "block": "minecraft:potatoes",
           "properties": {
             "age": "7"
           }
@@ -38,8 +38,8 @@
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
               "parameters": {
-                "extra": 3,
-                "probability": 0.5714286
+                "probability": 0.5714286,
+                "extra": 3
               }
             }
           ]
@@ -51,8 +51,8 @@
       "rolls": 1.0,
       "conditions": [
         {
-          "block": "minecraft:potatoes",
           "condition": "minecraft:block_state_property",
+          "block": "minecraft:potatoes",
           "properties": {
             "age": "7"
           }
@@ -61,13 +61,32 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
           "conditions": [
             {
-              "chance": 0.02,
-              "condition": "minecraft:random_chance"
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
             }
-          ],
-          "name": "minecraft:poisonous_potato"
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:potatoes",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potato"
         }
       ]
     }

@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    {
-      "id": "tetra:modular_crossbow",
-      "required": false
-    }
-  ]
-}

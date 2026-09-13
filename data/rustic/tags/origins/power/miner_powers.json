@@ -1,7 +1,32 @@
 {
-    "replace": false,
-    "values": [
-        "rustic:no_mining_exhaustion",
-        "rustic:more_stone_break_speed"
-    ]
+  "replace": false,
+  "values": [
+    "rustic:no_mining_exhaustion",
+    "rustic:more_stone_break_speed",
+    "rustic:miner_double_coal_ore",
+    "rustic:miner_double_deepslate_coal_ore",
+    "rustic:miner_double_iron_ore",
+    "rustic:miner_double_deepslate_iron_ore",
+    "rustic:miner_double_copper_ore",
+    "rustic:miner_double_deepslate_copper_ore",
+    "rustic:miner_double_gold_ore",
+    "rustic:miner_double_deepslate_gold_ore",
+    "rustic:miner_double_diamond_ore",
+    "rustic:miner_double_deepslate_diamond_ore",
+    "rustic:miner_double_emerald_ore",
+    "rustic:miner_double_deepslate_emerald_ore",
+    "rustic:miner_double_nether_quartz_ore",
+    "rustic:miner_double_nether_gold_ore",
+    "rustic:miner_double_redstone_ore",
+    "rustic:miner_double_deepslate_redstone_ore",
+    "rustic:miner_double_lapis_ore",
+    "rustic:miner_double_deepslate_lapis_ore",
+    "rustic:miner_double_ancient_debris",
+    "rustic:miner_double_zinc_ore",
+    "rustic:miner_double_deepslate_zinc_ore",
+    "rustic:miner_double_sulfur_ore",
+    "rustic:miner_double_deepslate_sulfur_ore",
+    "rustic:miner_double_silver_ore",
+    "rustic:miner_double_deepslate_silver_ore"
+  ]
 }

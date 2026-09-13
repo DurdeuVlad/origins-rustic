@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "culturaldelights:blocks/corn_upper": "rustic:farmer_corn_upper"
+  },
+  "hidden": true
+}

@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/iron_ore": "rustic:miner_iron_ore"
+  },
+  "hidden": true
+}

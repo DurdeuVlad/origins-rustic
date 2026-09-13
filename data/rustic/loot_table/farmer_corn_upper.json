@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "farmersdelight:straw",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "culturaldelights:corn_upper",
+                  "properties": {
+                    "age": "3"
+                  }
+                },
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "#farmersdelight:tools/knives"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "culturaldelights:corn_cob",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "culturaldelights:corn_upper",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "culturaldelights:corn_upper",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "culturaldelights:corn_cob"
+        }
+      ]
+    }
+  ]
+}

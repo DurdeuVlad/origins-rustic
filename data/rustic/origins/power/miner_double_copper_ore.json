@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/copper_ore": "rustic:miner_copper_ore"
+  },
+  "hidden": true
+}

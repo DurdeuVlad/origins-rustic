@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "hexalia:blocks/saltsprout": "rustic:farmer_saltsprout"
+  },
+  "hidden": true
+}

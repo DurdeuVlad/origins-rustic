@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/ancient_debris": "rustic:miner_ancient_debris"
+  },
+  "hidden": true
+}

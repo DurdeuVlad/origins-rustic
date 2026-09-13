@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "werewolves:blocks/deepslate_silver_ore": "rustic:miner_deepslate_silver_ore"
+  },
+  "hidden": true
+}

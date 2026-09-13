@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "kaleidoscope_cookery:blocks/rice_crop": "rustic:farmer_kc_rice_crop"
+  },
+  "hidden": true
+}

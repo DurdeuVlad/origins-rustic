@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "farmersrespite:blocks/tea_bush": "rustic:farmer_tea_bush"
+  },
+  "hidden": true
+}

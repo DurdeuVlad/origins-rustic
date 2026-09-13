@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/lapis_ore": "rustic:miner_lapis_ore"
+  },
+  "hidden": true
+}

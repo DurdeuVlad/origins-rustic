@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "vinery:blocks/taiga_grape_bush_red": "rustic:farmer_taiga_grape_bush_red"
+  },
+  "hidden": true
+}

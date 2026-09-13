@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "fungidelight:blocks/morel_mushroom_colony": "rustic:farmer_morel_mushroom_colony"
+  },
+  "hidden": true
+}

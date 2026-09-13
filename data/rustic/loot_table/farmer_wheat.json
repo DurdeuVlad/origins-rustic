@@ -8,7 +8,7 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -36,7 +36,7 @@
     },
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
@@ -61,6 +61,25 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:wheat",
+          "properties": {
+            "age": "7"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wheat"
         }
       ]
     }

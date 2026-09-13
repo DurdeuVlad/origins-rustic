@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "farmersdelight:blocks/tomatoes_on_rope": "rustic:farmer_tomatoes_on_rope"
+  },
+  "hidden": true
+}

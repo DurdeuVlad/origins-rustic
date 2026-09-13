@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/gold_ore": "rustic:miner_gold_ore"
+  },
+  "hidden": true
+}

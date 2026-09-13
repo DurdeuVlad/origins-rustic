@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "farmersdelight:blocks/brown_mushroom_colony": "rustic:farmer_brown_mushroom_colony"
+  },
+  "hidden": true
+}

@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "create:blocks/zinc_ore": "rustic:miner_zinc_ore"
+  },
+  "hidden": true
+}

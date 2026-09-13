@@ -1,0 +1,187 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "fungidelight:morel_mushroom",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "fungidelight:morel_mushroom_colony",
+                  "properties": {
+                    "age": "0"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fungidelight:morel_mushroom",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "fungidelight:morel_mushroom_colony",
+                  "properties": {
+                    "age": "1"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fungidelight:morel_mushroom",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "fungidelight:morel_mushroom_colony",
+                  "properties": {
+                    "age": "2"
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 4
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fungidelight:morel_mushroom",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "fungidelight:morel_mushroom_colony",
+                  "properties": {
+                    "age": "3"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:any_of",
+                    "terms": [
+                      {
+                        "ability": "shears_dig",
+                        "condition": "neoforge:can_item_perform_ability"
+                      },
+                      {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                          "predicates": {
+                            "minecraft:enchantments": [
+                              {
+                                "enchantments": "minecraft:silk_touch",
+                                "levels": {
+                                  "min": 1
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "fungidelight:morel_mushroom_colony",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "ability": "shears_dig",
+                      "condition": "neoforge:can_item_perform_ability"
+                    },
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "predicates": {
+                          "minecraft:enchantments": [
+                            {
+                              "enchantments": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "fungidelight:morel_mushroom_colony",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "fungidelight:morel_mushroom_colony",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "fungidelight:morel_mushroom",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 5.0,
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

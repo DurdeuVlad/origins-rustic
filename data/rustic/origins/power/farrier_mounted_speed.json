@@ -17,12 +17,5 @@
         "show_icon": true
       }
     }
-  },
-  "badges": [
-    {
-      "type": "origins:tooltip",
-      "sprite": "origins:textures/gui/badge/passive.png",
-      "text": "Potcovar din Dinoria: călăria ta este impecabilă, acordând monturii tale viteză sporită (Viteză I)."
-    }
-  ]
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "farmersrespite:blocks/coffee_stem_double": "rustic:farmer_coffee_stem_double"
+  },
+  "hidden": true
+}

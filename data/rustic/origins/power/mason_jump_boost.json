@@ -5,14 +5,7 @@
     "active_by_default": false,
     "key": {
       "key": "key.origins.secondary_active"
-    },
-    "badges": [
-      {
-        "type": "origins:keybind",
-        "sprite": "origins:textures/gui/badge/toggle.png",
-        "text": "Apasă %s pentru a activa/dezactiva săritura ridicată."
-      }
-    ]
+    }
   },
   "jump_boost": {
     "type": "origins:action_over_time",

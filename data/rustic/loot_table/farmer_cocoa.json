@@ -8,7 +8,7 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "rolls": 2.0,
+      "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -19,14 +19,57 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "minecraft:cocoa",
                   "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cocoa",
                   "properties": {
                     "age": "2"
                   }
                 }
               ],
               "count": 3.0
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cocoa",
+                  "properties": {
+                    "age": "2"
+                  }
+                }
+              ],
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:uniform_bonus_count",
+              "parameters": {
+                "bonusMultiplier": 0.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:cocoa",
+          "properties": {
+            "age": "2"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cocoa_beans",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3.0,
+              "add": false
             }
           ]
         }

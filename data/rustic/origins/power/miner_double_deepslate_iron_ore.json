@@ -1,0 +1,7 @@
+{
+  "type": "origins:replace_loot_table",
+  "replace": {
+    "minecraft:blocks/deepslate_iron_ore": "rustic:miner_deepslate_iron_ore"
+  },
+  "hidden": true
+}
