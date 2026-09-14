@@ -43,6 +43,8 @@
   "origin.rustic.sylvan.description": "Suflet al pădurii. [Sub Frunziș de Pădure] Aleargă cu viteză sporită (+20%) sub bolta copacilor de codru sau junglă.",
   "origin.rustic.undead.name": "Nemort",
   "origin.rustic.undead.description": "Nemort sculat din groapă. [Click Dreapta cu Carne Putredă] Se hrănește și își vindecă viața fără greață. [Pasivă] Imun la otravă și vătămare magică; are doar 7 inimi max. [Sub Soare] Arde dacă nu poartă coif.",
+  "origin.rustic.vampire.name": "Vampir",
+  "origin.rustic.vampire.description": "Făptură a nopții. [Atac Melee] Fură viață din inamici la fiecare lovitură de armă. [Sub Soare] Arde violent când este expus luminii de zi.",
   "power.rustic.amphibian_dry_weakness.name": "Vlăguire pe Uscat",
   "power.rustic.amphibian_dry_weakness.description": "[Pasivă] Departe de apă și fără ploaie, trupul se usucă, provocând încetinire și slăbiciune.",
   "power.rustic.amphibian_ignore_water.name": "Mersul prin Unde",
