@@ -1,0 +1,15 @@
+{
+  "type": "origins:action_over_time",
+  "hidden": true,
+  "interval": 20,
+  "condition": {
+    "type": "origins:power_active",
+    "power": "origins:phantomize"
+  },
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "rustic:phantom_timer",
+    "change": 1,
+    "operation": "add"
+  }
+}

@@ -6,8 +6,19 @@
   },
   "retain_state": false,
   "condition": {
-    "type": "origins:food_level",
-    "comparison": ">",
-    "compare_to": 6
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:food_level",
+        "comparison": ">",
+        "compare_to": 6
+      },
+      {
+        "type": "origins:resource",
+        "resource": "rustic:phantom_cooldown",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    ]
   }
 }
