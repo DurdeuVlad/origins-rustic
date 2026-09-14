@@ -10,20 +10,5 @@
     "resource": "rustic:phantom_timer",
     "change": 1,
     "operation": "add"
-  },
-  "falling_action": {
-    "type": "origins:and",
-    "actions": [
-      {
-        "type": "origins:trigger_cooldown",
-        "power": "rustic:phantom_cooldown"
-      },
-      {
-        "type": "origins:change_resource",
-        "resource": "rustic:phantom_timer",
-        "change": 0,
-        "operation": "set"
-      }
-    ]
   }
 }
