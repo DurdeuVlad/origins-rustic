@@ -1,5 +1,6 @@
 {
   "type": "origins:action_over_time",
+  "hidden": true,
   "interval": 20,
   "condition": {
     "type": "origins:power_active",
