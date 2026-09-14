@@ -6,6 +6,10 @@
         "origins:fragile",
         "origins:phantomize_overlay",
         "origins:phantomize_callback",
-        "rustic:phantom_phasing"
+        "rustic:phantom_phasing",
+        "rustic:phantom_cooldown",
+        "rustic:phantom_timer",
+        "rustic:phantom_ticker",
+        "rustic:phantom_cooldown_trigger"
     ]
 }
