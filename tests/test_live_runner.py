@@ -82,10 +82,21 @@ class TestDockerStatusCheck:
     def test_container_not_found(self, mock_run):
         mock_proc = MagicMock()
         mock_proc.returncode = 1
+        mock_proc.stderr = "Error: No such container: nonexistent-container\n"
         mock_run.return_value = mock_proc
 
         status = get_container_status("nonexistent-container")
         assert status == "not_found"
+
+    @patch("subprocess.run")
+    def test_container_inspect_error_is_distinct_from_not_found(self, mock_run):
+        mock_proc = MagicMock()
+        mock_proc.returncode = 1
+        mock_proc.stderr = "permission denied while trying to connect to the Docker daemon\n"
+        mock_run.return_value = mock_proc
+
+        status = get_container_status("mc-staging-server")
+        assert status.startswith("error:")
 
 
 class TestPlayerMissingDetection:
@@ -195,6 +206,113 @@ class TestBatchExecutionAndAssertions:
         assert passed == 0
         assert failed == 0
         assert errored == 1
+
+    @patch("tests.test_origins_live.run_rcon_command")
+    def test_unknown_origin_is_reported_as_error_and_blocks_following_assertion(self, mock_cmd):
+        mock_cmd.side_effect = [
+            (0, "Unknown origin rustic:barbarian", ""),
+            (0, "Entity test_player has attribute generic.attack_damage with value 2.0", ""),
+        ]
+        steps = [
+            TestStep(
+                command="origin set test_player origins_classes:class rustic:barbarian",
+                description="Deleted class setup",
+                is_setup=True,
+                expected_text="Set class",
+            ),
+            TestStep(
+                command="attribute test_player generic.attack_damage get",
+                description="Deleted class assertion",
+                expected_text="2.0",
+                check_fn=lambda r: "2.0" in r,
+            ),
+        ]
+
+        passed, failed, errored = run_batch("invalid_origin", steps, "dummy-container", "dummy-pw")
+
+        assert passed == 0
+        assert failed == 0
+        assert errored == 2
+
+    @patch("tests.test_origins_live.run_rcon_command")
+    def test_nonzero_exit_with_stdout_is_still_an_error(self, mock_cmd):
+        mock_cmd.return_value = (1, "Unknown origin rustic:barbarian", "transport warning")
+        step = TestStep(
+            command="origin set test_player origins_classes:class rustic:barbarian",
+            description="Deleted class setup",
+            is_setup=True,
+            expected_text="Set class",
+        )
+
+        passed, failed, errored = run_batch("nonzero_stdout", [step], "dummy-container", "dummy-pw")
+
+        assert passed == 0
+        assert failed == 0
+        assert errored == 1
+
+    @patch("tests.test_origins_live.run_rcon_command")
+    def test_empty_rcon_response_is_an_error(self, mock_cmd):
+        mock_cmd.return_value = (0, "", "")
+        step = TestStep(
+            command="gamemode survival test_player",
+            description="Gamemode setup",
+            is_setup=True,
+            expected_text="Set game mode",
+        )
+
+        passed, failed, errored = run_batch("empty_response", [step], "dummy-container", "dummy-pw")
+
+        assert passed == 0
+        assert failed == 0
+        assert errored == 1
+
+    @patch("tests.test_origins_live.subprocess.run")
+    def test_rcon_invocation_passes_one_minecraft_command_argument(self, mock_run):
+        mock_proc = MagicMock()
+        mock_proc.returncode = 0
+        mock_proc.stdout = "ok\n"
+        mock_proc.stderr = ""
+        mock_run.return_value = mock_proc
+
+        run_rcon_command(
+            "mc-staging-server",
+            "dummy-pw",
+            25575,
+            "say first; say second",
+        )
+
+        argv = mock_run.call_args.args[0]
+        assert argv == [
+            "docker",
+            "exec",
+            "mc-staging-server",
+            "rcon-cli",
+            "--port",
+            "25575",
+            "--password",
+            "dummy-pw",
+            "say first; say second",
+        ]
+
+    @patch("tests.test_origins_live.run_rcon_command")
+    def test_mid_batch_rcon_failure_errors_remaining_commands(self, mock_cmd):
+        mock_cmd.side_effect = [
+            (0, "Set game mode to Survival Mode", ""),
+            (1, "", "container is not running"),
+            (1, "", "container is not running"),
+        ]
+        steps = [
+            TestStep("gamemode survival test_player", "Setup", True, "Set game mode"),
+            TestStep("attribute test_player generic.armor get", "First assertion", check_fn=lambda r: True),
+            TestStep("attribute test_player generic.max_health get", "Second assertion", check_fn=lambda r: True),
+        ]
+
+        passed, failed, errored = run_batch("mid_run", steps, "dummy-container", "dummy-pw")
+
+        assert passed == 1
+        assert failed == 0
+        assert errored == 2
+        assert mock_cmd.call_count == 3
 
 
 class TestMainEntryPoint:

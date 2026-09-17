@@ -81,8 +81,12 @@ def get_container_status(container_name: str = DEFAULT_CONTAINER) -> str:
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
         if proc.returncode != 0:
-            return "not_found"
-        return proc.stdout.strip()
+            stderr = proc.stderr.strip()
+            if re.search(r"no such (?:object|container)|container .* not found", stderr, re.IGNORECASE):
+                return "not_found"
+            return f"error: {stderr or f'docker inspect exited with code {proc.returncode}'}"
+        status = proc.stdout.strip()
+        return status or "error: docker inspect returned an empty status"
     except Exception as e:
         return f"error: {e}"
 
@@ -101,6 +105,20 @@ def is_player_missing(response: str) -> bool:
         if re.search(pattern, response, re.IGNORECASE):
             return True
     return False
+
+
+def is_command_error(response: str) -> bool:
+    """Detect Minecraft command responses that indicate an invalid command or ID."""
+    error_patterns = [
+        r"\bunknown (?:or incomplete )?(?:command|argument|origin|class)\b",
+        r"\b(?:origin|class)\b.*\b(?:not found|does not exist|not available|unknown|invalid)\b",
+        r"\b(?:no such|no matching)\b.*\b(?:origin|class)\b",
+        r"\b(?:there is|there's)\s+no\b.*\b(?:origin|class)\b",
+        r"\b(?:couldn'?t|could not|cannot|can't|unable to)\b.*\b(?:find|resolve|set|assign)\b.*\b(?:origin|class)\b",
+        r"\bincorrect argument\b",
+        r"\bfailed to execute\b",
+    ]
+    return any(re.search(pattern, response, re.IGNORECASE) for pattern in error_patterns)
 
 
 def run_rcon_command(
@@ -488,8 +506,22 @@ def run_batch(
     passed = 0
     failed = 0
     errored = 0
+    setup_group_failed = False
+    previous_was_setup = False
 
     for idx, step in enumerate(steps, 1):
+        if step.is_setup and not previous_was_setup:
+            # A new contiguous setup group establishes a new state for its assertions.
+            setup_group_failed = False
+
+        if not step.is_setup and setup_group_failed:
+            print(f"  [{idx}/{len(steps)}] ERROR: {step.description}")
+            print(f"    Command:  {step.command}")
+            print("    Detail:   Blocked by a previous setup command error; command not sent.")
+            errored += 1
+            previous_was_setup = False
+            continue
+
         ret_code, stdout, stderr = run_rcon_command(
             container=container,
             password=password,
@@ -499,11 +531,26 @@ def run_batch(
 
         output = stdout if stdout else stderr
 
-        if ret_code != 0 and not stdout:
+        if ret_code != 0:
             print(f"  [{idx}/{len(steps)}] ERROR: {step.description}")
             print(f"    Command:  {step.command}")
             print(f"    Error:    {stderr or f'Process exited with code {ret_code}'}")
+            if stdout:
+                print(f"    Response: {stdout}")
             errored += 1
+            if step.is_setup:
+                setup_group_failed = True
+            previous_was_setup = step.is_setup
+            continue
+
+        if not stdout and not stderr:
+            print(f"  [{idx}/{len(steps)}] ERROR: {step.description}")
+            print(f"    Command:  {step.command}")
+            print("    Error:    No response received from rcon-cli")
+            errored += 1
+            if step.is_setup:
+                setup_group_failed = True
+            previous_was_setup = step.is_setup
             continue
 
         # Check if the player entity is missing / offline
@@ -513,6 +560,20 @@ def run_batch(
             print(f"    Detail:   Target player is offline or entity not found.")
             print(f"    Response: {output}")
             errored += 1
+            if step.is_setup:
+                setup_group_failed = True
+            previous_was_setup = step.is_setup
+            continue
+
+        if is_command_error(output):
+            print(f"  [{idx}/{len(steps)}] ERROR: {step.description}")
+            print(f"    Command:  {step.command}")
+            print(f"    Detail:   Minecraft rejected the command or referenced ID.")
+            print(f"    Response: {output}")
+            errored += 1
+            if step.is_setup:
+                setup_group_failed = True
+            previous_was_setup = step.is_setup
             continue
 
         if step.is_setup:
@@ -538,6 +599,7 @@ def run_batch(
                 print(f"    Actual:   {output}")
                 failed += 1
 
+        previous_was_setup = step.is_setup
         if step.post_delay > 0:
             time.sleep(step.post_delay)
 
@@ -590,7 +652,12 @@ def main(argv: Optional[List[str]] = None) -> int:
     status = get_container_status(args.container)
     if status != "running":
         print(f"\n[ERROR] Container '{args.container}' status is '{status}'.")
-        print("Server is asleep, not running tests.")
+        if status.startswith("error:"):
+            print("Could not verify Docker/container state; not running tests.")
+        elif status == "not_found":
+            print("Container was not found; not running tests.")
+        else:
+            print("Server is asleep, not running tests.")
         return 1
 
     # 2. Read RCON password

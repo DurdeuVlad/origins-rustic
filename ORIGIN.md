@@ -19,7 +19,7 @@ Adds 30% of the entity's base movement speed as a flat bonus while standing in a
 ## Dwarf
 
 Tag: `#rustic:dwarf_powers` → `data/rustic/tags/origins/power/dwarf_powers.json`
-**Tag currently only lists `rustic:dwarf_pickaxe_haste`. The two underground powers below exist as files but are missing from the tag and are therefore inactive.**
+The tag registers the pickaxe haste power and both underground powers below.
 
 ### `rustic:dwarf_pickaxe_haste`
 Type: `origins:action_over_time`
@@ -29,22 +29,20 @@ Action: applies `minecraft:haste` — amplifier 0 (Haste I), duration 40 ticks, 
 
 Every second, if the player is holding any pickaxe, refreshes Haste I for 2 seconds. Effect is hidden from particles but shows the icon. Net result: continuous Haste I while a pickaxe is held.
 
-### ⚠ `rustic:dwarf_underground_resistance` — BROKEN (not in tag)
+### `rustic:dwarf_underground_resistance`
 Type: `origins:action_over_time`
 Condition: `origins:distance_from_coordinates` — offset Y `-64`, ignoring X/Z, comparison `<=` `124`
   → equivalent to: entity Y position ≤ 60
 Action: applies `minecraft:resistance` — amplifier 1 (Resistance II), duration 40 ticks - use OriginJS to implement
 
-Should continuously apply Resistance II while the player is at or below Y=60 (underground). Currently does nothing because the power is not listed in `dwarf_powers.json`.
+Should continuously apply Resistance II while the player is at or below Y=60 (underground).
 
-### ⚠ `rustic:dwarf_underground_vision` — BROKEN (not in tag)
+### `rustic:dwarf_underground_vision`
 Type: `origins:night_vision`
 Strength: `1.0` (full brightness)
 Condition: same as above — entity Y position ≤ 60 - use OriginJS to implement
 
-Should grant full night vision while underground (Y ≤ 60). Currently does nothing because the power is not listed in `dwarf_powers.json`.
-
-**Fix:** add both `rustic:dwarf_underground_resistance` and `rustic:dwarf_underground_vision` to `data/rustic/tags/origins/power/dwarf_powers.json`.
+Should grant full night vision while underground (Y ≤ 60).
 
 ---
 
@@ -107,4 +105,3 @@ Type: `origins:effect_immunity`
 Effects: `["minecraft:poison", "minecraft:hunger"]`
 
 Grants immunity to both Poison and Hunger effects.
-
