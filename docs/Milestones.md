@@ -21,7 +21,7 @@ graph LR
 | **M2: Architecture & Documentation Base** | Complete durable specifications per `/flux-docs` and `/flux-milestone`. | `Business.md`, `Decision.md`, `Milestones.md`, `Collaboration.md`, `RUSTIC_ORIGINS_SPEC.md`, `README.md`. | **ACTIVE** | N/A |
 | **M3: Combat & RPG Classes Expansion** | Introduce tactical frontline combat roles with unique mechanics. | Barbarian (#1, #2, #3), Knight (#5, #6). | **IN PROGRESS** | #1, #2, #3, #5, #6 |
 | **M4: Trade & Gathering Classes Porting** | Complete economic interdependence loop for crafting & resource harvesting. | Tanner (#9), Farrier (#11), Archivist (#10), Fisherman (#12), Farmer (#7), Blacksmith (#8), Nitwit (#14), Old Jobs (#4). | **SCHEDULED** | #4, #7, #8, #9, #10, #11, #12, #14 |
-| **M5: Staged Origin Races Activation** | Fully implement Frostborn and Vampire from staged prototypes into playable origins. | `data/rustic/origins/origin/frostborn.json`, `vampire.json`, associated powers & tags. | **SCHEDULED** | Staged |
+| **M5: Staged Origin Races Activation** | Fully implement Frostborn and Vampire from staged prototypes into playable origins. | `data/rustic/origins/origin/frostborn.json`, `vampire.json`, associated powers & tags. | **IN PROGRESS** | #22 (Frostborn), Vampire |
 | **M6: Verification & v2.0 Release Gate** | End-to-end datapack verification, automated validation, collaborative PR to `master`. | Server test harness, linting, promotion to `master`. | **SCHEDULED** | Release PR |
 
 ---
@@ -240,15 +240,31 @@ graph LR
 
 ## Milestone 5: Staged Origin Races Activation
 * **Strategic Intent**: Fully activate the two unfinished racial origins currently staged as empty shells.
-* **Status**: **SCHEDULED**
+* **Status**: **IN PROGRESS**
 
-### Issue 5.1: Frostborn (`rustic:frostborn`)
-* **Intent**: Arctic predator thriving in sub-zero biomes.
-* **Mechanics**: Freezing touch / chill aura, movement speed on snow/ice, immunity to freezing damage, fire vulnerability (+50% fire damage taken).
+### Issue 5.1: Frostborn (`rustic:frostborn` / Issue #22)
+* **Title**: Frostborn Class / Origin Activation
+* **Status**: **DONE** (Implemented on `feature/frostborn`)
+* **Intent**: Arctic predator thriving in sub-zero biomes, vulnerable to thermal hazards.
+* **Expectation**:
+  * Innate race selectable in Origins selection screen with icon `minecraft:packed_ice`.
+  * Grants Glacial Might (Strength I & Speed I in cold biomes `#minecraft:is_cold`).
+  * Grants Glacial Aura (Key G, 20s cooldown, 140-tick freeze & Blindness II to enemy players within 8m).
+  * Molten Weakness (+75% fire/lava damage taken).
+  * Heat Weakness tiered debuffs (Weakness I on fire, II on campfire, III in lava).
+  * Overheat system (0–100 HUD bar, fills in heat without ice, deals 2.0 HP damage at 100 via `rustic:frostborn_overheat`, drains away from heat).
+  * Ice Coolant (consumes 1 ice item from `#rustic:ice_items` every 20s to pause heat buildup).
+* **Acceptance Criteria**:
+  - [x] Origin `data/rustic/origins/origin/frostborn.json` references `#rustic:frostborn_powers`.
+  - [x] Tag `data/rustic/tags/origins/power/frostborn_powers.json` contains all 11 power entries.
+  - [x] Tag `data/rustic/tags/item/ice_items.json` contains ice, packed ice, and blue ice.
+  - [x] Custom damage type `data/rustic/damage_type/frostborn_overheat.json` registered.
+  - [x] Complete localization in `assets/rustic/lang/en_us.json` including power names, descriptions, and death messages.
 
 ### Issue 5.2: Vampire (`rustic:vampire`)
 * **Intent**: Nocturnal predator with life steal and nocturnal empowerment.
 * **Mechanics**: Severe daylight combustion (bypassed only under shadow or heavy helmets), life drain on melee attacks, entity group: Undead, night vision, boosted agility at midnight.
+* **Status**: **SCHEDULED**
 
 ---
 

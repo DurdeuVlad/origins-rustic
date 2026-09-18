@@ -1,5 +1,7 @@
 {
-  "powers": [],
+  "powers": [
+    "#rustic:frostborn_powers"
+  ],
   "icon": {
     "id": "minecraft:packed_ice"
   },
