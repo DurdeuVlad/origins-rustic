@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "rustic:frostborn_cold_buffs",
+    "rustic:frostborn_glacial_aura",
+    "rustic:frostborn_fire_vulnerability",
+    "rustic:frostborn_weakness_fire",
+    "rustic:frostborn_weakness_campfire",
+    "rustic:frostborn_weakness_lava",
+    "rustic:frostborn_heat_resource",
+    "rustic:frostborn_heat_fill",
+    "rustic:frostborn_heat_damage",
+    "rustic:frostborn_heat_cooldown",
+    "rustic:frostborn_ice_coolant"
+  ]
+}

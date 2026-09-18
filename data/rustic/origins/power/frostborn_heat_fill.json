@@ -1,0 +1,114 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 10,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:on_block",
+            "block_condition": {
+              "type": "origins:or",
+              "conditions": [
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:fire"
+                },
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:soul_fire"
+                },
+                {
+                  "type": "origins:in_tag",
+                  "tag": "minecraft:campfires"
+                },
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:lava"
+                }
+              ]
+            }
+          },
+          {
+            "type": "origins:in_block_anywhere",
+            "block_condition": {
+              "type": "origins:or",
+              "conditions": [
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:fire"
+                },
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:soul_fire"
+                },
+                {
+                  "type": "origins:in_tag",
+                  "tag": "minecraft:campfires"
+                },
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:lava"
+                }
+              ]
+            }
+          },
+          {
+            "type": "origins:block_in_radius",
+            "radius": 1,
+            "block_condition": {
+              "type": "origins:or",
+              "conditions": [
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:fire"
+                },
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:soul_fire"
+                },
+                {
+                  "type": "origins:in_tag",
+                  "tag": "minecraft:campfires"
+                },
+                {
+                  "type": "origins:block",
+                  "block": "minecraft:lava"
+                }
+              ]
+            },
+            "comparison": ">=",
+            "compare_to": 1
+          },
+          {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:lava"
+          },
+          {
+            "type": "origins:fluid_height",
+            "fluid": "minecraft:lava",
+            "comparison": ">",
+            "compare_to": 0.0
+          }
+        ]
+      },
+      {
+        "type": "origins:inventory",
+        "item_condition": {
+          "type": "origins:in_tag",
+          "tag": "rustic:ice_items"
+        },
+        "comparison": "<=",
+        "compare_to": 0
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "rustic:frostborn_heat_resource",
+    "change": 2,
+    "operation": "add"
+  }
+}

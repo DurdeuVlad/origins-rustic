@@ -1,0 +1,40 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 40,
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_cold"
+    }
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:strength",
+          "duration": 50,
+          "amplifier": 0,
+          "ambient": true,
+          "is_ambient": true,
+          "show_particles": false,
+          "show_icon": true
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:speed",
+          "duration": 50,
+          "amplifier": 0,
+          "ambient": true,
+          "is_ambient": true,
+          "show_particles": false,
+          "show_icon": true
+        }
+      }
+    ]
+  }
+}
