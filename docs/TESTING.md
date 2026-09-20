@@ -53,7 +53,7 @@ attribute <player> generic.attack_damage get       # Expected: 2.0 (+25% / +1 at
 
 # 2. Salahor (Colossal Titan)
 origin set <player> origins_classes:class rustic:salahor
-attribute <player> generic.max_health get          # Expected: 22.0 (+2 hearts)
+attribute <player> generic.max_health get          # Expected: 24.0 (+2 hearts / +4 HP)
 attribute <player> generic.attack_damage get       # Expected: 2.0 (+1 attack damage)
 attribute <player> generic.knockback_resistance get # Expected: 0.2
 attribute <player> generic.movement_speed get      # Expected: 0.09 (-10% to -20% speed)
