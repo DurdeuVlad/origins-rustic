@@ -1,0 +1,71 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 40,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:on_block",
+        "block_condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:block",
+              "block": "minecraft:fire"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:soul_fire"
+            }
+          ]
+        }
+      },
+      {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:block",
+              "block": "minecraft:fire"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:soul_fire"
+            }
+          ]
+        }
+      },
+      {
+        "type": "origins:block_in_radius",
+        "radius": 1,
+        "block_condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:block",
+              "block": "minecraft:fire"
+            },
+            {
+              "type": "origins:block",
+              "block": "minecraft:soul_fire"
+            }
+          ]
+        },
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:weakness",
+      "duration": 50,
+      "amplifier": 0,
+      "ambient": false,
+      "show_particles": true,
+      "show_icon": true
+    }
+  }
+}

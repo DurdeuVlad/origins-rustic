@@ -176,9 +176,27 @@ Each origin definition references a power tag under `data/rustic/tags/origins/po
 
 ---
 
-### 2.11 Frostborn (`rustic:frostborn`) & 2.12 Vampire (`rustic:vampire`)
-* **Status**: Empty power definitions (`"powers": []`) staged for full porting in Milestone 4.
-* **Frostborn Prototype**: Freezing aura, cold weather buff, fire vulnerability, ice path traversal.
+### 2.11 Frostborn (`rustic:frostborn`)
+* **Role**: Arctic predator and environmental specialist thriving in sub-zero biomes, highly vulnerable to thermal hazards and fire.
+* **Icon**: `minecraft:packed_ice`
+* **Tag**: `#rustic:frostborn_powers`
+* **Mechanics**:
+  * `rustic:frostborn_cold_buffs`: Continuous Strength I and Speed I while in `#minecraft:is_cold` biomes.
+  * `rustic:frostborn_glacial_aura`: Key G primary active (400t cooldown). Targets enemy players within 8m, applying 140 TicksFrozen (~7s freeze) and Blindness II (5s).
+  * `rustic:frostborn_fire_vulnerability`: +75% incoming damage from fire, lava, and fireballs (1.75x multiplier).
+  * `rustic:frostborn_weakness_fire`: Weakness I while standing in/on fire or soul fire.
+  * `rustic:frostborn_weakness_campfire`: Weakness II while standing on/near a lit campfire.
+  * `rustic:frostborn_weakness_lava`: Weakness III while standing on or submerged in lava.
+  * `rustic:frostborn_heat_resource`: Heat saturation gauge (0-100) rendered on the HUD.
+  * `rustic:frostborn_heat_fill`: +2 heat every 10t when exposed to heat sources without ice in inventory (fills in ~25s).
+  * `rustic:frostborn_heat_cooldown`: -1 heat every 10t when away from heat sources (drains in ~50s).
+  * `rustic:frostborn_heat_damage`: Deals 2.0 HP every 40t (2s) via `rustic:frostborn_overheat` when heat reaches 100%.
+  * `rustic:frostborn_ice_coolant`: Consumes 1 item from `#rustic:ice_items` every 400t (20s) while over heat to pause overheat buildup.
+
+---
+
+### 2.12 Vampire (`rustic:vampire`)
+* **Status**: Empty power definitions (`"powers": []`) staged for full porting in Milestone 5.2.
 * **Vampire Prototype**: Daylight combustion, life drain on attack, entity group: undead, night speed/attack buffs.
 
 ---
